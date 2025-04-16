@@ -1,0 +1,31 @@
+/*Temp*/
+/*Storage*/
+
+:root {
+    --a11y-fontsize: 2vh;
+    --a11y-highlight:   #ffffff;
+    --palette-primary:     #000000;
+    --palette-secondary-a: #000000;
+    --palette-secondary-b: #000000;
+    --palette-tertiary-a:  #000000;
+    --palette-tertiary-b:  #000000;
+}
+
+@media (prefers-theme: dark) {
+    :root {
+        --palette-primary:     #000000;
+        --palette-secondary-a: #000000;
+        --palette-secondary-b: #000000;
+        --palette-tertiary-a:  #000000;
+        --palette-tertiary-b:  #000000;
+    }
+}
+
+@media (max-width: 900px) {
+    
+}
+
+*.screen-mobileOnly {}
+
+/*Main*/
+/*Rest*/
