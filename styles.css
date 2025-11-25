@@ -6,9 +6,9 @@
     --global-fontsize: 2rem;
     /**/
     --palette-primary:                #651551;
-    --palette-primary-shaded:         #AB2088;
+    --palette-secondary:              #AB2088;
     /**/
-    --palette-secondary:              #FCC900;
+    --palette-accent:                 #FCC900;
     /**/
     --palette-common-text:            #F2F3F4;
     --palette-common-text-highlight:  #B6B7B8;
@@ -32,3 +32,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--palette-common-background);
+    color: var(--palette-common-text);
+}
+
+/**
+    CORE SELECTORS
+    main, nav, main < section
+**/
