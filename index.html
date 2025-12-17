@@ -1,3 +1,16 @@
+<!--
+    Project Title:             Luna Nobles Portfolio Webpage
+        Document Author:       Luna Nobles
+        Date Initialised:      July, 2025
+        Date Updated:          December, 2025
+        Version ID:            Unreleased (0.)2.4
+
+    Project Description:
+        Personal portfolio webpage for me.
+
+    Important Notes and Comments:
+        
+-->
 <!DOCTYPE html>
 <html lang="en-CA">
     <head>
@@ -9,7 +22,7 @@
         <meta name="keywords"    content="portfolio, portfolio-website"/>
 
         <title>Luna Nobles Portfolio</title>
-        <link rel="icon" type="image/svg" href="images/Luna Nobles, Personal Icon.png"/>
+        <link rel="icon" type="image/svg" href="images_profile/Luna Nobles, Personal Icon.png"/>
 
         <!--META CONTEXT-->
         <link rel="stylesheet" href="styles_font.css"/>
@@ -19,20 +32,101 @@
     <body>
     <!--
         Viewport is a 20-80 nav-main splitport layout.
-        Container stlye
+        Container style
         Palette: 
             Primary:    Deep Purple     (#651551)
             Secondary:  Rasberry Plum   (#AB2088)
             Accent:     Bright Amber    (#FCC900)
     -->
         <nav>
-            <img src="images_profile/profile_picture.png" height="" width=""/>
-
+            <img id="profile_picture" src="images_profile/profile_picture.png" alt="profile_picture.png"/>
+            <h2>Luna Nobles</h2>
+            <h4 id="social_handle" class="section_inline_blorb">@deleduck</h4>
+            <span class="splitport_even">
+                <h5 class="section_inline_blorb"><span class="material-symbols-rounded">web_asset</span> Web Dev.</h6>
+                <h5 class="section_inline_blorb"><span class="material-symbols-rounded">sports_esports</span> Game Dev.</h6>
+            </span>
+            <hr class="hr_stylised"/>
+            <div id="navigation_pannel">
+                <a href="#home"><span class="material-symbols-rounded">home</span> Home</a>
+                <a href="#projects"><span class="material-symbols-rounded">deployed_code</span> Projects</a>
+                <a href="#skills"><span class="material-symbols-rounded">person_play</span> Skills</a>
+                <a href="#about_me"><span class="material-symbols-rounded">person</span> About Me</a>
+                <a href="#contacts"><span class="material-symbols-rounded">mail</span> Contacts</a>
+                <a href="#resumé"><span class="material-symbols-rounded">article_person</span> Resumé</a>
+            </div>
+            <hr class="hr_stylised"/>
+            <fieldset>Webpage Version: 1.0<br/>Dec. 15, '25</fieldset>
         </nav>
         <main>
-            <section>
+            <section id="home">
                 <h1>Luna Nobles Webpage Portfolio</h1>
                 <h4>Enjoy!</h4>
+                <hr class="hr_stylised_justifyed"/>
+                <fieldset>
+                    <p><strong>Title</strong></p>
+                    <p>Stuff stuff tnfewj edfnlwki k eikje oan aapm</p>
+                    <p>Does the inline <span class="text_highlight">highlight</span> still hold visible for subcontainers?</p>
+                    <p>Does the inline <a href="">hyperlink</a> still hold visible for subcontainers?</p>
+                </fieldset>
+                <p>This is an inline <span class="text_highlight">highlight</span>, it should be working now.</p>
+                <p>This is an inline <a href="">hyperlink</a>, it should be working now.</p>
+                <div class="splitport_even">
+                    <fieldset>
+                        <p><strong>Title Left</strong></p>
+                        <p>Content LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent Left</p>
+                    </fieldset>
+                    <fieldset>
+                        <p><strong>Title Right</strong></p>
+                        <p>Content RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent Right</p>
+                    </fieldset>
+                </div>
+                <div class="splitport_even">
+                    <fieldset>
+                        <p><strong>Title Left</strong></p>
+                        <p>Content LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent Left</p>
+                    </fieldset>
+                    <fieldset>
+                        <p><strong>Title Right</strong></p>
+                        <p>Content RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent Right</p>
+                    </fieldset>
+                    <fieldset>
+                        <p><strong>Title Left</strong></p>
+                        <p>Content LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent Left</p>
+                    </fieldset>
+                </div>
+            </section>
+            <section id="projects">
+                <h1>Projects</h1>
+                <h4>A search-feature with all of the projects I've created.</h4>
+                <hr class="hr_stylised_justifyed"/>
+                <p>
+                    blah blah blah
+                </p>
+            </section>
+            <section id="about_me">
+                <h1>Projects</h1>
+                <h4>A search-feature with all of the projects I've created.</h4>
+                <hr class="hr_stylised_justifyed"/>
+                <p>
+                    blah blah blah
+                </p>
+            </section>
+            <section id="contacts">
+                <h1>Projects</h1>
+                <h4>A search-feature with all of the projects I've created.</h4>
+                <hr class="hr_stylised_justifyed"/>
+                <p>
+                    blah blah blah
+                </p>
+            </section>
+            <section id="more">
+                <h1>Projects</h1>
+                <h4>A search-feature with all of the projects I've created.</h4>
+                <hr class="hr_stylised_justifyed"/>
+                <p>
+                    blah blah blah
+                </p>
             </section>
         </main>
         <script src="script.js"></script>

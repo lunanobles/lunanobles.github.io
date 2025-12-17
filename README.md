@@ -1,6 +1,8 @@
 # Luna Nobles Portfolio Webpage
-> TODO:
-> - README.md
-> - Basic HTML
-> - Basic CSS
-> - Everything else...
+
+> Project Title: **Luna Nobles Portfolio Webpage**<br>
+>        Document Author: *Luna Nobles*<br>
+>        Date Initialised:      *July, 2025*<br>
+>        Date Updated:          *December, 2025*<br>
+>        Version ID:            *Unreleased (0.)2.1*<br>
+---
