@@ -9,7 +9,7 @@
 
 ## Workload
 #### Search module
-> &#x2717; &mdash; Tag System & Nomenclature
-> &#x2717; &mdash; Tag Styling
+> &#x2717; &mdash; Tag System & Nomenclature<br>
+> &#x2717; &mdash; Tag Styling<br>
 > &#x2717; &mdash; Tag-search Programming
 #### Everything else...
