@@ -9,11 +9,11 @@
 
     --palette-primary:                #651551;
     --palette-secondary:              #AB2088;
-    --palette-transparent-primary:    #651551AA;
-    --palette-transparent-secondary:  #AB2088AA;
+    --palette-transparent-primary:    #651551E5;
+    --palette-transparent-secondary:  #AB2088E5;
 
     --palette-accent:                 #FCC900;
-    --palette-transparent-accent:     #FCC900AA;
+    --palette-transparent-accent:     #FCC900E5;
 
     --palette-common-text:            #F2F3F4;
     --palette-common-text-highlight:  #B6B7B8;
@@ -22,6 +22,12 @@
     --palette-common-background:      #020304;
     --palette-transparent-top:        #5C5D5EAA;
     --palette-transparent-bottom:     #202122AA;
+
+    --palette-special-one:            #8CB369E5;
+    --palette-special-two:            #F4E285E5;
+    --palette-special-three:          #F4A259E5;
+    --palette-special-four:           #5B8E7DE5;
+    --palette-special-five:           #BC4B51E5;
 }
 
 @media (prefers-color-scheme: light) { /*LIGHT MODE*/
@@ -236,45 +242,54 @@ div#navigation_pannel {
     MODULES
 */
 
-/*Search Module*/
+/*
+Search Module
+*/
 
+/*General Module*/
 section#projects_search {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     padding: 1%;
-    background: red;
 }
 
-section#projects_search > div.project_card {
+section#projects_search > a.project_card {
     width: 30%;
     height: 300px;
     margin: 1vh 1vw;
     overflow: hidden;
     position: relative;
-    border: 3px solid var(--palette-common-field-bottom);
+    display: none;
+    border: 3px solid var(--palette-common-field-top);
     border-radius: 5%;
+    color: var(--palette-common-text);
+    text-decoration: none;
+    &.content_shown {
+        display: block;
+    }
 }
 
-section#projects_search > div.project_card::before {
+section#projects_search > a.project_card::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    display: block;
     background-image: url("./images_public/medium_Artboard_1_CA_7014f6233b.png");
     background-size: cover; /* Ensures the image covers the initial area */
     background-position: center;
     transition: all 1s ease-in-out;
     z-index: 1;
 }
-    section#projects_search > div.project_card:hover::before { /*Can't use &:hover in previous because ordering is broken*/
+    section#projects_search > a.project_card:hover::before { /*Can't use &:hover in previous because ordering is broken*/
         transform: scale(1.3);
     }
 
-section#projects_search > div.project_card > div:first-child {
+section#projects_search > a.project_card > div:first-child {
     height: fit-content;
     padding: 5px;
     background-color: var(--palette-transparent-bottom);
@@ -283,3 +298,58 @@ section#projects_search > div.project_card > div:first-child {
 }
 
 
+/*Tags*/
+section#projects_search > a.project_card > div > div {
+    padding: 0.7vh;
+}
+
+section#projects_search span.project_tag {
+    color: var(--palette-accent);
+    border: 1px solid var(--palette-accent);
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px;
+    white-space: nowrap;
+}
+
+section#projects_search span.project_tag_featured                {background-color: var(--palette-transparent-secondary); border: 3px double var(--palette-transparent-accent);}
+section#projects_search span.project_tag_superprojects           {background-color: var(--palette-transparent-accent); color: var(--palette-transparent-secondary); border: 3px double var(--palette-transparent-secondary);}
+section#projects_search span.project_tag_websites                {background-color: var(--palette-special-one);}
+section#projects_search span.project_tag_videogames              {background-color: var(--palette-special-two);}
+section#projects_search span.project_tag_software                {background-color: var(--palette-special-three);}
+section#projects_search span.project_tag_art                     {background-color: var(--palette-special-four);}
+section#projects_search span.project_tag_systemsandhierarchies   {background-color: var(--palette-special-five);}
+section#projects_search span.project_tag_other                   {background-color: rgba(105, 105, 105, 0.9); color: rgba(211, 211, 211, 0.9); border: 1px dashed rgba(211, 211, 211, 0.9);}
+
+/*Buttons*/
+div#project_buttons > button {
+    background-color: var(--palette-common-text-highlight);
+    border: 1px solid var(--palette-common-background);
+    border-radius: 30px;
+    padding: 1vh 1vw;
+    margin: 5px;
+    color: var(--palette-common-background);
+    width: 20%;
+    &:hover {
+        cursor: pointer;
+        background-color: var(--palette-common-field-top);
+    }
+}
+
+div#project_buttons > button[onclick~="project_filter()"] {
+    width: 35%;
+    margin: 0;
+    font-weight: inherit;
+
+}
+
+div#project_buttons > button.project_button_active {
+    background-color: red;
+}
+
+picture > img,
+picture > source {
+    display: block;
+    width: 20% !important;
+    height: auto !important;
+}

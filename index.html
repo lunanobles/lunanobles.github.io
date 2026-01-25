@@ -3,7 +3,7 @@
         Document Author:       Luna Nobles
         Date Initialised:      July, 2025
         Date Updated:          January, 2026
-        Version ID:            Unreleased (0.)2.4
+        Version ID:            Unreleased (0.)3.1
 
     Project Description:
         Personal portfolio webpage for me.
@@ -11,7 +11,6 @@
     Important Notes and Comments:
         
 -->
->>>>>>> 5523c864f2dd2dfe324aac9391b7602ef3d21678
 <!DOCTYPE html>
 <html lang="en-CA">
     <head>
@@ -31,9 +30,9 @@
         <style>
             /*Project Background Image Selection*/
             #project_titleone::before       {background-image: url(./images_profile/profile_.jpg) !important;} /*Use !important to override default image*/
-            #project_titletwo::before       {background-image: url(./images_profile/profile_.jpg) !important;} /*Use !important to override default image*/
-            #project_titlethree::before     {background-image: url(./images_profile/profile_.jpg) !important;} /*Use !important to override default image*/
-            #project_titlefour::before      {background-image: url(./images_profile/profile_.jpg) !important;} /*Use !important to override default image*/
+            #project_titletwo::before       {background-image: url(./images_profile/profile_.jpg) !important;} 
+            #project_titlethree::before     {background-image: url(./images_profile/profile_.jpg) !important;} 
+            #project_titlefour::before      {background-image: url(./images_profile/profile_.jpg) !important;} 
         </style>
     </head>
 
@@ -49,7 +48,7 @@
         <nav>
             <img id="profile_picture" src="images_profile/profile_picture.png" alt="profile_picture.png"/>
             <h2>Luna Nobles</h2>
-            <h4 id="social_handle" class="section_inline_blorb">@deleduck</h4>
+            <h3 id="social_handle" class="section_inline_blorb">@deleduck</h3>
             <span class="splitport_even">
                 <h5 class="section_inline_blorb"><span class="material-symbols-rounded">web_asset</span> Web Dev.</h6>
                 <h5 class="section_inline_blorb"><span class="material-symbols-rounded">sports_esports</span> Game Dev.</h6>
@@ -64,12 +63,12 @@
                 <a href="#resumé"><span class="material-symbols-rounded">article_person</span> Resumé</a>
             </div>
             <hr class="hr_stylised"/>
-            <fieldset>Webpage Version: 1.0<br/>Dec. 15, '25</fieldset>
+            <fieldset>Webpage Version: 1.0<br/>Jan. 25, '26</fieldset>
         </nav>
         <main>
             <section id="home">
                 <h1>Luna Nobles Webpage Portfolio</h1>
-                <h4>Enjoy!</h4>
+                <h3>Enjoy!</h3>
                 <hr class="hr_stylised_justifyed"/>
                 <fieldset>
                     <p><strong>Title</strong></p>
@@ -106,102 +105,118 @@
             </section>
             <section id="projects">
                 <h1>Projects</h1>
-                <h4>A search-feature with all of the projects I've created &mdash; from Video Games to Websites to Systems, here is a collection of everything I've made.</h4>
+                <h3>A search-feature with all of the projects I've created &mdash; from Video Games to Websites to Systems, here is a collection of everything I've made.</h3>
                 <hr class="hr_stylised_justifyed"/>
+                <div id="project_buttons">
+                    <button type="button" onclick="project_filter()">Reset &mdash; Show All</button></br>
+                    <button type="button" onclick="project_filter('featured')">Featured</button>
+                    <button type="button" onclick="project_filter('websites')">Websites</button>
+                    <button type="button" onclick="project_filter('video-games')">Video Games</button>
+                    <button type="button" onclick="project_filter('software')">Software</button>
+                    <button type="button" onclick="project_filter('art')">Art</button>
+                    <button type="button" onclick="project_filter('systems-and-hierarchies')">Systems & Hierarchies</button>
+                    <button type="button" onclick="project_filter('super-projects')">Super-Projects</button>
+                    <button type="button" onclick="project_filter('other')">Other</button>
+                </div>
                 <section id="projects_search">
-                    <div class="project_card" id="project_titleone">
+                    <a class="project_card content_shown" id="project_titleone" data-tags="other featured super-projects"
+                       href="#project_deleduck">
                         <div>
-                            <h2>Project Title</h2>
-                            <h6>Short project description.</h6>
+                            <h2>DeLeDuck Persona</h2>
+                            <h6>My online persona, DeLeDuck, and the related art, YouTube content, and systems.</h6>
                             <hr/>
-                            <div>Tagbox</div>
+                            <div><span class="project_tag project_tag_other">Other</span><span class="project_tag project_tag_featured">Featured</span><span class="project_tag project_tag_superprojects">Super-Projects</span></div>
                         </div>
-                    </div>
-                    <div class="project_card">
+                    </a>
+                    <a class="project_card content_shown" data-tags="other featured super-projects"
+                       href="#project_deleduck">
                         <div>
-                            <h2>Project Title</h2>
-                            <h6>Short project description.</h6>
+                            <h2>DeLeDuck Persona</h2>
+                            <h6>My online persona, DeLeDuck, and the related art, YouTube content, and systems.</h6>
                             <hr/>
-                            <div>Tagbox</div>
+                            <div><span class="project_tag project_tag_other">Other</span><span class="project_tag project_tag_featured">Featured</span><span class="project_tag project_tag_superprojects">Super-Projects</span></div>
                         </div>
-                    </div>
-                    <div class="project_card">
+                    </a>
+                    <a class="project_card content_shown" data-tags="other featured super-projects"
+                       href="#project_deleduck">
                         <div>
-                            <h2>Project Title</h2>
-                            <h6>Short project description.</h6>
+                            <h2>DeLeDuck Persona</h2>
+                            <h6>My online persona, DeLeDuck, and the related art, YouTube content, and systems.</h6>
                             <hr/>
-                            <div>Tagbox</div>
+                            <div><span class="project_tag project_tag_other">Other</span><span class="project_tag project_tag_featured">Featured</span><span class="project_tag project_tag_superprojects">Super-Projects</span></div>
                         </div>
-                    </div>
-                    <div class="project_card">
+                    </a>
+                    <a class="project_card content_shown" data-tags="other featured super-projects"
+                       href="#project_deleduck">
                         <div>
-                            <h2>Project Title</h2>
-                            <h6>Short project description.</h6>
+                            <h2>DeLeDuck Persona</h2>
+                            <h6>My online persona, DeLeDuck, and the related art, YouTube content, and systems.</h6>
                             <hr/>
-                            <div>Tagbox</div>
+                            <div><span class="project_tag project_tag_other">Other</span><span class="project_tag project_tag_featured">Featured</span><span class="project_tag project_tag_superprojects">Super-Projects</span></div>
                         </div>
-                    </div>
-                    <div class="project_card">
+                    </a>
+                    <a class="project_card content_shown" data-tags="other featured super-projects"
+                       href="#project_deleduck">
                         <div>
-                            <h2>Project Title</h2>
-                            <h6>Short project description.</h6>
+                            <h2>DeLeDuck Persona</h2>
+                            <h6>My online persona, DeLeDuck, and the related art, YouTube content, and systems.</h6>
                             <hr/>
-                            <div>Tagbox</div>
+                            <div><span class="project_tag project_tag_other">Other</span><span class="project_tag project_tag_featured">Featured</span><span class="project_tag project_tag_superprojects">Super-Projects</span></div>
                         </div>
-                    </div>
-                    <div class="project_card">
+                    </a>
+                    <a class="project_card content_shown" data-tags="other featured super-projects"
+                       href="#project_deleduck">
                         <div>
-                            <h2>Project Title</h2>
-                            <h6>Short project description.</h6>
+                            <h2>DeLeDuck Persona</h2>
+                            <h6>My online persona, DeLeDuck, and the related art, YouTube content, and systems.</h6>
                             <hr/>
-                            <div>Tagbox</div>
+                            <div><span class="project_tag project_tag_other">Other</span><span class="project_tag project_tag_featured">Featured</span><span class="project_tag project_tag_superprojects">Super-Projects</span></div>
                         </div>
-                    </div>
-                    <div class="project_card">
+                    </a>
+                    <a class="project_card content_shown" data-tags="other featured super-projects"
+                       href="#project_deleduck">
                         <div>
-                            <h2>Project Title</h2>
-                            <h6>Short project description.</h6>
+                            <h2>DeLeDuck Persona</h2>
+                            <h6>My online persona, DeLeDuck, and the related art, YouTube content, and systems.</h6>
                             <hr/>
-                            <div>Tagbox</div>
+                            <div><span class="project_tag project_tag_other">Other</span><span class="project_tag project_tag_featured">Featured</span><span class="project_tag project_tag_superprojects">Super-Projects</span></div>
                         </div>
-                    </div>
-                    <div class="project_card">
+                    </a>
+                    <a class="project_card content_shown" data-tags="other featured super-projects"
+                       href="#project_deleduck">
                         <div>
-                            <h2>Project Title</h2>
-                            <h6>Short project description.</h6>
+                            <h2>DeLeDuck Persona</h2>
+                            <h6>My online persona, DeLeDuck, and the related art, YouTube content, and systems.</h6>
                             <hr/>
-                            <div>Tagbox</div>
+                            <div><span class="project_tag project_tag_other">Other</span><span class="project_tag project_tag_featured">Featured</span><span class="project_tag project_tag_superprojects">Super-Projects</span></div>
                         </div>
-                    </div>
-                    <div class="project_card">
+                    </a>
+                    <a class="project_card content_shown" data-tags="other featured super-projects"
+                       href="#project_deleduck">
                         <div>
-                            <h2>Project Title</h2>
-                            <h6>Short project description.</h6>
+                            <h2>DeLeDuck Persona</h2>
+                            <h6>My online persona, DeLeDuck, and the related art, YouTube content, and systems.</h6>
                             <hr/>
-                            <div>Tagbox</div>
+                            <div><span class="project_tag project_tag_other">Other</span><span class="project_tag project_tag_featured">Featured</span><span class="project_tag project_tag_superprojects">Super-Projects</span></div>
                         </div>
-                    </div>
-                    <div class="project_card">
+                    </a>
+                    <a class="project_card content_shown" data-tags="other featured super-projects"
+                       href="#project_deleduck">
                         <div>
-                            <h2>Project Title</h2>
-                            <h6>Short project description.</h6>
+                            <h2>DeLeDuck Persona</h2>
+                            <h6>My online persona, DeLeDuck, and the related art, YouTube content, and systems.</h6>
                             <hr/>
-                            <div>Tagbox</div>
+                            <div><span class="project_tag project_tag_other">Other</span><span class="project_tag project_tag_featured">Featured</span><span class="project_tag project_tag_superprojects">Super-Projects</span></div>
                         </div>
-                    </div>
-                    <div class="project_card">
-                        <div>
-                            <h2>Project Title</h2>
-                            <h6>Short project description.</h6>
-                            <hr/>
-                            <div>Tagbox</div>
-                        </div>
-                    </div>
+                    </a>
+                </section>
+                <section id="projects_descriptions">
+                    <div id="project_deleduck"></div>
                 </section>
             </section>
             <section id="skills">
                 <h1>Skills</h1>
-                <h4>A search-feature with all of the projects I've created.</h4>
+                <h3>A search-feature with all of the projects I've created.</h3>
                 <hr class="hr_stylised_justifyed"/>
                 <p>
                     blah blah blah
@@ -209,15 +224,32 @@
             </section>
             <section id="about_me">
                 <h1>About Me</h1>
-                <h4>A search-feature with all of the projects I've created.</h4>
+                <h3>A search-feature with all of the projects I've created.</h3>
                 <hr class="hr_stylised_justifyed"/>
                 <p>
                     blah blah blah
                 </p>
+                <picture>
+                    <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/youtube_black.svg" type="image/svg+xml">
+                    <source media="(prefers-color-scheme: dark)"  srcset="./images_public/marks/youtube_white.svg" type="image/svg+xml">
+                    <img src="./images_public/marks/youtube_colour.svg" alt="youtube_icon.svg">
+                </picture>
+                <picture>
+                    <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/github_black.svg" type="image/svg+xml">
+                    <img src="./images_public/marks/github_white.svg" alt="github_icon.svg">
+                </picture>
+                <picture>
+                    <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/discord_black.svg" type="image/svg+xml">
+                    <source media="(prefers-color-scheme: dark)"  srcset="./images_public/marks/discord_white.svg" type="image/svg+xml">
+                    <img src="./images_public/marks/discord_colour.svg" alt="discord_icon.svg">
+                </picture>
+                <picture>
+                    <img src="./images_public/marks/recroom_colour.svg" alt="recroom_icon.svg">
+                </picture>
             </section>
             <section id="contacts">
                 <h1>Contacts</h1>
-                <h4>A search-feature with all of the projects I've created.</h4>
+                <h3>A search-feature with all of the projects I've created.</h3>
                 <hr class="hr_stylised_justifyed"/>
                 <p>
                     blah blah blah
@@ -225,7 +257,7 @@
             </section>
             <section id="resumé">
                 <h1 aria-label="resume">Resumé</h1>
-                <h4>Various versions of the resumés under my name.</h4>
+                <h3>Various versions of the resumés under my name.</h3>
                 <hr class="hr_stylised_justifyed"/>
                 <p>
                     blah blah blah
