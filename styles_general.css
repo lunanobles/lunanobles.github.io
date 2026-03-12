@@ -82,7 +82,7 @@ body {
 
 /*
 *   CORE SELECTORS
-*   nav, main, aside, & main > seciton
+*   nav, main, aside, & main children
 */
 body nav { /*Left side navigation and other information; static on screen*/
     /*Height & Width*/
@@ -104,14 +104,19 @@ body main {  /*The central information element; only thing that scrolls*/
     &::-webkit-scrollbar { /*Take away the scroll-bar*/ 
         display: none;
     }
+    & > * > * { /*General spacing*/
+        margin: 1.5vh 1vw;
+    }
+    /*EDITIING CHILDREN*/
+    & > div { /*General "sections"*/
+        margin-bottom: 2vh;
+    }
     & fieldset { /*The sideboxes*/
         background-color: var(--palette-common-field-bottom);
         border-radius: 5px;
         border: 1.5px solid var(--palette-common-field-top);
         height: fit-content;
-    }
-    & > * > * { /*General spacing*/
-        margin: 1.5vh 1vw;
+        padding: 5px;
     }
 }
 

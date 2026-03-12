@@ -37,3 +37,7 @@ function project_filter(tag) {
         });
     }
 }
+
+function viewPageAs(who) {
+    main = document.querySelector("main");
+}

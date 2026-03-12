@@ -77,6 +77,7 @@
 - Deleted module_projects.js.
 - Seperated css stylesheets into styles_general.css (for major styling) and styles_special.css (for specific/local styling).
 ### Branch creation &mdash; overall-redesign &mdash; 0.4b.?
+### 0.4b.0 &#x2192; 0.4b.?
 #### `0.4b.0 | Layout & Style Redesign Basics`
 - Published **Mar. 11, '26**
 - Added README.md Official Versions / Changelog.
@@ -86,4 +87,12 @@
 - Redesigned style of page.
   - Colour palette changes to fit dark theme.
 - &#x26A0; Project search system inoperable!
+#### `0.4b.1 | Minor Layout & Style Updates`
+- Published **Mar. 12, '26**
+- Changed colour of hr bar.
+- Added extra margin around the page.
+- Introduced viewPageAs() JS function.
+- Actually updated the "Webpage Version" box.
+- Removed hr in nav.
+
 

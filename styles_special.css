@@ -3,18 +3,19 @@
 *.splitport-even {
     display: flex;
     justify-content: space-evenly;
-    > * {
+    & > * {
         max-width: 50%;
     }
-    *.splitport-weighter {
+    & *.splitport-weighter {
         min-width: 60%;
+        margin: 0 5%;
     }
 }
 *.splitport-even-vertical {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    > * {
+    & > * {
         max-height: 50%;
     }
 }
@@ -22,6 +23,7 @@
 hr.stylised {
     background-color: var(--palette-primary);
     border: none;
+    border-radius: 5px;
     height: 2vh;
     width: 50%;
     justify-self: center;
