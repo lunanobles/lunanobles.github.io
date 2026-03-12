@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*.splitport-even {
+    display: flex;
+    justify-content: space-evenly;
+    > * {
+        max-width: 50%;
+    }
+    *.splitport-weighter {
+        min-width: 60%;
+    }
+}
+*.splitport-even-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    > * {
+        max-height: 50%;
+    }
+}
+
+hr.stylised {
+    background-color: var(--palette-primary);
+    border: none;
+    height: 2vh;
+    width: 50%;
+    justify-self: center;
+    &.justified {
+        justify-self: left;
+    }
+}

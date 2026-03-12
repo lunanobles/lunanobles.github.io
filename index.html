@@ -1,9 +1,9 @@
 <!--
     Project Title:             Luna Nobles Portfolio Webpage
         Document Author:       Luna Nobles
-        Date Initialised:      July, 2025
-        Date Updated:          January, 2026
-        Version ID:            Unreleased (0.)3.1
+        Date Initialised:      March, 2026
+        Date Updated:          March, 2026
+        Version ID:            Unreleased (0.)4b.0
 
     Project Description:
         Personal portfolio webpage for me.
@@ -26,7 +26,8 @@
 
         <!--META CONTEXT-->
         <link rel="stylesheet" href="styles_font.css"/>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="styles_general.css"/>
+        <link rel="stylesheet" href="styles_special.css"/>
         <style>
             /*Project Background Image Selection*/
             #project_titleone::before       {background-image: url(./images_profile/profile_.jpg) !important;} /*Use !important to override default image*/
@@ -46,30 +47,29 @@
             Accent:     Bright Amber    (#FCC900)
     -->
         <nav>
-            <img id="profile_picture" src="images_profile/profile_picture.png" alt="profile_picture.png"/>
-            <h2>Luna Nobles</h2>
-            <h3 id="social_handle" class="section_inline_blorb">@deleduck</h3>
-            <span class="splitport_even">
-                <h5 class="section_inline_blorb"><span class="material-symbols-rounded">web_asset</span> Web Dev.</h6>
-                <h5 class="section_inline_blorb"><span class="material-symbols-rounded">sports_esports</span> Game Dev.</h6>
-            </span>
-            <hr class="hr_stylised"/>
-            <div id="navigation_pannel">
-                <a href="#home"><span class="material-symbols-rounded">home</span> Home</a>
-                <a href="#projects"><span class="material-symbols-rounded">deployed_code</span> Projects</a>
-                <a href="#skills"><span class="material-symbols-rounded">person_play</span> Skills</a>
-                <a href="#about_me"><span class="material-symbols-rounded">person</span> About Me</a>
-                <a href="#contacts"><span class="material-symbols-rounded">mail</span> Contacts</a>
-                <a href="#resumé"><span class="material-symbols-rounded">article_person</span> Resumé</a>
+            <div id="viewas_pannel">
+                <p>View page as:</p>
+                <a onclick='viewPageAs("employer")'><span class="material-symbols-rounded">work</span>Employer</a><br/>
+                <a onclick='viewPageAs("friend")'><span class="material-symbols-rounded">person_play</span>Friend</a><br/>
+                <a onclick='viewPageAs("stranger")'><span class="material-symbols-rounded">psychology_alt</span>Stranger</a><br/>
             </div>
-            <hr class="hr_stylised"/>
+            <div id="navigation_pannel">
+                <p>Navigation:</p>
+                <a href="#home"><span class="material-symbols-rounded">home</span> Home</a><br/>
+                <a href="#projects"><span class="material-symbols-rounded">deployed_code</span> Projects</a><br/>
+                <a href="#skills"><span class="material-symbols-rounded">person_play</span> Skills</a><br/>
+                <a href="#about_me"><span class="material-symbols-rounded">person</span> About Me</a><br/>
+                <a href="#contacts"><span class="material-symbols-rounded">mail</span> Contacts</a><br/>
+                <a href="#resumé"><span class="material-symbols-rounded">article_person</span> Resumé</a><br/>
+            </div>
+            <hr class="stylised"/>
             <fieldset>Webpage Version: 1.0<br/>Jan. 25, '26</fieldset>
         </nav>
         <main>
-            <section id="home">
+            <div id="home">
                 <h1>Luna Nobles Webpage Portfolio</h1>
                 <h3>Enjoy!</h3>
-                <hr class="hr_stylised_justifyed"/>
+                <hr class="stylised justified"/>
                 <fieldset>
                     <p><strong>Title</strong></p>
                     <p>Stuff stuff tnfewj edfnlwki k eikje oan aapm</p>
@@ -78,31 +78,27 @@
                 </fieldset>
                 <p>This is an inline <span class="text_highlight">highlight</span>, it should be working now.</p>
                 <p>This is an inline <a href="">hyperlink</a>, it should be working now.</p>
-                <div class="splitport_even">
-                    <fieldset>
+                <div class="splitport-even">
+                   <div class="splitport-weighter">
                         <p><strong>Title Left</strong></p>
-                        <p>Content LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent Left</p>
-                    </fieldset>
-                    <fieldset>
-                        <p><strong>Title Right</strong></p>
-                        <p>Content RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent Right</p>
-                    </fieldset>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                            <br/>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                            <br/>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                        </p>
+                   </div>
+                   <div class="splitport-even-vertical">
+                        <fieldset>
+                            <p><strong>Title Right</strong></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </fieldset>
+                        <fieldset>
+                            <p><strong>Title Right</strong></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </fieldset>
+                    </div>
                 </div>
-                <div class="splitport_even">
-                    <fieldset>
-                        <p><strong>Title Left</strong></p>
-                        <p>Content LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent Left</p>
-                    </fieldset>
-                    <fieldset>
-                        <p><strong>Title Right</strong></p>
-                        <p>Content RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent RightContent Right</p>
-                    </fieldset>
-                    <fieldset>
-                        <p><strong>Title Left</strong></p>
-                        <p>Content LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent LeftContent Left</p>
-                    </fieldset>
-                </div>
-            </section>
+            </div>
             <section id="projects">
                 <h1>Projects</h1>
                 <h3>A search-feature with all of the projects I've created &mdash; from Video Games to Websites to Systems, here is a collection of everything I've made.</h3>
@@ -264,6 +260,14 @@
                 </p>
             </section>
         </main>
+        <aside>
+            <img id="profile_picture" src="images_profile/profile_picture.png" alt="profile_picture.png" width="50px" height="50px"/>
+            <h2>Luna Nobles</h2>
+            <h3 id="social_handle" class="section_inline_blorb">@deleduck</h3>
+            <span class="splitport_even">
+                <h5 class="section_inline_blorb"><span class="material-symbols-rounded">web_asset</span> Web Dev.</h6>
+                <h5 class="section_inline_blorb"><span class="material-symbols-rounded">sports_esports</span> Game Dev.</h6>
+            </span></aside>
         <script src="script.js"></script>
     </body>
 </html>
