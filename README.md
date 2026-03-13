@@ -77,6 +77,7 @@
 - Deleted module_projects.js.
 - Seperated css stylesheets into styles_general.css (for major styling) and styles_special.css (for specific/local styling).
 ### Branch creation &mdash; overall-redesign &mdash; 0.4b.?
+> This was a weird one, it was my first time making a branch, and I had just started learning Git. This got set to main in a weird way, I have no clue what happend ngl. 
 ### 0.4b.0 &#x2192; 0.4b.?
 #### `0.4b.0 | Layout & Style Redesign Basics`
 - Published **Mar. 11, '26**
@@ -94,5 +95,7 @@
 - Introduced viewPageAs() JS function.
 - Actually updated the "Webpage Version" box.
 - Removed hr in nav.
-
+#### `0.4b.2 | README Note`
+- Published **Mar. 13, '26**
+- Added a note about how the branch was made and weirdly merged back idek.
 
