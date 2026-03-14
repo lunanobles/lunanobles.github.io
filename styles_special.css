@@ -59,7 +59,7 @@ hr.stylised {
 }
 
 body aside {
-    & > img#profile_picture {
+    & > img#profile_picture, & img#profile_picture_mobile {
         width: 50%;
         height: auto;
         margin: 5px;

@@ -56,12 +56,30 @@
                 <p>Navigation:</p>
                 <a href="#home"><span class="material-symbols-rounded">home</span> Home</a><br/>
                 <a href="#projects"><span class="material-symbols-rounded">deployed_code</span> Projects</a><br/>
-                <a href="#skills"><span class="material-symbols-rounded">person_play</span> Skills</a><br/>
+                <a href="#skills"><span class="material-symbols-rounded">design_services</span> Skills</a><br/>
                 <a href="#about_me"><span class="material-symbols-rounded">person</span> About Me</a><br/>
                 <a href="#contacts"><span class="material-symbols-rounded">mail</span> Contacts</a><br/>
                 <a href="#resume"><span class="material-symbols-rounded">article_person</span> Resume</a><br/>
             </div>
             <fieldset id="version"><a href="https://github.com/lunanobles.github.io" title="View GitHub Repo">Version 0.4b.3<br/>Mar. 14, '26</a></fieldset>
+        </nav>
+        <nav class="mobile">
+            <div id="viewas_pannel_mobile">
+                <p>View:
+                <a onclick='viewPageStyle("professional")'><span class="material-symbols-rounded">work</span></a>
+                <a onclick='viewPageStyle("personal")'><span class="material-symbols-rounded">person_play</span></a>
+                </p>
+            </div>
+            <div id="navigation_pannel_mobile">
+                <p>Navigate:
+                <a href="#home"><span class="material-symbols-rounded">home</span></a>
+                <a href="#projects"><span class="material-symbols-rounded">deployed_code</span></a>
+                <a href="#skills"><span class="material-symbols-rounded">design_services</span></a>
+                <a href="#about_me"><span class="material-symbols-rounded">person</span></a>
+                <a href="#contacts"><span class="material-symbols-rounded">mail</span></a>
+                <a href="#resume"><span class="material-symbols-rounded">article_person</span></a>
+                </p>
+            </div>
         </nav>
         <main>
             <div id="home">
@@ -265,7 +283,39 @@
             <span class="splitport_even">
                 <h5 class="section_inline_blorb"><span class="material-symbols-rounded">web_asset</span> Web Dev.</h6>
                 <h5 class="section_inline_blorb"><span class="material-symbols-rounded">sports_esports</span> Game Dev.</h6>
-            </span></aside>
+            </span>
+        </aside>
+        <aside class="mobile">
+            <img id="profile_picture_mobile" src="images_profile/profile_picture.png" alt="profile_picture.png"/>
+            <h2>Luna Nobles</h2>
+            <span class="splitport_even social_links">
+                <a href="https://www.youtube.com/@DeLeDuck" title="@DeLeDuck on YouTube">
+                    <picture>
+                        <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/youtube_black.svg" type="image/svg+xml">
+                        <source media="(prefers-color-scheme: dark)"  srcset="./images_public/marks/youtube_white.svg" type="image/svg+xml">
+                        <img src="./images_public/marks/youtube_colour.svg" alt="youtube_icon.svg">
+                    </picture>
+                </a>
+                <a href="https://github.com/lunanobles" title="lunanobles on GitHub">
+                    <picture>
+                        <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/github_black.svg" type="image/svg+xml">
+                        <img src="./images_public/marks/github_white.svg" alt="github_icon.svg">
+                    </picture>
+                </a>
+                <a href="https://discord.com/users/872675076472983572" title="@DeLeDuck on Discord">
+                    <picture>
+                        <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/discord_black.svg" type="image/svg+xml">
+                        <source media="(prefers-color-scheme: dark)"  srcset="./images_public/marks/discord_white.svg" type="image/svg+xml">
+                        <img src="./images_public/marks/discord_colour.svg" alt="discord_icon.svg">
+                    </picture>
+                </a>
+                <a href="https://rec.net/user/DeLeDuck" title="@DeLeDuck on RecRoom">
+                    <picture>
+                        <img src="./images_public/marks/recroom_colour.svg" alt="recroom_icon.svg">
+                    </picture>
+                </a>
+            </span>
+        </aside>
         <script src="script.js"></script>
     </body>
 </html>

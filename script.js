@@ -1,3 +1,8 @@
+if (document.documentElement.clientWidth < 530) {
+    alert("WARNING! This page was not developed with this screen size in mind, page layout will be distorted or even unusable.\nPlease view the page on a larger device.")
+    document.body.innerHTML = `<p style="text-align: center;">&#9888; Please view this page on a larger device. &#9888;</br>Try reloading the page...</p>`
+}
+
 function project_filter(tag) {
 
     var items = document.querySelectorAll(`section#projects_search > a.project_card[data-tags~="`+tag+`"]`);

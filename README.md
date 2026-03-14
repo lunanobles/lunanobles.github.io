@@ -76,7 +76,7 @@
 - Deleted module_projects.html.
 - Deleted module_projects.js.
 - Seperated css stylesheets into styles_general.css (for major styling) and styles_special.css (for specific/local styling).
-### Branch creation &mdash; overall-redesign &mdash; 0.4b.?
+### Branch creation &mdash; overall-redesign &mdash; 0.4b.4
 > This was a weird one, it was my first time making a branch, and I had just started learning Git. This got set to main in a weird way, I have no clue what happend ngl. 
 ### 0.4b.0 &#x2192; 0.4b.?
 #### `0.4b.0 | Layout & Style Redesign Basics` &mdash; lunanobles
@@ -100,8 +100,20 @@
 - Added a note about how the branch was made and weirdly merged back idek.
 #### `0.4b.3 | New Colour Palette` &mdash; lunanobles
 - Published **Mar. 14, '26**
-- New colour theme for dark-mode and light-mode
-- Fixed text escaping from splitport-vertical boxes
+- New colour theme for dark-mode and light-mode.
+- Fixed text escaping from splitport-vertical boxes.
 - Changed viewPageAs() to view professional or view personal.
-- Adjusted margin between certain elements
+- Adjusted margin between certain elements.
 - Added hyperlink to the GitHub repository for the webpage version info.
+#### (Current) `0.4b.4 | Mobile Layout I` &mdash; lunanobles
+- Published **Mar. 14, '26**
+- Designed mobile layout for devices below 800px wide.
+- Created error page for devices less than 530px wide.
+- Adjusted nav-bar to top, only showing icons for hyperlinks.
+- Adjusted profile to bottom, with only image, name, and socials.
+#### (Planned) `0.4b.5 | Mobile Layout II` &mdash; lunanobles
+### 0.5.0 &#x2192; 0.5.?
+#### (Planned) `0.5.0 | Basic Content` &mdash; lunanobles
+#### (Planned) `0.5.1 | Profile Content & Info` &mdash; lunanobles
+#### (Planned) `0.5.2 | Navigation Pannel Design` &mdash; lunanobles
+#### (Planned) `0.5.3 | Project Search Feature... Again` &mdash; lunanobles
