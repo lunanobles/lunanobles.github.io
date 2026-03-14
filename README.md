@@ -79,7 +79,7 @@
 ### Branch creation &mdash; overall-redesign &mdash; 0.4b.?
 > This was a weird one, it was my first time making a branch, and I had just started learning Git. This got set to main in a weird way, I have no clue what happend ngl. 
 ### 0.4b.0 &#x2192; 0.4b.?
-#### `0.4b.0 | Layout & Style Redesign Basics`
+#### `0.4b.0 | Layout & Style Redesign Basics` &mdash; lunanobles
 - Published **Mar. 11, '26**
 - Added README.md Official Versions / Changelog.
 - Redesigned layout of page.
@@ -88,14 +88,20 @@
 - Redesigned style of page.
   - Colour palette changes to fit dark theme.
 - &#x26A0; Project search system inoperable!
-#### `0.4b.1 | Minor Layout & Style Updates`
+#### `0.4b.1 | Minor Layout & Style Updates` &mdash; lunanobles
 - Published **Mar. 12, '26**
 - Changed colour of hr bar.
 - Added extra margin around the page.
 - Introduced viewPageAs() JS function.
 - Actually updated the "Webpage Version" box.
 - Removed hr in nav.
-#### `0.4b.2 | README Note`
+#### `0.4b.2 | README Note` &mdash; lunanobles
 - Published **Mar. 13, '26**
 - Added a note about how the branch was made and weirdly merged back idek.
-
+#### `0.4b.3 | New Colour Palette` &mdash; lunanobles
+- Published **Mar. 14, '26**
+- New colour theme for dark-mode and light-mode
+- Fixed text escaping from splitport-vertical boxes
+- Changed viewPageAs() to view professional or view personal.
+- Adjusted margin between certain elements
+- Added hyperlink to the GitHub repository for the webpage version info.

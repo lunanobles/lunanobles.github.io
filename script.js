@@ -38,6 +38,6 @@ function project_filter(tag) {
     }
 }
 
-function viewPageAs(who) {
+function viewPageStyle(who) {
     main = document.querySelector("main");
 }

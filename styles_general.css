@@ -7,16 +7,14 @@
             
 :root {
     --global-fontsize:                  1rem;
-    --palette-primary:                hsl(279, 33%, 45%);
-    --palette-secondary:              hsl(279, 59%, 64%);
-    --palette-accent:                 hsl(50, 85%, 80%);
-    --palette-common-text:            #F2F3F4;
-    --palette-common-text-highlight:  #B6B7B8;
-    --palette-common-field-top:       #606368;
-    --palette-common-field-bottom:    #3c4042;
-    --palette-common-background:      #202124;
-    --palette-transparent-top:        #5C5D5EAA;
-    --palette-transparent-bottom:     #202122AA;
+    --palette-primary:                hsl(267, 29%, 60%);
+    --palette-secondary:              hsl(266, 55%, 35%);
+    --palette-accent:                 hsl(37, 46%, 54%);
+    --palette-common-text:            hsl(253, 100%, 95%);
+    --palette-common-text-muted:      hsl(244, 68%, 79%);
+    --palette-common-field-top:       hsl(251, 53%, 13%);
+    --palette-common-field-bottom:    hsl(253, 80%, 8%);
+    --palette-common-background:      hsl(250, 100%, 5%);
     --palette-special-one:            #8CB369E5;
     --palette-special-two:            #F4E285E5;
     --palette-special-three:          #F4A259E5;
@@ -26,11 +24,14 @@
 
 @media (prefers-color-scheme: light) { /*LIGHT MODE*/
     :root {
-        --palette-common-text:            #020304;
-        --palette-common-text-highlight:  #202122;
-        --palette-common-field-top:       #98999A;
-        --palette-common-field-bottom:    #B6B7B8;
-        --palette-common-background:      #F2F3F4;
+        --palette-primary:                hsl(266, 55%, 35%);
+        --palette-secondary:              hsl(267, 29%, 60%);
+        --palette-accent:                 hsl(37, 67%, 43%);
+        --palette-common-text:            hsl(256, 100%, 12%);
+        --palette-common-text-muted:      hsl(251, 43%, 38%);
+        --palette-common-field-top:       hsl(260, 100%, 99%);
+        --palette-common-field-bottom:    hsl(246, 100%, 96%);
+        --palette-common-background:      hsl(244, 100%, 94%);
   }
 }
 
@@ -71,9 +72,12 @@ body {
     justify-content: space-evenly;
     /*Colouring & Styling*/
     background-color: var(--palette-common-background);
-    color: var(--palette-common-text);
+    color: var(--palette-common-text-muted);
     font-family: "Noto Sans", sans-serif;
     font-size: var(--global-fontsize);
+    & h1, h2, h3, h4 {
+        color: var(--palette-common-text);
+    }
 }
 
 
@@ -126,6 +130,7 @@ body aside { /*Right side personal information & images; static on screen*/
     height: 100vh;
     /*Technical & Layout*/
     overflow: hidden;
+    text-align: center;
 }
 
 

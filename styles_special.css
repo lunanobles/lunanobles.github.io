@@ -1,5 +1,31 @@
 @charset "UTF-8";
 
+a:link, a:visited {
+    color: var(--palette-primary);
+    &:hover {
+        color: var(--palette-accent);
+    }
+}
+fieldset#version {
+    font-family: "Consolas", monospace;
+    background-color: var(--palette-common-field-bottom);
+    border: 1px solid var(--palette-common-field-top);
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    & > a:link, & > a:visited {
+        color: var(--palette-accent);
+        text-decoration: none;
+        &:hover {
+            color: var(--palette-primary);
+        }
+    }
+    &:hover {
+        background-color: var(--palette-common-field-top);
+        border: 1px solid var(--palette-common-field-bottom);
+    }
+}
+
 *.splitport-even {
     display: flex;
     justify-content: space-evenly;
@@ -8,7 +34,6 @@
     }
     & *.splitport-weighter {
         min-width: 60%;
-        margin: 0 5%;
     }
 }
 *.splitport-even-vertical {
@@ -16,7 +41,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     & > * {
-        max-height: 50%;
+        max-height: max-content;
+        margin: 5px;
     }
 }
 
@@ -29,5 +55,14 @@ hr.stylised {
     justify-self: center;
     &.justified {
         justify-self: left;
+    }
+}
+
+body aside {
+    & > img#profile_picture {
+        width: 50%;
+        height: auto;
+        margin: 5px;
+        border-radius: 15px;
     }
 }
