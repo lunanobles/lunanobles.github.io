@@ -152,6 +152,9 @@ No _official_ versions from this time...
 - Removed profiles for screen-widths below 450px.
 - Lowered absolute min-width threshold to just 320px wide.
 - Split mobile layout styling from the general stylesheet.
+#### (Current) `0.4b.6+ | Debug tool for ultra-small screens` &mdash; lunanobles
+- Published **Mar. 15, '26**
+- Added screen width display to error page for small screens.
 
 #### (Planned) `0.4b.7 | Navigation Pannel Design w/ Mobile` &mdash; lunanobles
 

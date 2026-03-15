@@ -1,6 +1,6 @@
 if (document.documentElement.clientWidth < 320) {
     alert("WARNING! This page was not developed with this screen size in mind, page layout will be distorted or even unusable.\nPlease view the page on a larger device.")
-    document.body.innerHTML = `<p style="text-align: center;">&#9888; Please view this page on a larger device. &#9888;</br>Try reloading the page...</p>`
+    document.body.innerHTML = `<p style="text-align: center;">&#9888; Please view this page on a larger device. &#9888;</br>Try reloading the page...<br/>Width: `+document.documentElement.clientWidth+`px</p>`
 }
 
 function project_filter(tag) {
