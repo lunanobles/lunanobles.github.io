@@ -82,7 +82,7 @@ body aside {
     }
 }
 
-div.profile_selector {
+aside div.profile_selector {
     width: 30%;
     height: auto;
     justify-self: center;
@@ -100,5 +100,12 @@ div.profile_selector {
             border: 1px solid var(--palette-primary);
             cursor: pointer;
         }
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    html aside div.profile_selector div.checked, 
+    html aside div.profile_selector div:hover{
+        color: var(--palette-common-text);
     }
 }

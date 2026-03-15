@@ -138,7 +138,7 @@ No _official_ versions from this time...
 - Adjusted nav-bar to top, only showing icons for hyperlinks.
 - Adjusted profile to bottom, with only image, name, and socials.
 
-#### (Current) `0.4b.5 | Basic Content I` &mdash; lunanobles
+#### `0.4b.5 | Basic Content I` &mdash; lunanobles
 
 - Published **Mar. 14, '26**
 - Added the lots of text content for the 'Home' section.
@@ -146,14 +146,22 @@ No _official_ versions from this time...
 - Removed viewPageAs in leu of profiles.
 - Added profile selector (DeLeDuck, Celene, and IRL).
 
-#### (Planned) `0.4b.6 | Mobile Layout II` &mdash; lunanobles
+#### (Current) `0.4b.6 | Mobile Layout II` &mdash; lunanobles
+- Published **Mar. 15, '26**
+- Enlarged navigation on mobile, increasing accessablity.
+- Removed profiles for screen-widths below 450px.
+- Lowered absolute min-width threshold to just 320px wide.
+- Split mobile layout styling from the general stylesheet.
+
+#### (Planned) `0.4b.7 | Navigation Pannel Design w/ Mobile` &mdash; lunanobles
 
 ### 0.5.0 &#x2192; 0.5.?
+At this point in development, new features should be kept to a minimum, and there should be a focus on content.
 
 #### (Planned) `0.5.0 | Basic Content II` &mdash; lunanobles
 
 #### (Planned) `0.5.1 | Profile Content & Info` &mdash; lunanobles
 
-#### (Planned) `0.5.2 | Navigation Pannel Design` &mdash; lunanobles
-
-#### (Planned) `0.5.3 | Project Search Feature... Again` &mdash; lunanobles
+#### (Planned) `0.5.2 | Project Search Feature... Again` &mdash; lunanobles
+### 0.6.0 &#x2192; 0.6.?
+At this point in development, ZERO new features should be added untill full release (1.0.0). All resources should be spent on adding content material to the page. This should lead to full release.
