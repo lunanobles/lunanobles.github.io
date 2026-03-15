@@ -38,7 +38,7 @@
 @media (max-width: 800px) { /*MOBILE LAYOUT*/
     html > body {
         flex-direction: column;
-        & > nav, & > aside {
+        & > nav, & > aside:not(.mobile) {
             display: none;
         }
     }
@@ -78,13 +78,13 @@
             width: auto;
         }
         & *.social_links {
-            width: 80%;
+            width: 50%;
             text-decoration: none;
             & picture, & img {
                 height: 60%;
                 width: auto;
                 margin: auto;
-                
+
             }
         }
     }
@@ -102,7 +102,7 @@ html {
     padding: 0;
     height: 100vh;
     width: 100vw;
-    min-width: 530px;
+    min-width: 500px;
     /*Technical & Layout*/
     overflow: hidden;
 }
@@ -123,11 +123,14 @@ body {
     color: var(--palette-common-text-muted);
     font-family: "Noto Sans", sans-serif;
     font-size: var(--global-fontsize);
-    & h1, h2, h3, h4 {
+    & h1, h2, h3 {
         color: var(--palette-common-text);
     }
     & > nav.mobile, & > aside.mobile {
         display: none;
+    }
+    & p {
+        text-indent: 2rem;
     }
 }
 
@@ -148,6 +151,7 @@ body nav { /*Left side navigation and other information; static on screen*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 5px;
 }
 
 body main {  /*The central information element; only thing that scrolls*/
@@ -182,6 +186,20 @@ body aside { /*Right side personal information & images; static on screen*/
     /*Technical & Layout*/
     overflow: hidden;
     text-align: center;
+    padding: 1vh 1vw;
+    &.profile_deleduck {
+        display: block;
+    }
+    &.profile_celene, &.profile_irl {
+        display: none;
+    }
+    & fieldset { /*The sideboxes*/
+        background-color: var(--palette-common-field-bottom);
+        border-radius: 5px;
+        border: 1.5px solid var(--palette-common-field-top);
+        height: fit-content;
+        padding: 5px;
+    }
 }
 
 

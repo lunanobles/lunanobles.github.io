@@ -1,4 +1,4 @@
-if (document.documentElement.clientWidth < 530) {
+if (document.documentElement.clientWidth < 500) {
     alert("WARNING! This page was not developed with this screen size in mind, page layout will be distorted or even unusable.\nPlease view the page on a larger device.")
     document.body.innerHTML = `<p style="text-align: center;">&#9888; Please view this page on a larger device. &#9888;</br>Try reloading the page...</p>`
 }
@@ -43,6 +43,24 @@ function project_filter(tag) {
     }
 }
 
-function viewPageStyle(who) {
-    main = document.querySelector("main");
+function viewProfile(who) {
+    profile_deleduck = document.querySelector("aside.profile_deleduck");
+    profile_celene = document.querySelector("aside.profile_celene");
+    profile_irl = document.querySelector("aside.profile_irl");
+
+    if (who == "DeLeDuck") {
+        profile_deleduck.style.display = "block";
+        profile_celene.style.display = "none";
+        profile_irl.style.display = "none";
+    }
+    else if (who == "Celene") {
+        profile_deleduck.style.display = "none";
+        profile_celene.style.display = "block";
+        profile_irl.style.display = "none";
+    }
+    else if (who == "IRL") {
+        profile_deleduck.style.display = "none";
+        profile_celene.style.display = "none";
+        profile_irl.style.display = "block";
+    }
 }

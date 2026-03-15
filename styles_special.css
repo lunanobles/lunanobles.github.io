@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: var(--palette-primary);
+
     &:hover {
         color: var(--palette-accent);
     }
 }
+
 fieldset#version {
     font-family: "Consolas", monospace;
     background-color: var(--palette-common-field-bottom);
@@ -13,13 +16,17 @@ fieldset#version {
     border-radius: 5px;
     margin: 5px;
     text-align: center;
-    & > a:link, & > a:visited {
+
+    &>a:link,
+    &>a:visited {
         color: var(--palette-accent);
         text-decoration: none;
+
         &:hover {
             color: var(--palette-primary);
         }
     }
+
     &:hover {
         background-color: var(--palette-common-field-top);
         border: 1px solid var(--palette-common-field-bottom);
@@ -29,18 +36,23 @@ fieldset#version {
 *.splitport-even {
     display: flex;
     justify-content: space-evenly;
-    & > * {
+
+    &>* {
         max-width: 50%;
+        margin: 0 2px;
     }
+
     & *.splitport-weighter {
         min-width: 60%;
     }
 }
+
 *.splitport-even-vertical {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    & > * {
+
+    &>* {
         max-height: max-content;
         margin: 5px;
     }
@@ -53,16 +65,40 @@ hr.stylised {
     height: 2vh;
     width: 50%;
     justify-self: center;
+
     &.justified {
         justify-self: left;
     }
 }
 
 body aside {
-    & > img#profile_picture, & img#profile_picture_mobile {
+
+    &>img.profile_picture,
+    & img#profile_picture_mobile {
         width: 50%;
         height: auto;
         margin: 5px;
         border-radius: 15px;
+    }
+}
+
+div.profile_selector {
+    width: 30%;
+    height: auto;
+    justify-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    & > div {
+        width: 30%;
+        background-color: var(--palette-common-field-bottom);
+        color: var(--palette-common-text-muted);
+        border: 1px solid var(--palette-common-field-top);
+        border-radius: 2px;
+        &.checked, &:hover {
+            background-color: var(--palette-secondary);
+            color: var(--palette-accent);
+            border: 1px solid var(--palette-primary);
+            cursor: pointer;
+        }
     }
 }
