@@ -11,7 +11,7 @@ function project_filter(tag) {
     var all_buttons = document.querySelectorAll(`div#project_buttons > button`);
 
 
-    ////// Stylising Buttons //////
+    /// Stylising Buttons ///
     all_buttons.forEach(button => {
         button.classList.toggle("project_button_active", false);
     })
@@ -22,7 +22,7 @@ function project_filter(tag) {
     } // else, don't
 
 
-    ////// Stylising Items //////
+    /// Stylising Items ///
     all_items.forEach(item => {
         item.classList.toggle("content_shown", false);
     })

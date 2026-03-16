@@ -4,7 +4,7 @@
 > Document Author: _Luna Nobles_<br>
 > Date Initialised: _July, 2025_<br>
 > Date Updated: _March, 2026_<br>
-> Version ID: _Unreleased (0.)4b.7_<br>
+> Version ID: _Unreleased (0.)4b.8_<br>
 
 ---
 
@@ -156,10 +156,15 @@ No _official_ versions from this time...
 - Published **Mar. 15, '26**
 - Added screen width display to error page for small screens.
 
-#### (Current) `0.4b.7 | Navigation Pannel Design` &mdash; lunanobles
+#### `0.4b.7 | Navigation Pannel Design` &mdash; lunanobles
 - Published **Mar. 15, '26**
 - Created new style for (non-mobile) navigation pannel.
 - Created a dropdown system for nav items. This is inaccesable to mobile layout
+
+#### (Current) `0.4b.8 | Light-mode minor changes` &mdash; lunanobles
+- Published **Mar. 16, '26**
+- Edited colours for light-mode.
+- Changed :hover colour of nav items.
 
 ### 0.5.0 &#x2192; 0.5.?
 > At this point in development, new features should be kept to a minimum, and there should be a focus on content.

@@ -30,8 +30,8 @@
         --palette-common-text:            hsl(256, 100%, 12%);
         --palette-common-text-muted:      hsl(251, 43%, 38%);
         --palette-common-field-top:       hsl(260, 100%, 99%);
-        --palette-common-field-bottom:    hsl(246, 100%, 96%);
-        --palette-common-background:      hsl(244, 100%, 94%);
+        --palette-common-field-bottom:    hsl(246, 100%, 94%);
+        --palette-common-background:      hsl(244, 100%, 93%);
     }
 }
 

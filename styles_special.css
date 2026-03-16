@@ -108,7 +108,9 @@ aside div.profile_selector {
     html aside div.profile_selector div:hover{
         color: var(--palette-common-text);
     }
-    html nav div#navigation_pannel a {
-        color: var();
+    html nav div#navigation_pannel div.navigation_item:hover a,
+    html nav div#navigation_pannel div.dropdown_content:hover a,
+    html nav div#navigation_pannel div.navigation_item:hover span.dropdown_icon {
+        color: var(--palette-common-text) !important;
     }
 }

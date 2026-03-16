@@ -17,11 +17,14 @@
         }
     }
     html > body > nav.mobile {
-        position: sticky;
-        display: block;
-        height: 10%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        height: 10vh;
         width: 100%;
         border-bottom: 1vh solid var(--palette-common-field-top);
+        background-color: var(--palette-common-background);
         color: var(--palette-accent);
         font-size: 2vh;
         display: flex;
@@ -43,6 +46,7 @@
         }
     }
     html > body > main {
+        margin-top: 10vh;
         height: 80%;
         width: 100%;
         & p {
