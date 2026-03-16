@@ -3,7 +3,7 @@
         Document Author:       Luna Nobles
         Date Initialised:      July, 2025
         Date Updated:          March, 2026
-        Version ID:            (Unreleased) 0.4b.5
+        Version ID:            (Unreleased) 0.4b.7
 
     Project Description:
         Personal portfolio webpage for me.
@@ -50,14 +50,67 @@
         <nav>
             <div id="navigation_pannel">
                 <p>Navigation:</p>
-                <a href="#home"><span class="material-symbols-rounded">home</span> Home</a><br/>
-                <a href="#projects"><span class="material-symbols-rounded">deployed_code</span> Projects</a><br/>
-                <a href="#skills"><span class="material-symbols-rounded">design_services</span> Skills</a><br/>
-                <a href="#about_me"><span class="material-symbols-rounded">person</span> About Me</a><br/>
-                <a href="#contacts"><span class="material-symbols-rounded">mail</span> Contacts</a><br/>
-                <a href="#resume"><span class="material-symbols-rounded">article_person</span> Resume</a><br/>
+                <div>
+                    <div id="nav_home" class="navigation_item">
+                        <a href="#home"><span class="material-symbols-rounded">home</span><p>Home</p></a>
+                        <span class="dropdown_icon"></span>
+                    </div>
+                    <div class="dropdown_content">
+                        
+                    </div>
+                </div>
+                <div>
+                    <div id="nav_projects" class="navigation_item">
+                        <a href="#projects"><span class="material-symbols-rounded">deployed_code</span><p>Projects</p></a>
+                        <span onclick="navDropDown('projects')" class="dropdown_icon"><span class="material-symbols-rounded">keyboard_arrow_up</span></span>
+                    </div>
+                    <div class="dropdown_content">
+                        <a href="#projects_featured">Featured</a>
+                        <a href="#projects_search">Search All</a>
+                    </div>
+                </div>
+                <div>
+                    <div id="nav_skills" class="navigation_item">
+                        <a href="#skills"><span class="material-symbols-rounded">design_services</span><p>Skills</p></a>
+                        <span onclick="navDropDown('skills')" class="dropdown_icon"><span class="material-symbols-rounded">keyboard_arrow_up</span></span>
+                    </div>
+                    <div class="dropdown_content">
+                        <a href="#skills_A">Skills, A</a>
+                        <a href="#skills_B">Skills, B</a>
+                        <a href="#skills_C">Skills, C</a>
+                    </div>
+                </div>
+                <div>
+                    <div id="nav_aboutme" class="navigation_item">
+                        <a href="#aboutme"><span class="material-symbols-rounded">person</span><p>About Me</p></a>
+                        <span onclick="navDropDown('aboutme')" class="dropdown_icon"><span class="material-symbols-rounded">keyboard_arrow_up</span></span>
+                    </div>
+                    <div class="dropdown_content">
+                        <a href="#aboutme_A">About Me, A</a>
+                        <a href="#aboutme_B">About Me, B</a>
+                        <a href="#aboutme_C">About Me, C</a>
+                    </div>
+                </div>
+                <div>
+                    <div id="nav_contacts" class="navigation_item">
+                        <a href="#contacts"><span class="material-symbols-rounded">mail</span><p>Contacts</p></a>
+                        <span class="dropdown_icon"></span>
+                    </div>
+                    <div class="dropdown_content">
+                    </div>
+                </div>
+                <div>
+                    <div id="nav_resume" class="navigation_item">
+                        <a href="#resume"><span class="material-symbols-rounded">article_person</span><p>Resume</p></a>
+                        <span onclick="navDropDown('resume')" class="dropdown_icon"><span class="material-symbols-rounded">keyboard_arrow_up</span></span>
+                    </div>
+                    <div class="dropdown_content">
+                        <a href="#resume_inpage">In-page Resume</a>
+                        <a href="#resume_external">External Resumes</a>
+                    </div>
+                </div>
             </div>
-            <fieldset id="version"><a href="https://github.com/lunanobles.github.io" title="View GitHub Repo">Version 0.4b.5<br/>Mar. 14, '26</a></fieldset>
+            <fieldset id="version"><a href="https://github.com/lunanobles/lunanobles.github.io" title="View GitHub Repo">Version 0.4b.7<br/>Mar. 15, '26</a></fieldset>
         </nav>
         <nav class="mobile">
             <div id="navigation_pannel_mobile">
@@ -65,7 +118,7 @@
                 <a href="#home"><span class="material-symbols-rounded">home</span></a>
                 <a href="#projects"><span class="material-symbols-rounded">deployed_code</span></a>
                 <a href="#skills"><span class="material-symbols-rounded">design_services</span></a>
-                <a href="#about_me"><span class="material-symbols-rounded">person</span></a>
+                <a href="#aboutme"><span class="material-symbols-rounded">person</span></a>
                 <a href="#contacts"><span class="material-symbols-rounded">mail</span></a>
                 <a href="#resume"><span class="material-symbols-rounded">article_person</span></a>
                 </p>
@@ -231,7 +284,7 @@
                     blah blah blah
                 </p>
             </section>
-            <section id="about_me">
+            <section id="aboutme">
                 <h1>About Me</h1>
                 <h3>A search-feature with all of the projects I've created.</h3>
                 <hr class="hr_stylised_justifyed"/>

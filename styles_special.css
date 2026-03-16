@@ -108,4 +108,7 @@ aside div.profile_selector {
     html aside div.profile_selector div:hover{
         color: var(--palette-common-text);
     }
+    html nav div#navigation_pannel a {
+        color: var();
+    }
 }

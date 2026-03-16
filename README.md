@@ -4,13 +4,13 @@
 > Document Author: _Luna Nobles_<br>
 > Date Initialised: _July, 2025_<br>
 > Date Updated: _March, 2026_<br>
-> Version ID: _Unreleased (0.)4b.5_<br>
+> Version ID: _Unreleased (0.)4b.7_<br>
 
 ---
 
 ## Known bugs & Issues
-1. If you swap between profiles, then reduce the size of the screen to the mobile layout, the profile stays and ruins the layout.
-2. The entire projects section is inoperable.
+1. The entire projects section is inoperable.
+2. I've been overworking myself, commiting like 3 times a day.
 
 ## Official Versions / Changelog
 
@@ -146,25 +146,52 @@ No _official_ versions from this time...
 - Removed viewPageAs in leu of profiles.
 - Added profile selector (DeLeDuck, Celene, and IRL).
 
-#### (Current) `0.4b.6 | Mobile Layout II` &mdash; lunanobles
+#### `0.4b.6 | Mobile Layout II` &mdash; lunanobles
 - Published **Mar. 15, '26**
 - Enlarged navigation on mobile, increasing accessablity.
 - Removed profiles for screen-widths below 450px.
 - Lowered absolute min-width threshold to just 320px wide.
 - Split mobile layout styling from the general stylesheet.
-#### (Current) `0.4b.6+ | Debug tool for ultra-small screens` &mdash; lunanobles
+#### `0.4b.6+ | Debug tool for ultra-small screens` &mdash; lunanobles
 - Published **Mar. 15, '26**
 - Added screen width display to error page for small screens.
 
-#### (Planned) `0.4b.7 | Navigation Pannel Design w/ Mobile` &mdash; lunanobles
+#### (Current) `0.4b.7 | Navigation Pannel Design` &mdash; lunanobles
+- Published **Mar. 15, '26**
+- Created new style for (non-mobile) navigation pannel.
+- Created a dropdown system for nav items. This is inaccesable to mobile layout
 
 ### 0.5.0 &#x2192; 0.5.?
-At this point in development, new features should be kept to a minimum, and there should be a focus on content.
+> At this point in development, new features should be kept to a minimum, and there should be a focus on content.
 
-#### (Planned) `0.5.0 | Basic Content II` &mdash; lunanobles
+#### (Planned) `0.5.0a | Basic Content II` &mdash; lunanobles
+
+#### (Planned) `0.5.0b | Re-commenting & Debuging` &mdash; lunanobles
 
 #### (Planned) `0.5.1 | Profile Content & Info` &mdash; lunanobles
 
-#### (Planned) `0.5.2 | Project Search Feature... Again` &mdash; lunanobles
+#### (Planned) `0.5.2a | Project Search Feature... Again` &mdash; lunanobles
+
+#### (Planned) `0.5.2b | Projects Content` &mdash; lunanobles
+
+#### (Planned) `0.5.3 | Skills Content` &mdash; lunanobles
+
+#### (Planned) `0.5.4 | About Me Content` &mdash; lunanobles
+
+#### (Planned) `0.5.5 | Contacts Content` &mdash; lunanobles
+
+#### (Planned) `0.5.6 | Resume Content` &mdash; lunanobles
+
+#### (Planned) `0.5.7 | Footer` &mdash; lunanobles
+
 ### 0.6.0 &#x2192; 0.6.?
-At this point in development, ZERO new features should be added untill full release (1.0.0). All resources should be spent on adding content material to the page. This should lead to full release.
+> At this point in development, ZERO new features should be added untill full release (1.0.0). All resources should be spent on adding content material to the page. This should lead to full release.
+#### (Planned) `0.6.0 | Debuging, fact checking, and review I`  &mdash; lunanobles
+
+#### (Planned) `0.6.1 | Debuging, fact checking, and review II`  &mdash; lunanobles
+
+## 1.0 &#x2192; 1.?
+> Once I am confidant that all the information is correct, most (if not, all) screens are supported, and the page is ready for the world, then it may be launched at `Version 1.0`.
+#### (Planned) `0.6.0 | Debuging, fact checking, and review I`  &mdash; lunanobles
+
+#### (Planned) `0.6.1 | Debuging, fact checking, and review II`  &mdash; lunanobles

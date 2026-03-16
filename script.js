@@ -44,9 +44,9 @@ function project_filter(tag) {
 }
 
 function viewProfile(who) {
-    profile_deleduck = document.querySelector("aside.profile_deleduck");
-    profile_celene = document.querySelector("aside.profile_celene");
-    profile_irl = document.querySelector("aside.profile_irl");
+    var profile_deleduck = document.querySelector("aside.profile_deleduck");
+    var profile_celene = document.querySelector("aside.profile_celene");
+    var profile_irl = document.querySelector("aside.profile_irl");
 
     if (who == "DeLeDuck") {
         profile_deleduck.style.display = "block";
@@ -62,5 +62,53 @@ function viewProfile(who) {
         profile_deleduck.style.display = "none";
         profile_celene.style.display = "none";
         profile_irl.style.display = "block";
+    }
+}
+
+
+let isOpen = [false, false, false, false, false, false];
+
+function navDropDown(section) {
+    let section_num = -1;
+
+    switch (section) {
+        case "home":
+            section_num = 0;
+            break;
+        case "projects":
+            section_num = 1;
+            break;
+        case "skills":
+            section_num = 2;
+            break;
+        case "aboutme":
+            section_num = 3;
+            break;
+        case "contacts":
+            section_num = 4;
+            break;
+        case "resume":
+            section_num = 5;
+            break;
+    }
+
+    var dropdown = document.querySelector(`html > body > nav div#nav_${section} span.dropdown_icon > span`);
+    var subcontent = document.querySelectorAll(`html > body > nav div > div#nav_${section} + div.dropdown_content`);
+
+    if (!isOpen[section_num]) 
+    {
+        dropdown.innerText = "keyboard_arrow_down";
+        subcontent.forEach(item => {
+            item.style.display = "flex";
+        });
+        isOpen[section_num] = true;
+    }
+    else 
+    {
+        dropdown.innerText = "keyboard_arrow_up";
+        subcontent.forEach(item => {
+            item.style.display = "none";
+        });
+        isOpen[section_num] = false;
     }
 }
