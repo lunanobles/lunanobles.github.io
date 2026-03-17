@@ -4,13 +4,15 @@
 > Document Author: _Luna Nobles_<br>
 > Date Initialised: _July, 2025_<br>
 > Date Updated: _March, 2026_<br>
-> Version ID: _Unreleased (0.)4b.8_<br>
+> Version ID: _Unreleased (0.)5.0_<br>
 
 ---
 
 ## Known bugs & Issues
 1. The entire projects section is inoperable.
-2. I've been overworking myself, commiting like 3 times a day.
+2. ~~On mobile, clicking the nav elements hides the nav-bar.~~
+3. ~~On mobile, clicking the nav elements hides the content at the very bottom of the page.~~
+4. I've been overworking myself, commiting like 3 times a day.
 
 ## Official Versions / Changelog
 
@@ -161,7 +163,7 @@ No _official_ versions from this time...
 - Created new style for (non-mobile) navigation pannel.
 - Created a dropdown system for nav items. This is inaccesable to mobile layout
 
-#### (Current) `0.4b.8 | Light-mode minor changes` &mdash; lunanobles
+#### `0.4b.8 | Light-mode minor changes` &mdash; lunanobles
 - Published **Mar. 16, '26**
 - Edited colours for light-mode.
 - Changed :hover colour of nav items.
@@ -169,11 +171,17 @@ No _official_ versions from this time...
 ### 0.5.0 &#x2192; 0.5.?
 > At this point in development, new features should be kept to a minimum, and there should be a focus on content.
 
-#### (Planned) `0.5.0a | Basic Content II` &mdash; lunanobles
+#### (Current) `0.5.0a-b | Reorganising CSS files I-II` &mdash; lunanobles
+- Published **Mar. 16, '26**
+- Specified what goes in the general and special stylesheets, respectivly.
+- Moved special light-mode selectors to general stylesheet.
+- Removed --global-fontsize.
 
-#### (Planned) `0.5.0b | Re-commenting & Debuging` &mdash; lunanobles
+#### (Planned) `0.5.0c | Re-commenting & Debuging` &mdash; lunanobles
 
-#### (Planned) `0.5.1 | Profile Content & Info` &mdash; lunanobles
+#### (Planned) `0.5.1a | Basic Content II` &mdash; lunanobles
+
+#### (Planned) `0.5.1b | Profile Content & Info` &mdash; lunanobles
 
 #### (Planned) `0.5.2a | Project Search Feature... Again` &mdash; lunanobles
 
@@ -197,6 +205,4 @@ No _official_ versions from this time...
 
 ## 1.0 &#x2192; 1.?
 > Once I am confidant that all the information is correct, most (if not, all) screens are supported, and the page is ready for the world, then it may be launched at `Version 1.0`.
-#### (Planned) `0.6.0 | Debuging, fact checking, and review I`  &mdash; lunanobles
-
-#### (Planned) `0.6.1 | Debuging, fact checking, and review II`  &mdash; lunanobles
+#### (Planned) `1.0 | "RELEASE THE HOUNDS!"`

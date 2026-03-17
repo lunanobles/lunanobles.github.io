@@ -1,37 +1,57 @@
 @charset "UTF-8";
 
 /*
- PRIMARY SELECTORS
-  :root, @media, @keyframes, *, html, body
+*   ///General Stylesheet///
+*   This stylsheet is for displays that span multiple sections,
+*   i.e. common text, headers, nav-bar elements, anchors, anything
+*   that is special to one section.
 */
-            
+
+/*
+*   Root Selectors
+*   :root, @media, @keyframes, *, html, body
+*/
+
 :root {
-    --global-fontsize:                  1rem;
-    --palette-primary:                hsl(267, 29%, 60%);
-    --palette-secondary:              hsl(266, 55%, 35%);
-    --palette-accent:                 hsl(37, 46%, 54%);
-    --palette-common-text:            hsl(253, 100%, 95%);
-    --palette-common-text-muted:      hsl(244, 68%, 79%);
-    --palette-common-field-top:       hsl(251, 53%, 13%);
-    --palette-common-field-bottom:    hsl(253, 80%, 8%);
-    --palette-common-background:      hsl(250, 100%, 5%);
-    --palette-special-one:            #8CB369E5;
-    --palette-special-two:            #F4E285E5;
-    --palette-special-three:          #F4A259E5;
-    --palette-special-four:           #5B8E7DE5;
-    --palette-special-five:           #BC4B51E5;
+    --palette-primary: hsl(267, 29%, 60%);
+    --palette-secondary: hsl(266, 55%, 35%);
+    --palette-accent: hsl(37, 46%, 54%);
+    --palette-common-text: hsl(253, 100%, 95%);
+    --palette-common-text-muted: hsl(244, 68%, 79%);
+    --palette-common-field-top: hsl(251, 53%, 13%);
+    --palette-common-field-bottom: hsl(253, 80%, 8%);
+    --palette-common-background: hsl(250, 100%, 5%);
+    --palette-special-one: #8CB369E5;
+    --palette-special-two: #F4E285E5;
+    --palette-special-three: #F4A259E5;
+    --palette-special-four: #5B8E7DE5;
+    --palette-special-five: #BC4B51E5;
 }
 
-@media (prefers-color-scheme: light) { /*LIGHT MODE*/
+/*LIGHT MODE*/
+@media (prefers-color-scheme: light) {
     :root {
-        --palette-primary:                hsl(266, 55%, 35%);
-        --palette-secondary:              hsl(267, 29%, 60%);
-        --palette-accent:                 hsl(37, 67%, 43%);
-        --palette-common-text:            hsl(256, 100%, 12%);
-        --palette-common-text-muted:      hsl(251, 43%, 38%);
-        --palette-common-field-top:       hsl(260, 100%, 99%);
-        --palette-common-field-bottom:    hsl(246, 100%, 94%);
-        --palette-common-background:      hsl(244, 100%, 93%);
+        --palette-primary: hsl(266, 55%, 35%);
+        --palette-secondary: hsl(267, 29%, 60%);
+        --palette-accent: hsl(37, 67%, 43%);
+        --palette-common-text: hsl(256, 100%, 12%);
+        --palette-common-text-muted: hsl(251, 43%, 38%);
+        --palette-common-field-top: hsl(260, 100%, 99%);
+        --palette-common-field-bottom: hsl(246, 100%, 94%);
+        --palette-common-background: hsl(244, 100%, 93%);
+    }
+
+    /*Profile Selector Boxes*/
+    html aside div.profile_selector div.checked,
+    html aside div.profile_selector div:hover {
+        color: var(--palette-common-text);
+    }
+
+    /*All Navigation Items*/
+    html nav div#navigation_pannel div.navigation_item:hover a,
+    html nav div#navigation_pannel div.dropdown_content:hover a,
+    html nav div#navigation_pannel div.navigation_item:hover span.dropdown_icon {
+        color: var(--palette-common-text) !important;
     }
 }
 
@@ -40,10 +60,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-*.mobile {
-    display: none;
 }
 
 html {
@@ -72,14 +88,17 @@ body {
     color: var(--palette-common-text-muted);
     font-family: "Noto Sans", sans-serif;
     font-size: var(--global-fontsize);
-    & h1, h2, h3 {
+
+    /*Give headers a more prominent colour*/
+    & h1,
+    & h2,
+    & h3 {
         color: var(--palette-common-text);
     }
-    & > nav.mobile, & > aside.mobile {
+
+    &>nav.mobile,
+    &>aside.mobile {
         display: none;
-    }
-    & p {
-        text-indent: 2rem;
     }
 }
 
@@ -91,7 +110,8 @@ body {
 *   CORE SELECTORS
 *   nav, main, aside, & main children
 */
-body nav { /*Left side navigation and other information; static on screen*/
+body nav {
+    /*Left side navigation and other information; static on screen*/
     /*Height & Width*/
     width: 10vw;
     height: 100vh;
@@ -101,14 +121,17 @@ body nav { /*Left side navigation and other information; static on screen*/
     flex-direction: column;
     justify-content: space-between;
     padding: 5px;
-    & > div#navigation_pannel {
+
+    &>div#navigation_pannel {
         width: 100%;
         height: max-content;
         display: block;
-        & > div {
+
+        &>div {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+
             & div.navigation_item {
                 display: flex;
                 flex-direction: row;
@@ -118,11 +141,13 @@ body nav { /*Left side navigation and other information; static on screen*/
                 background-color: var(--palette-common-field-bottom);
                 border: 1px solid var(--palette-common-field-top);
                 text-decoration: none !important;
+
                 &:hover {
                     background-color: var(--palette-secondary);
                     border: 1px solid var(--palette-primary);
                     color: var(--palette-accent);
                 }
+
                 & a {
                     display: flex;
                     justify-content: space-evenly;
@@ -131,17 +156,20 @@ body nav { /*Left side navigation and other information; static on screen*/
                     height: 100%;
                     text-decoration: none;
                     text-align: left;
-                    & > span.material-symbols-rounded {
+
+                    &>span.material-symbols-rounded {
                         font-size: 2vw;
                         width: 20%;
                     }
-                    & > p {
+
+                    &>p {
                         text-indent: 0;
                         margin-left: 1vw;
                         width: 80%;
                         font-size: 1vw;
                     }
                 }
+
                 & span.dropdown_icon {
                     display: flex;
                     width: 20%;
@@ -149,17 +177,19 @@ body nav { /*Left side navigation and other information; static on screen*/
                     font-size: 2vw;
                     text-align: center;
                     align-items: center;
+
                     & * {
                         margin: auto;
                         justify-self: center;
                     }
                 }
             }
-            
+
             & div.dropdown_content {
                 display: none;
                 flex-direction: column;
                 justify-content: space-evenly;
+
                 & a {
                     display: block;
                     justify-content: space-evenly;
@@ -168,16 +198,19 @@ body nav { /*Left side navigation and other information; static on screen*/
                     height: 100%;
                     text-decoration: none;
                     text-align: left;
-                    & > span.material-symbols-rounded {
+
+                    &>span.material-symbols-rounded {
                         font-size: 2vw;
                         width: 20%;
                     }
+
                     &:hover {
                         background-color: var(--palette-secondary);
                         border: 1px solid var(--palette-primary);
                         color: var(--palette-accent);
                     }
-                    & > p {
+
+                    &>p {
                         text-indent: 0;
                         margin-left: 1vw;
                         width: 80%;
@@ -189,23 +222,37 @@ body nav { /*Left side navigation and other information; static on screen*/
     }
 }
 
-body main {  /*The central information element; only thing that scrolls*/
+body main {
+    /*The central information element; only thing that scrolls*/
     /*Height & Width*/
     width: 70vw;
     max-height: 100vh;
     /*Technical & Layout*/
     overflow-y: scroll;
-    &::-webkit-scrollbar { /*Take away the scroll-bar*/ 
+
+    &::-webkit-scrollbar {
+        /*Take away the scroll-bar*/
         display: none;
     }
-    & > * > * { /*General spacing*/
+
+    &>*>* {
+        /*General spacing*/
         margin: 1.5vh 1vw;
     }
+
     /*EDITIING CHILDREN*/
-    & > div { /*General "sections"*/
+
+    & p {
+        text-indent: 2rem;
+    }
+    
+    &>div {
+        /*General "sections"*/
         margin-bottom: 2vh;
     }
-    & fieldset { /*The sideboxes*/
+
+    & fieldset {
+        /*The sideboxes*/
         background-color: var(--palette-common-field-bottom);
         border-radius: 5px;
         border: 1.5px solid var(--palette-common-field-top);
@@ -214,7 +261,8 @@ body main {  /*The central information element; only thing that scrolls*/
     }
 }
 
-body aside { /*Right side personal information & images; static on screen*/
+body aside {
+    /*Right side personal information & images; static on screen*/
     /*Height & Width*/
     width: 20vw;
     height: 100vh;
@@ -222,13 +270,18 @@ body aside { /*Right side personal information & images; static on screen*/
     overflow: hidden;
     text-align: center;
     padding: 1vh 1vw;
+
     &.profile_deleduck {
         display: block;
     }
-    &.profile_celene, &.profile_irl {
+
+    &.profile_celene,
+    &.profile_irl {
         display: none;
     }
-    & fieldset { /*The sideboxes*/
+
+    & fieldset {
+        /*The sideboxes*/
         background-color: var(--palette-common-field-bottom);
         border-radius: 5px;
         border: 1.5px solid var(--palette-common-field-top);

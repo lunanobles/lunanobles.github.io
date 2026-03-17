@@ -102,15 +102,3 @@ aside div.profile_selector {
         }
     }
 }
-
-@media (prefers-color-scheme: light) {
-    html aside div.profile_selector div.checked, 
-    html aside div.profile_selector div:hover{
-        color: var(--palette-common-text);
-    }
-    html nav div#navigation_pannel div.navigation_item:hover a,
-    html nav div#navigation_pannel div.dropdown_content:hover a,
-    html nav div#navigation_pannel div.navigation_item:hover span.dropdown_icon {
-        color: var(--palette-common-text) !important;
-    }
-}

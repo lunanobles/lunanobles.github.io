@@ -46,7 +46,7 @@
         }
     }
     html > body > main {
-        margin-top: 10vh;
+        margin: 10vh 0;
         height: 80%;
         width: 100%;
         & p {
