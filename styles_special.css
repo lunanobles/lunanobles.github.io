@@ -1,13 +1,10 @@
 @charset "UTF-8";
 
-a:link,
-a:visited {
-    color: var(--palette-primary);
-
-    &:hover {
-        color: var(--palette-accent);
-    }
-}
+/*
+*   ///Special Stylesheet///
+*   This stylsheet is for displays that are specific to one area,
+*   i.e. project cards, 
+*/
 
 fieldset#version {
     font-family: "Consolas", monospace;
@@ -30,44 +27,6 @@ fieldset#version {
     &:hover {
         background-color: var(--palette-common-field-top);
         border: 1px solid var(--palette-common-field-bottom);
-    }
-}
-
-*.splitport-even {
-    display: flex;
-    justify-content: space-evenly;
-
-    &>* {
-        max-width: 50%;
-        margin: 0 2px;
-    }
-
-    & *.splitport-weighter {
-        min-width: 60%;
-    }
-}
-
-*.splitport-even-vertical {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-    &>* {
-        max-height: max-content;
-        margin: 5px;
-    }
-}
-
-hr.stylised {
-    background-color: var(--palette-primary);
-    border: none;
-    border-radius: 5px;
-    height: 2vh;
-    width: 50%;
-    justify-self: center;
-
-    &.justified {
-        justify-self: left;
     }
 }
 

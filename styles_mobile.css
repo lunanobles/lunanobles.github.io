@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @media (max-width: 1000px) {
-    html nav div#navigation_pannel > p {
+    html nav div#navigation_pannel p {
         display: none;
     }
 }
@@ -17,7 +17,7 @@
         }
     }
     html > body > nav.mobile {
-        position: absolute;
+        position: sticky;
         top: 0;
         left: 0;
         display: flex;
@@ -46,7 +46,7 @@
         }
     }
     html > body > main {
-        margin: 10vh 0;
+        margin-top: 10vh;
         height: 80%;
         width: 100%;
         & p {

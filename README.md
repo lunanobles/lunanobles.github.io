@@ -1,18 +1,29 @@
 # Luna Nobles Portfolio Webpage
 
-> Project Title: **Luna Nobles Portfolio Webpage & Personal Site**<br>
-> Document Author: _Luna Nobles_<br>
-> Date Initialised: _July, 2025_<br>
-> Date Updated: _March, 2026_<br>
-> Version ID: _Unreleased (0.)5.0_<br>
+
+**(Project Information)**
+> Project Title:          Luna Nobles Portfolio Webpage & Personal Site<br/>
+> Primary Author:         Luna Nobles / DeLeDuck / Princess Celene<br/>
+> Initialisation Date:    July, 2025<br/>
+
+**(Version Information)**
+> Deployer/Author:        [lunanobles](https://github.com/lunanobles)<br/>
+> Deployment Date:        March, 2026<br/>
+> Deployment Type:        Private Publication<br/>
+> Version ID:             0.5.0b<br/>
+> Version Name:           Reorganising CSS files II<br/>
+> Version Ancestor:       ["Version 0.5.0a | Reorganising CSS files I"](https://github.com/lunanobles/lunanobles.github.io/commit/d070e12b112f99c792a46f699065a1c6385c46e3)<br/>
+
+
+This webpage is the hub and core of all my personas, projects, ideas, and whatever else I'd like!
+
 
 ---
+## Update Notes
+After my break, I'm back working on this project. As you can see, I've changed things up with the README. I've added a ton of titles and images for the projects too! The next steps will primarily include adding the content to the page; this will be a lot of work.
 
 ## Known bugs & Issues
 1. The entire projects section is inoperable.
-2. ~~On mobile, clicking the nav elements hides the nav-bar.~~
-3. ~~On mobile, clicking the nav elements hides the content at the very bottom of the page.~~
-4. I've been overworking myself, commiting like 3 times a day.
 
 ## Official Versions / Changelog
 
@@ -174,28 +185,34 @@ No _official_ versions from this time...
 #### (Current) `0.5.0a-b | Reorganising CSS files I-II` &mdash; lunanobles
 - Published **Mar. 16, '26**
 - Specified what goes in the general and special stylesheets, respectivly.
-- Moved special light-mode selectors to general stylesheet.
 - Removed --global-fontsize.
+- Hid text on nav pannel when the screen become too small (<1000px)
+- Fixed issues with mobile nav-bar.
+- Moved selectors in special that should be in general:
+  - Anchors (a)
+  - Paragraphs (main p)
+  - Splitport Class (*.splitport, *.splitport-vertical, etc...)
+  - Certain Light-mode Queries
+- Added names for many projects, in preparation.
+- Added images for said projects, in preparation.
 
-#### (Planned) `0.5.0c | Re-commenting & Debuging` &mdash; lunanobles
+#### (Planned) `0.5.1 | Basic Content II` &mdash; lunanobles
 
-#### (Planned) `0.5.1a | Basic Content II` &mdash; lunanobles
+#### (Planned) `0.5.2 | Profile Content & Info` &mdash; lunanobles
 
-#### (Planned) `0.5.1b | Profile Content & Info` &mdash; lunanobles
+#### (Planned) `0.5.3a | Project Search Feature... Again` &mdash; lunanobles
 
-#### (Planned) `0.5.2a | Project Search Feature... Again` &mdash; lunanobles
+#### (Planned) `0.5.3b | Projects Content` &mdash; lunanobles
 
-#### (Planned) `0.5.2b | Projects Content` &mdash; lunanobles
+#### (Planned) `0.5.4 | Skills Content` &mdash; lunanobles
 
-#### (Planned) `0.5.3 | Skills Content` &mdash; lunanobles
+#### (Planned) `0.5.5 | About Me Content` &mdash; lunanobles
 
-#### (Planned) `0.5.4 | About Me Content` &mdash; lunanobles
+#### (Planned) `0.5.6 | Contacts Content` &mdash; lunanobles
 
-#### (Planned) `0.5.5 | Contacts Content` &mdash; lunanobles
+#### (Planned) `0.5.7 | Resume Content` &mdash; lunanobles
 
-#### (Planned) `0.5.6 | Resume Content` &mdash; lunanobles
-
-#### (Planned) `0.5.7 | Footer` &mdash; lunanobles
+#### (Planned) `0.5.8 | Footer` &mdash; lunanobles
 
 ### 0.6.0 &#x2192; 0.6.?
 > At this point in development, ZERO new features should be added untill full release (1.0.0). All resources should be spent on adding content material to the page. This should lead to full release.
