@@ -21,11 +21,8 @@
     --palette-common-field-top:     hsl(251, 53%, 13%);
     --palette-common-field-bottom:  hsl(253, 80%, 8%);
     --palette-common-background:    hsl(250, 100%, 5%);
-    --palette-special-one:          #8CB369E5;
-    --palette-special-two:          #F4E285E5;
-    --palette-special-three:        #F4A259E5;
-    --palette-special-four:         #5B8E7DE5;
-    --palette-special-five:         #BC4B51E5;
+    /**/
+    --palette-common-field-bottom-transparent: hsla(253, 80%, 8%, 0.7);
 }
 
 /*LIGHT MODE*/
@@ -135,6 +132,10 @@ body main {
     &::-webkit-scrollbar {
         /*Take away the scroll-bar*/
         display: none;
+    }
+
+    &>section {
+        max-width: 100%;
     }
 
     &>*>* {

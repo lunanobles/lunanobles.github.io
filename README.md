@@ -182,8 +182,8 @@ No _official_ versions from this time...
 ### 0.5.0 &#x2192; 0.5.?
 > At this point in development, new features should be kept to a minimum, and there should be a focus on content.
 
-#### (Current) `0.5.0a-b | Reorganising CSS files I-II` &mdash; lunanobles
-- Published **Mar. 16, '26**
+#### `0.5.0a-b | Reorganising CSS files I-II` &mdash; lunanobles
+- Published **Mar. 16, '26** & **Mar. 29, '26**
 - Specified what goes in the general and special stylesheets, respectivly.
 - Removed --global-fontsize.
 - Hid text on nav pannel when the screen become too small (<1000px)
@@ -193,10 +193,13 @@ No _official_ versions from this time...
   - Paragraphs (main p)
   - Splitport Class (*.splitport, *.splitport-vertical, etc...)
   - Certain Light-mode Queries
-- Added names for many projects, in preparation.
-- Added images for said projects, in preparation.
 
-#### (Planned) `0.5.1 | Basic Content II` &mdash; lunanobles
+#### (Current) `0.5.1 | Basic Content II` &mdash; lunanobles
+- Publishd **Apr. 04, '26
+- Fixed errors in this README.md.
+- Fixed the error with mobile layout scrolling.
+- Remade the styles for the project cards.
+- Added another paragraph of content to the Main section.
 
 #### (Planned) `0.5.2 | Profile Content & Info` &mdash; lunanobles
 
