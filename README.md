@@ -1,18 +1,18 @@
 # Luna Nobles Portfolio Webpage
 
 
-**(Project Information)**
-> Project Title:          Luna Nobles Portfolio Webpage & Personal Site<br/>
-> Primary Author:         Luna Nobles / DeLeDuck / Princess Celene<br/>
-> Initialisation Date:    July, 2025<br/>
+**Project Information**
+<pre>Project Title:          Luna Nobles Portfolio Webpage & Personal Site</pre><br/>
+<pre>Primary Author:         Luna Nobles / DeLeDuck / Princess Celene</pre><br/>
+<pre>Initialisation Date:    July, 2025</pre><br/>
 
-**(Version Information)**
-> Deployer/Author:        [lunanobles](https://github.com/lunanobles)<br/>
-> Deployment Date:        March, 2026<br/>
-> Deployment Type:        Private Publication<br/>
-> Version ID:             0.5.0b<br/>
-> Version Name:           Reorganising CSS files II<br/>
-> Version Ancestor:       ["Version 0.5.0a | Reorganising CSS files I"](https://github.com/lunanobles/lunanobles.github.io/commit/d070e12b112f99c792a46f699065a1c6385c46e3)<br/>
+**Version Information**
+<pre>Deployer/Author:        </pre>[lunanobles](https://github.com/lunanobles)<br/>
+<pre>Deployment Date:        May, 2026</pre><br/>
+<pre>Deployment Type:        Private Publication</pre><br/>
+<pre>Version ID:             0.5.2a</pre><br/>
+<pre>Version Name:           Profile Content & Info I</pre><br/>
+<pre>Version Ancestor:       </pre>["0.5.1 | Basic Content II"](https://github.com/lunanobles/lunanobles.github.io/commit/c71907cc43d0ca6e954adfb453ae455f2b9061cf)<br/>
 
 
 This webpage is the hub and core of all my personas, projects, ideas, and whatever else I'd like!
@@ -194,14 +194,21 @@ No _official_ versions from this time...
   - Splitport Class (*.splitport, *.splitport-vertical, etc...)
   - Certain Light-mode Queries
 
-#### (Current) `0.5.1 | Basic Content II` &mdash; lunanobles
-- Publishd **Apr. 04, '26
+#### `0.5.1 | Basic Content II` &mdash; lunanobles
+- Published **Apr. 04, '26
 - Fixed errors in this README.md.
 - Fixed the error with mobile layout scrolling.
 - Remade the styles for the project cards.
 - Added another paragraph of content to the Main section.
 
-#### (Planned) `0.5.2 | Profile Content & Info` &mdash; lunanobles
+#### (Current) `0.5.2a | Profile Content & Info I` &mdash; lunanobles
+- Published **May 05, '26
+- Fixed profile selection button's text overflowing
+- Readjusted the sizing and some style of the project cards
+- Split project search section into "Featured Projects" and "All Projects" sections
+- Added some information to "DeLeDuck" profile
+
+#### (Planned) `0.5.2b | Profile Content & Info II` &mdash; lunanobles
 
 #### (Planned) `0.5.3a | Project Search Feature... Again` &mdash; lunanobles
 

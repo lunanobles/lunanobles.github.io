@@ -31,10 +31,11 @@
         <link rel="stylesheet" href="styles_mobile.css"/>
         <style>
             /*Project Background Image Selection*/
-            #project_titleone::before       {background-image: url(./images_public/cards/lunarcreative.jpg) !important;} /*Use !important to override default image*/
-            #project_titletwo::before       {background-image: url(./images_profile/profile_.jpg) !important;} 
-            #project_titlethree::before     {background-image: url(./images_profile/profile_.jpg) !important;} 
-            #project_titlefour::before      {background-image: url(./images_profile/profile_.jpg) !important;} 
+            #project_deleduck::before               {background-image: url(./images_profile/profile_picture.png) !important;}/*Use !important to override default image*/
+            #project_princesscelene::before         {background-image: url(./images_public/placeholder-image.png) !important;} 
+            #project_visceria::before               {background-image: url(./images_public/cards/visceria.webp) !important;} 
+            #project_titlethree::before             {background-image: url(./images_profile/profile_.jpg) !important;} 
+            #project_titlefour::before              {background-image: url(./images_profile/profile_.jpg) !important;} 
         </style>
     </head>
 
@@ -110,7 +111,7 @@
                     </div>
                 </div>
             </div>
-            <fieldset id="version"><a href="https://github.com/lunanobles/lunanobles.github.io" title="View GitHub Repo">Version 0.5.0b<br/>Mar. 29, '26</a></fieldset>
+            <fieldset id="version"><a href="https://github.com/lunanobles/lunanobles.github.io" title="View GitHub Repo">Version 0.5.2a<br/>May. 05, '26</a></fieldset>
         </nav>
         <nav class="mobile">
             <div id="navigation_pannel_mobile">
@@ -172,6 +173,58 @@
                 <h1>Projects</h1>
                 <h3>A search-feature with all of the projects I've created &mdash; from Video Games to Websites to Systems, here is a collection of everything I've made.</h3>
                 <hr class="stylised justified"/>
+
+                <h3><span class="material-symbols-rounded">star</span> Featured Projects</h3>
+                <section id="projects_featured">
+                    <a class="project_card content_shown" 
+                       id="project_deleduck" 
+                       data-tags="other featured super-projects"
+                       href="#deleduck">
+                        <div>
+                            <h2>DeLeDuck Persona</h2>
+                            <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
+                            <h6>Unknown Date &rightarrow; May of 2026</h6>
+                            <hr/>
+                            <div>
+                                <span class="project_tag">Art</span>
+                                <span class="project_tag">Systems & Hierarchies</span>
+                                <span class="project_tag">Other</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project_card content_shown" 
+                       id="project_princesscelene" 
+                       data-tags="other featured super-projects"
+                       href="#deleduck">
+                        <div>
+                            <h2>Princess Celene Persona</h2>
+                            <h4>This is my current major project, showcasing a new online persona, games, and more.</h4>
+                            <h6>May of 26 &rightarrow; Present</h6>
+                            <hr/>
+                            <div>
+                                <span class="project_tag">Art</span>
+                                <span class="project_tag">Systems & Hierarchies</span>
+                                <span class="project_tag">Other</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project_card content_shown" 
+                       id="project_visceria" 
+                       data-tags="websites"
+                       href="#visceria">
+                        <div>
+                            <h2>Visceria Webpage</h2>
+                            <h4>The webpage for Gaming Thing Studios' Itch.io game <i>Visceria</i>.</h4>
+                            <h6>April of 26</h6>
+                            <hr/>
+                            <div>
+                                <span class="project_tag">Websites</span>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+                <h3><span class="material-symbols-rounded">book_5</span> All Projects</h3>
                 <div id="project_buttons">
                     <button type="button" onclick="project_filter()">Reset &mdash; Show All</button></br>
                     <button type="button" onclick="project_filter('featured')">Featured</button>
@@ -189,9 +242,9 @@
                        data-tags="other featured super-projects"
                        href="https://lunar-creative.github.io/its-been-fun">
                         <div>
-                            <h2></h2>
+                            <h2>DeLeDuck Persona</h2>
                             <h4>A (now defunct) VR creation school, teaching users how to create their own games and experiances.</h4>
-                            <h6>Abc. 00, '00</h6>
+                            <h6>→</h6>
                             <hr/>
                             <div>
                                 <span class="project_tag">Websites</span>
@@ -202,7 +255,7 @@
                     <a class="project_card content_shown" 
                        id="project_titletwo" 
                        data-tags="other featured super-projects"
-                       href="https://lunar-creative.github.io/its-been-fun">
+                       href="https://lunar-creative.github.io/">
                         <div>
                             <h2>Lunar Creative</h2>
                             <h4>A (now defunct) VR creation school, teaching users how to create their own games and experiances.</h4>
@@ -366,9 +419,21 @@
             <h3>@deleduck</h3>
             <h3>she/her/hers</h3>
             <span class="splitport_even">
-                <h5 class="section_inline_blorb"><span class="material-symbols-rounded">web_asset</span> Web Dev.</h6>
-                <h5 class="section_inline_blorb"><span class="material-symbols-rounded">sports_esports</span> Game Dev.</h6>
+                <h5 class="section_inline_blorb"><span class="material-symbols-rounded">web_asset</span> Web Designer & Developer</h6>
+                <h5 class="section_inline_blorb"><span class="material-symbols-rounded">sports_esports</span> Aspiring Game Developer</h6>
             </span>
+            <br/>
+            <div>
+                <h4>Autobiography</h4>
+                <p>I do oh so many things! Making websites? Check. Making videos for YouTube? Check. 
+                   Music? Check. Art? Check.</p>
+                <p>I love dabbeling in just about anything. I put myself forward just to see what's out there!</p>
+                <br/>
+                <h4>End of an Era</h4>
+                <p>Recently, I've made the decision to stop going by this username online. 
+                    This is after many years of using said name.</p>
+                <p>Now I choose to move towards a new persona, currently in the works: Princess Celene.</p>
+            </div>
         </aside>
         <aside class="profile_celene">
             <div class="profile_selector">

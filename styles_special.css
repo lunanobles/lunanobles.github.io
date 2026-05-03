@@ -7,7 +7,8 @@
 */
 
 /*MULTI-SELECTORS & MAJOR SELECTORS*/
-section#projects_search {
+section#projects_search,
+section#projects_featured {
     max-width: 100%;
     height: max-content;
     display: flex;
@@ -18,9 +19,9 @@ section#projects_search {
     &>a.project_card {
         position: relative;
         display: block;
-        min-width: 30%;
-        max-width: 45%;
-        height: 50vh;
+        min-width: 400px;
+        max-width: 50%;
+        aspect-ratio: 1/1.15;
         background-color: var(--palette-common-field-bottom);
         border: 2px solid var(--palette-common-field-top);
         border-radius: 5px;
@@ -29,7 +30,8 @@ section#projects_search {
         overflow: hidden;
 
         &>*:first-child {
-            position: relative;
+            position: absolute;
+            bottom: 0;
             z-index: 2;
             padding: 5px;
             background-color: var(--palette-common-field-bottom-transparent);
@@ -122,6 +124,7 @@ aside div.profile_selector {
         color: var(--palette-common-text-muted);
         border: 1px solid var(--palette-common-field-top);
         border-radius: 2px;
+        font-size: 1vw;
 
         &.checked,
         &:hover {
