@@ -16,9 +16,13 @@ section#projects_featured {
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    &>a.project_card {
+    & div.detailed_card {
+        display: none;
+    }
+        
+    & a.project_card {
         position: relative;
-        display: block;
+        display: block !important;
         min-width: 400px;
         max-width: 50%;
         aspect-ratio: 1/1.15;
@@ -42,6 +46,7 @@ section#projects_featured {
                 flex-wrap: wrap;
                 justify-content: left;
                 width: 100%;
+
                 & span.project_tag {
                     background-color: var(--palette-common-field-bottom-transparent);
                     border-radius: 2px;
@@ -49,6 +54,39 @@ section#projects_featured {
                     padding: 2px;
                 }
             }
+        }
+
+        & *.credits_to_show {
+            /* Visibility */
+            visibility: hidden;
+            opacity: 0;
+            /* Size and Position */
+            width: max-content;
+            height: auto;
+            position: relative;
+            top: 5px;
+            justify-self: center;
+            text-align: center;
+            z-index: 20;
+            /* Styling */
+            background-color: var(--palette-common-field-bottom-transparent);
+            border: 1px solid var(--palette-common-field-bottom);
+            border-radius: 5px;
+            color: var(--palette-common-text-muted);
+            font-size: 15px;
+
+            & * {
+                /*Fixing up the text position*/
+                text-indent: 0;
+                padding: 2px;
+                margin: 0;
+            }
+        }
+
+        &:hover *.credits_to_show {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out, visibility 0.5s;
         }
 
         &::before {

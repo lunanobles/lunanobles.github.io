@@ -33,7 +33,7 @@
             /*Project Background Image Selection*/
             #project_deleduck::before               {background-image: url(./images_profile/profile_picture.png) !important;}/*Use !important to override default image*/
             #project_princesscelene::before         {background-image: url(./images_public/placeholder-image.png) !important;} 
-            #project_visceria::before               {background-image: url(./images_public/cards/visceria.webp) !important;} 
+            #project_visceria::before               {background-image: url(./images_public/cards/visceria.webp) !important; background-position: right -20px top 0 !important;} 
             #project_titlethree::before             {background-image: url(./images_profile/profile_.jpg) !important;} 
             #project_titlefour::before              {background-image: url(./images_profile/profile_.jpg) !important;} 
         </style>
@@ -41,7 +41,7 @@
 
     <body>
     <!--
-        Viewport is a 20-80 nav-main splitport layout.
+        Viewport is a 10-70-20 nav-main-aside splitport layout.
         Container style
         Palette: 
             Primary:    Deep Purple     (#651551)
@@ -176,10 +176,11 @@
 
                 <h3><span class="material-symbols-rounded">star</span> Featured Projects</h3>
                 <section id="projects_featured">
+                    <div class="super_card"
+                         onclick="FocusCard()">
                     <a class="project_card content_shown" 
                        id="project_deleduck" 
-                       data-tags="other featured super-projects"
-                       href="#deleduck">
+                       data-tags="other featured super-projects">
                         <div>
                             <h2>DeLeDuck Persona</h2>
                             <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
@@ -192,6 +193,10 @@
                             </div>
                         </div>
                     </a>
+                    <div class="detailed_card">
+                        <h2>WOAH</h2>
+                    </div>
+                    </div>
                     <a class="project_card content_shown" 
                        id="project_princesscelene" 
                        data-tags="other featured super-projects"
@@ -221,6 +226,7 @@
                                 <span class="project_tag">Websites</span>
                             </div>
                         </div>
+                        <div class="credits_to_show"><p>Art by Pari T</p></div>
                     </a>
                 </section>
 
