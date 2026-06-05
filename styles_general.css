@@ -127,6 +127,7 @@ body main {
     width: 70vw;
     max-height: 100vh;
     /*Technical & Layout*/
+    overflow-x: hidden;
     overflow-y: scroll;
 
     &::-webkit-scrollbar {
@@ -169,6 +170,7 @@ body aside {
     overflow: hidden;
     text-align: center;
     padding: 1vh 1vw;
+    font-size: 2vh;
 
     &.profile_deleduck {
         display: block;

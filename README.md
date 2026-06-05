@@ -201,12 +201,14 @@ No _official_ versions from this time...
 - Remade the styles for the project cards.
 - Added another paragraph of content to the Main section.
 
-#### (Current) `0.5.2a | Profile Content & Info I` &mdash; lunanobles
+#### (Current) `0.5.2a-c | Profile Content & Info I-III` &mdash; lunanobles
 - Published **May 05, '26
 - Fixed profile selection button's text overflowing
 - Readjusted the sizing and some style of the project cards
 - Split project search section into "Featured Projects" and "All Projects" sections
 - Added some information to "DeLeDuck" profile
+- Added acredation for art
+- Added 
 
 #### (Planned) `0.5.2b | Profile Content & Info II` &mdash; lunanobles
 
