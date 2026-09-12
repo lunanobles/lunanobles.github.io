@@ -1,4 +1,32 @@
-# `0.5.4 | And we're back!`
+# `0.5.5 | Other Preparations for Continuing Development`
+- Published **Sep. 12, '26**
+- Various minor changes and other typo fixes for this CHANGELOG.md. Most notably, the previously missing 0.5.3 version was added.
+- Added profile for Princess Celene and IRL, and renamed all images to indicate their associated profiles.
+- Changed the version ID GitHub link box thingy to just say the version family.
+- The FocusCard() function now allows for the input of `this` to allow for more universal functionallity, but said functionallity is not implimented anywhere else yet.
+
+---
+
+## Future/Planned Updates
+
+```0.5.6 | Univeral Detailed Project Cards```<br/>
+```0.5.7 | Project Card Filtering via Tags```<br/>
+```0.5.8 | Project Cards Content, Media, Descriptions, Etc...```<br/>
+
+---
+## Changelog History
+_(In Newest to Oldest Order)_
+
+
+
+
+
+<!-- MARK: 0.5.0...0.5.? -->
+### 0.5.0 &#x2194; 0.5.?
+> At this point in development, new features should be kept to a minimum, and there should be a focus on content.
+
+#### `0.5.4 | And we're back!`
+- Published **Sep. 12, '26**
 - Added new search phrases to the keywords metadata.
 - Created this CHANGELOG to replace the growing README's changelog.
   > The README.md file will likely change less often now, while the CHANGELOG.md file will update to add every new commit to the history. The changelong here will be in newest-oldest order rather than the opposite found in the previous README.md.
@@ -8,25 +36,9 @@
   > I'm probably going to make this a specific button the apears on hover, instead of clicking anywhere on the box.
 - Fixed a few typos and errors in previous changelog installments, but I wouldn't be surprised if I missed others.
 
----
-
-## Future/Planned Updates
-
-```0.5.5 | Univeral Detailed Project Cards```
-```0.5.6 | Project Card Filtering via Tags```
-```0.5.7 | Project Cards Content, Media, Descriptions, Etc...```
-
----
-## Changelog History
-_In Newest to Oldest Order_
-
-
-
-
-
-<!-- MARK: 0.4b.0...0.4b.8 -->
-### 0.5.0 &#x2194; 0.5.?
-> At this point in development, new features should be kept to a minimum, and there should be a focus on content.
+#### `0.5.3 | Software & Game Development Addition`
+- Published **Jun. 05, '26**
+- Added a card, description, and image for "GameMaker Games".
 
 #### `0.5.2a-c | Profile Content & Info I-II` &mdash; lunanobles
 - Published **May 05, '26**
