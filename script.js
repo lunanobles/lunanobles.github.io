@@ -120,8 +120,10 @@ function FocusCard() {
     var card_standard = document.querySelector("html body section#projects_featured a.project_card, html body section#projects_search a.project_card");
     var card_detailed = document.querySelector("html body section#projects_featured div.detailed_card, html body section#projects_search div.detailed_card ");
 
-    if (card_standard.style.display === "block") {
-        card_standard.style.display = "none !important";
+    if (card_standard.style.display === "block" ||
+        card_standard.style.display !== "none" 
+    ) {
+        card_standard.style.display = "none";
         card_detailed.style.display = "block";
     }
     else {

@@ -19,7 +19,7 @@
         <meta name="viewport"    content="width=device-width, initial-scale=1.0">
         <meta name="author"      content="Luna Nobles"/>
         <meta name="description" content="Luna's portfolio webpage showcasing any and all projects made. Great for employers, friends, and anyone else!"/>
-        <meta name="keywords"    content="portfolio, portfolio-website"/>
+        <meta name="keywords"    content="luna nobles website, luna nobles, deleduck, princess celene, portfolio, portfolio-website"/>
 
         <title>Luna Nobles Portfolio</title>
         <link rel="icon" type="image/svg" href="images_profile/Luna Nobles, Personal Icon.png"/>
@@ -31,11 +31,11 @@
         <link rel="stylesheet" href="styles_mobile.css"/>
         <style>
             /*Project Background Image Selection*/
-            #project_deleduck::before               {background-image: url(./images_profile/profile_picture.png) !important;}/*Use !important to override default image*/
-            #project_princesscelene::before         {background-image: url(./images_public/placeholder-image.png) !important;} 
-            #project_visceria::before               {background-image: url(./images_public/cards/visceria.webp) !important; background-position: right -20px top 0 !important;} 
-            #project_gamemaker::before              {background-image: url(./images_public/cards/gamemaker.png) !important;} 
-            #project_titlefour::before              {background-image: url(./images_profile/profile_.jpg) !important;} 
+            #project_deleduck a::before               {background-image: url(./images_profile/profile_picture.png) !important;}/*Use !important to override default image*/
+            #project_princesscelene a::before         {background-image: url(./images_public/placeholder-image.png) !important;} 
+            #project_visceria a::before               {background-image: url(./images_public/cards/visceria.webp) !important; background-position: right -20px top 0 !important;} 
+            #project_gamemaker a::before              {background-image: url(./images_public/cards/gamemaker.png) !important;} 
+            #project_titlefour a::before              {background-image: url(./images_profile/profile_.jpg) !important;} 
         </style>
     </head>
 
@@ -177,25 +177,33 @@
                 <h3><span class="material-symbols-rounded">star</span> Featured Projects</h3>
                 <section id="projects_featured">
                     <div class="super_card"
+                         id="project_deleduck" 
                          onclick="FocusCard()">
-                    <a class="project_card content_shown" 
-                       id="project_deleduck" 
-                       data-tags="other featured super-projects">
-                        <div>
-                            <h2>DeLeDuck Persona</h2>
-                            <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                            <h6>Unknown Date &rightarrow; May of 2026</h6>
-                            <hr/>
+                        <a class="project_card content_shown" 
+                           data-tags="other featured super-projects">
                             <div>
-                                <span class="project_tag">Art</span>
-                                <span class="project_tag">Systems & Hierarchies</span>
-                                <span class="project_tag">Other</span>
+                                <h2>DeLeDuck Persona</h2>
+                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
+                                <h6>Unknown Date &rightarrow; May of 2026</h6>
+                                <hr/>
+                                <div>
+                                    <span class="project_tag">Art</span>
+                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">Other</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="detailed_card">
+                            <div> <!--Should have :before background of card image-->
+                                <h2>DeLeDuck Persona</h2>
+                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
+                            </div>
+                            <div>
+                                <span>YouTube Channels: <a href="https://www.youtube.com/@DeLeDuck" target="_blank" rel="noopener">Primary</a>, 
+                                                        <a href="https://www.youtube.com/@DeLeDuck_Music" target="_blank" rel="noopener">Music</a>, 
+                                                        <a href="https://www.youtube.com/@DeLeDuck_Extras" target="_blank" rel="noopener">Extras</a></span>
                             </div>
                         </div>
-                    </a>
-                    <div class="detailed_card">
-                        <h2>WOAH</h2>
-                    </div>
                     </div>
                     <a class="project_card content_shown" 
                        id="project_princesscelene" 

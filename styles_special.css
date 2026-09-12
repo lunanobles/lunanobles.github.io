@@ -22,7 +22,7 @@ section#projects_featured {
         
     & a.project_card {
         position: relative;
-        display: block !important;
+        display: block;
         min-width: 400px;
         max-width: 50%;
         aspect-ratio: 1/1.15;
