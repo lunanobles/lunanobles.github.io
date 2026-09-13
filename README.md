@@ -20,3 +20,5 @@ There aren't any major goals for the project at the moment; primarily, I am work
 1. Detailed Project Cards are... ugly and also don't work all that well!
 2. The Projects searching functionality is... well... not functional.
 3. If you hadn't noticed... there's no content... As of now, the page is really just a pretty way to say "not much here ¯\\\_(ツ)\_/¯".
+4. The profile selector buttons are based off viewheight, so low pixel dencity screens get like 2pxs for the buttons.
+5. The light-mode project cards have poor visibility/readability.

@@ -16,6 +16,9 @@ section#projects_featured {
     flex-wrap: wrap;
     justify-content: space-evenly;
 
+    & *.show_detailed *.project_card {display: none;}
+    & *.show_detailed *.detailed_card {display: block;}
+
     & div.detailed_card {
         display: none;
     }

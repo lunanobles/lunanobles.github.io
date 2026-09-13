@@ -117,20 +117,8 @@ function navDropDown(section) {
 // Focussing on certain cards should increase their width and show details
 function FocusCard(element) {
     
-    const card_id = element.id;
-    var super_card    = document.querySelector(`html body section div#${card_id}`);
-    var card_standard = document.querySelector(`html body section div#${card_id} a.project_card`);
-    var card_detailed = document.querySelector(`html body section div#${card_id} div.detailed_card`);
+    const super_card = document.querySelector(`html body section div#${element.id}`);
 
-    if (card_standard.style.display === "block" ||
-        card_standard.style.display !== "none" 
-    ) {
-        card_standard.style.display = "none";
-        card_detailed.style.display = "block";
-    }
-    else {
-        card_standard.style.display = "block";
-        card_detailed.style.display = "none";
-    }
+    super_card.classList.toggle('show_detailed');
     
 }

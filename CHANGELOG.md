@@ -1,21 +1,23 @@
-# `0.5.5 | Other Preparations for Continuing Development`
-- Published **Sep. 12, '26**
-- Various minor changes and other typo fixes for this CHANGELOG.md. Most notably, the previously missing 0.5.3 version was added.
-- Added profile for Princess Celene and IRL, and renamed all images to indicate their associated profiles.
-- Changed the version ID GitHub link box thingy to just say the version family.
-- The FocusCard() function now allows for the input of `this` to allow for more universal functionallity, but said functionallity is not implimented anywhere else yet.
+# `0.5.6 | Univeral Detailed Project Cards`
+- Published **Sep. 13, '26**
+- In the HTML, I've coded blocks to help me actually work on this MASSIVE page via the `MARK:` comments because HTML is weird and doesn't support `#region` & `#endregion` in my coding envinroment (I use VSCode).
+- Changed all simple project cards into their super card counterparts.
+  > All the cards in the "all" section are broken because I didn't give them unique IDs yet. This isn't a content update, just me working on getting everything in place so I CAN add the content later.
+- Updated the `FocusCard()` function to work via `classList.toggle()` because that's just plain better, ngl.
+- More typo fixes in the changelog 😭.
+- Changed the Princess Celene card image to the associated profile image.
+- Added the three variations of the Discord icon.
 
 ---
 
 ## Future/Planned Updates
 
-```0.5.6 | Univeral Detailed Project Cards```<br/>
 ```0.5.7 | Project Card Filtering via Tags```<br/>
 ```0.5.8 | Project Cards Content, Media, Descriptions, Etc...```<br/>
 
 ---
 ## Changelog History
-_(In Newest to Oldest Order)_
+_(In Newest to Oldest Order.)<br/>(📦 indicates a release version.)_
 
 
 
@@ -24,6 +26,13 @@ _(In Newest to Oldest Order)_
 <!-- MARK: 0.5.0...0.5.? -->
 ### 0.5.0 &#x2194; 0.5.?
 > At this point in development, new features should be kept to a minimum, and there should be a focus on content.
+
+#### `0.5.5 | Other Preparations for Continuing Development`
+- Published **Sep. 12, '26**
+- Various minor changes and other typo fixes for this CHANGELOG.md. Most notably, the previously missing 0.5.3 version was added.
+- Added profile for Princess Celene and IRL, and renamed all images to indicate their associated profiles.
+- Changed the version ID GitHub link box thingy to just say the version family.
+- The FocusCard() function now allows for the input of `this` to allow for more universal functionallity, but said functionallity is not implimented anywhere else yet.
 
 #### `0.5.4 | And we're back!`
 - Published **Sep. 12, '26**
@@ -40,7 +49,7 @@ _(In Newest to Oldest Order)_
 - Published **Jun. 05, '26**
 - Added a card, description, and image for "GameMaker Games".
 
-#### `0.5.2a-c | Profile Content & Info I-II` &mdash; lunanobles
+#### `0.5.2a-b | Profile Content & Info I-II` &mdash; lunanobles
 - Published **May 05, '26**
 - Fixed profile selection button's text overflowing
 - Readjusted the sizing and some style of the project cards
@@ -72,7 +81,7 @@ _(In Newest to Oldest Order)_
 
 
 <!-- MARK: 0.4b.0...0.4b.8 -->
-### 0.4b.0 &#x2194; 0.4b.?
+### 0.4b.0 &#x2194; 0.4b.8
 
 #### `0.4b.8 | Light-mode minor changes` &mdash; lunanobles
 - Published **Mar. 16, '26**
@@ -143,7 +152,7 @@ _(In Newest to Oldest Order)_
 
 
 
-<!-- MARK: 0.4b.0? -->
+<!-- MARK: Merger -->
 ### Branch creation &mdash; overall-redesign &mdash; 0.4b.0
 
 > This was a weird one, it was my first time making a branch, and I had just started learning Git. This got set to main in a weird way, I have no clue what happend ngl.

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/*I'll be working on getting the mobile version of the projects cards working *later*... (0.5.6)*/
+
 @media (max-width: 1000px) {
     html nav div#navigation_pannel p {
         display: none;
