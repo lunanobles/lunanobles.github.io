@@ -5,10 +5,12 @@ if (document.documentElement.clientWidth < 320) {
 
 function project_filter(tag) {
 
-    var items = document.querySelectorAll(`section#projects_search > a.project_card[data-tags~="`+tag+`"]`);
-    var all_items = document.querySelectorAll(`section#projects_search > a.project_card`);
-    var this_button = document.querySelector(`button[onclick~="project_filter('`+tag+`')"]`);
+    var items = document.querySelectorAll(`section#projects_search div.super_card[data-tags~="${tag}"]`);
+    var all_items = document.querySelectorAll(`section#projects_search div.super_card[data-tags]`);
+    var this_button = document.querySelector(`button[onclick~="project_filter('${tag}')"]`);
     var all_buttons = document.querySelectorAll(`div#project_buttons > button`);
+
+    console.info(`items:\n\t${JSON.stringify(items)}\n\nall_items:\n\t${JSON.stringify(all_items)}`);
 
 
     /// Stylising Buttons ///

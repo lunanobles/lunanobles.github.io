@@ -1,19 +1,16 @@
-# `0.5.6 | Univeral Detailed Project Cards`
-- Published **Sep. 13, '26**
-- In the HTML, I've coded blocks to help me actually work on this MASSIVE page via the `MARK:` comments because HTML is weird and doesn't support `#region` & `#endregion` in my coding envinroment (I use VSCode).
-- Changed all simple project cards into their super card counterparts.
-  > All the cards in the "all" section are broken because I didn't give them unique IDs yet. This isn't a content update, just me working on getting everything in place so I CAN add the content later.
-- Updated the `FocusCard()` function to work via `classList.toggle()` because that's just plain better, ngl.
-- More typo fixes in the changelog 😭.
-- Changed the Princess Celene card image to the associated profile image.
-- Added the three variations of the Discord icon.
+# `0.5.7 | Project Card Filtering via Tags — Functionality`
+- Published **Sep. 14, '26**
+- Made the projects search section functionally work with any cards and their respective `data-tags` values.
 
 ---
 
 ## Future/Planned Updates
 
-```0.5.7 | Project Card Filtering via Tags```<br/>
-```0.5.8 | Project Cards Content, Media, Descriptions, Etc...```<br/>
+```0.5.7 | Project Card Filtering via Tags — Design``` <-- Also planned to make the search buttons pretty here.<br/>
+```0.6.0 | Project Cards Content, Media, Descriptions, Etc...```<br/>
+```0.6.1 | Profile Content, Media, Descriptions, Etc...```<br/>
+  > The 0.6.X versions will likely be labeled as "0.6.X | [topic/section] Content, Media, Descriptions, Etc..." and the X will just count up, no Xa, or anything. But repeating topics will get I or II or whatever at the end.
+
 
 ---
 ## Changelog History
@@ -26,6 +23,16 @@ _(In Newest to Oldest Order.)<br/>(📦 indicates a release version.)_
 <!-- MARK: 0.5.0...0.5.? -->
 ### 0.5.0 &#x2194; 0.5.?
 > At this point in development, new features should be kept to a minimum, and there should be a focus on content.
+
+#### `0.5.6 | Univeral Detailed Project Cards`
+- Published **Sep. 13, '26**
+- In the HTML, I've coded blocks to help me actually work on this MASSIVE page via the `MARK:` comments because HTML is weird and doesn't support `#region` & `#endregion` in my coding envinroment (I use VSCode).
+- Changed all simple project cards into their super card counterparts.
+  > All the cards in the "all" section are broken because I didn't give them unique IDs yet. This isn't a content update, just me working on getting everything in place so I CAN add the content later.
+- Updated the `FocusCard()` function to work via `classList.toggle()` because that's just plain better, ngl.
+- More typo fixes in the changelog 😭.
+- Changed the Princess Celene card image to the associated profile image.
+- Added the three variations of the Discord icon.
 
 #### `0.5.5 | Other Preparations for Continuing Development`
 - Published **Sep. 12, '26**

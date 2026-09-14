@@ -114,6 +114,11 @@ section#projects_featured {
 
 }
 
+section#projects_search {
+    & *.super_card {display: none;}
+    & *.super_card.content_shown {display: block;}
+}
+
 
 /*SINGLE SELECTORS*/
 

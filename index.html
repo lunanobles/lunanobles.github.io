@@ -169,12 +169,13 @@
                     things like that are added.
                 </p>
             </div>
-            <!-- MARK: PROJECTS -->
+            <!--MARK: 📦PROJECTS-->
             <section id="projects">
                 <h1>Projects</h1>
                 <h3>A search-feature with all of the projects I've created &mdash; from Video Games to Websites to Systems, here is a collection of everything I've made.</h3>
                 <hr class="stylised justified"/>
 
+                <!--MARK: Featured-->
                 <h3><span class="material-symbols-rounded">star</span> Featured Projects</h3>
                 <section id="projects_featured">
                     <div id="project_deleduck" 
@@ -292,6 +293,7 @@
                     </div>
                 </section>
 
+                <!--MARK: All-->
                 <h3><span class="material-symbols-rounded">book_5</span> All Projects</h3>
                 <div id="project_buttons">
                     <button type="button" onclick="project_filter()">Reset &mdash; Show All</button></br>
@@ -306,7 +308,62 @@
                 </div>
                 <section id="projects_search">
                     <div id="project_deleduck-not" 
-                         class="super_card"
+                         class="super_card content_shown"
+                         onclick="FocusCard(this)"
+                         data-tags="art">
+                        <a class="project_card">
+                            <div>
+                                <h2>DeLeDuck Persona</h2>
+                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
+                                <h6>Unknown Date &rightarrow; May of 2026</h6>
+                                <hr/>
+                                <div>
+                                    <span class="project_tag">Art</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="detailed_card">
+                            <div> <!--Should have :before background of card image-->
+                                <h2>DeLeDuck Persona</h2>
+                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
+                            </div>
+                            <div>
+                                <span>YouTube Channels: <a href="https://www.youtube.com/@DeLeDuck" target="_blank" rel="noopener">Primary</a>, 
+                                                        <a href="https://www.youtube.com/@DeLeDuck_Music" target="_blank" rel="noopener">Music</a>, 
+                                                        <a href="https://www.youtube.com/@DeLeDuck_Extras" target="_blank" rel="noopener">Extras</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project_deleduck-not" 
+                         class="super_card content_shown"
+                         onclick="FocusCard(this)"
+                         data-tags="other super-projects">
+                        <a class="project_card">
+                            <div>
+                                <h2>DeLeDuck Persona</h2>
+                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
+                                <h6>Unknown Date &rightarrow; May of 2026</h6>
+                                <hr/>
+                                <div>
+                                    <span class="project_tag">Super Projects</span>
+                                    <span class="project_tag">Other</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="detailed_card">
+                            <div> <!--Should have :before background of card image-->
+                                <h2>DeLeDuck Persona</h2>
+                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
+                            </div>
+                            <div>
+                                <span>YouTube Channels: <a href="https://www.youtube.com/@DeLeDuck" target="_blank" rel="noopener">Primary</a>, 
+                                                        <a href="https://www.youtube.com/@DeLeDuck_Music" target="_blank" rel="noopener">Music</a>, 
+                                                        <a href="https://www.youtube.com/@DeLeDuck_Extras" target="_blank" rel="noopener">Extras</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project_deleduck-not" 
+                         class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
                         <a class="project_card">
@@ -335,7 +392,7 @@
                         </div>
                     </div>
                     <div id="project_deleduck-not" 
-                         class="super_card"
+                         class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
                         <a class="project_card">
@@ -364,7 +421,7 @@
                         </div>
                     </div>
                     <div id="project_deleduck-not" 
-                         class="super_card"
+                         class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
                         <a class="project_card">
@@ -393,7 +450,7 @@
                         </div>
                     </div>
                     <div id="project_deleduck-not" 
-                         class="super_card"
+                         class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
                         <a class="project_card">
@@ -422,7 +479,7 @@
                         </div>
                     </div>
                     <div id="project_deleduck-not" 
-                         class="super_card"
+                         class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
                         <a class="project_card">
@@ -451,7 +508,7 @@
                         </div>
                     </div>
                     <div id="project_deleduck-not" 
-                         class="super_card"
+                         class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
                         <a class="project_card">
@@ -480,7 +537,7 @@
                         </div>
                     </div>
                     <div id="project_deleduck-not" 
-                         class="super_card"
+                         class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
                         <a class="project_card">
@@ -509,7 +566,7 @@
                         </div>
                     </div>
                     <div id="project_deleduck-not" 
-                         class="super_card"
+                         class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
                         <a class="project_card">
@@ -538,65 +595,7 @@
                         </div>
                     </div>
                     <div id="project_deleduck-not" 
-                         class="super_card"
-                         onclick="FocusCard(this)"
-                         data-tags="other featured super-projects">
-                        <a class="project_card">
-                            <div>
-                                <h2>DeLeDuck Persona</h2>
-                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                                <h6>Unknown Date &rightarrow; May of 2026</h6>
-                                <hr/>
-                                <div>
-                                    <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
-                                    <span class="project_tag">Other</span>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="detailed_card">
-                            <div> <!--Should have :before background of card image-->
-                                <h2>DeLeDuck Persona</h2>
-                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                            </div>
-                            <div>
-                                <span>YouTube Channels: <a href="https://www.youtube.com/@DeLeDuck" target="_blank" rel="noopener">Primary</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Music" target="_blank" rel="noopener">Music</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Extras" target="_blank" rel="noopener">Extras</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="project_deleduck-not" 
-                         class="super_card"
-                         onclick="FocusCard(this)"
-                         data-tags="other featured super-projects">
-                        <a class="project_card">
-                            <div>
-                                <h2>DeLeDuck Persona</h2>
-                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                                <h6>Unknown Date &rightarrow; May of 2026</h6>
-                                <hr/>
-                                <div>
-                                    <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
-                                    <span class="project_tag">Other</span>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="detailed_card">
-                            <div> <!--Should have :before background of card image-->
-                                <h2>DeLeDuck Persona</h2>
-                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                            </div>
-                            <div>
-                                <span>YouTube Channels: <a href="https://www.youtube.com/@DeLeDuck" target="_blank" rel="noopener">Primary</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Music" target="_blank" rel="noopener">Music</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Extras" target="_blank" rel="noopener">Extras</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="project_deleduck-not" 
-                         class="super_card"
+                         class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
                         <a class="project_card">
