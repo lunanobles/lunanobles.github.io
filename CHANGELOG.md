@@ -1,15 +1,21 @@
-# `0.5.7 | Project Card Filtering via Tags — Functionality`
-- Published **Sep. 14, '26**
-- Made the projects search section functionally work with any cards and their respective `data-tags` values.
+# `0.5.8 | Project Card Filtering via Tags — Design`
+- Published **Sep. 19, '26**
+- Created desktop design for detailed cards.
+- Created mobile design for detailed cards.
+- Adjusted mobile design for standard cards.
+- Designed the search/filter buttons.
+- Added the missing images to the detailed cards.
+- Added a little hyperlinks section to one of the profiles.
 
 ---
 
 ## Future/Planned Updates
 
-```0.5.7 | Project Card Filtering via Tags — Design``` <-- Also planned to make the search buttons pretty here.<br/>
 ```0.6.0 | Project Cards Content, Media, Descriptions, Etc...```<br/>
 ```0.6.1 | Profile Content, Media, Descriptions, Etc...```<br/>
-  > The 0.6.X versions will likely be labeled as "0.6.X | [topic/section] Content, Media, Descriptions, Etc..." and the X will just count up, no Xa, or anything. But repeating topics will get I or II or whatever at the end.
+  > The 0.6.X versions will likely be labeled as "0.6.X | [topic/section] Content, Media, Descriptions, Etc..." and the X will just count up, no 0.6.3a, or anything. But repeating topics will get I or II or whatever at the end.
+```0.7.0 | Reorganising and Cleaning Code I-...```
+  > I might just do some general cleaning up before the actual launch.
 
 
 ---
@@ -23,6 +29,10 @@ _(In Newest to Oldest Order.)<br/>(📦 indicates a release version.)_
 <!-- MARK: 0.5.0...0.5.? -->
 ### 0.5.0 &#x2194; 0.5.?
 > At this point in development, new features should be kept to a minimum, and there should be a focus on content.
+
+#### `0.5.7 | Project Card Filtering via Tags — Functionality`
+- Published **Sep. 14, '26**
+- Made the projects search section functionally work with any cards and their respective `data-tags` values.
 
 #### `0.5.6 | Univeral Detailed Project Cards`
 - Published **Sep. 13, '26**

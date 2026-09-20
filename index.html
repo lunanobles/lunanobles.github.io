@@ -31,11 +31,14 @@
         <link rel="stylesheet" href="styles_mobile.css"/>
         <style>
             /*Project Background Image Selection*/
-            #project_deleduck a::before               {background-image: url(./images_profile/profile_deleduck.png) !important;}/*Use !important to override default image*/
-            #project_princesscelene a::before         {background-image: url(./images_profile/profile_celene.png) !important;} 
-            #project_visceria a::before               {background-image: url(./images_public/cards/visceria.webp) !important; background-position: right -20px top 0 !important;} 
-            #project_gamemaker a::before              {background-image: url(./images_public/cards/gamemaker.png) !important;} 
-            #project_titlefour a::before              {background-image: url(./images_profile/profile_.jpg) !important;} 
+            #project_deleduck a::before                                 {background-image: url(./images_profile/profile_deleduck.png) !important;}
+            #project_deleduck *.detailed_card_img_section::before       {background-image: url(./images_profile/profile_deleduck.png) !important;}/*Use !important to override default image*/
+            #project_princesscelene a::before                           {background-image: url(./images_profile/profile_celene.png) !important;} 
+            #project_princesscelene *.detailed_card_img_section::before {background-image: url(./images_profile/profile_celene.png) !important;}/*Use !important to override default image*/
+            #project_visceria a::before                                 {background-image: url(./images_public/cards/visceria.webp) !important; background-position: right -20px top 0 !important;} 
+            #project_visceria *.detailed_card_img_section::before       {background-image: url(./images_public/cards/visceria.webp) !important;}/*Use !important to override default image*/
+            #project_gamemaker a::before                                {background-image: url(./images_public/cards/gamemaker.png) !important;} 
+            #project_gamemaker *.detailed_card_img_section::before      {background-image: url(./images_public/cards/gamemaker.png) !important;}/*Use !important to override default image*/
         </style>
     </head>
 
@@ -196,11 +199,15 @@
                             </div>
                         </a>
                         <div class="detailed_card">
-                            <div> <!--Should have :before background of card image-->
+                            <div class="detailed_card_img_section"></div>
+                            <div class="detailed_card_main_section">
+                                <div>
+                                    <span class="project_tag">Art</span>
+                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">Other</span>
+                                </div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                            </div>
-                            <div>
                                 <span>YouTube Channels: <a href="https://www.youtube.com/@DeLeDuck" target="_blank" rel="noopener">Primary</a>, 
                                                         <a href="https://www.youtube.com/@DeLeDuck_Music" target="_blank" rel="noopener">Music</a>, 
                                                         <a href="https://www.youtube.com/@DeLeDuck_Extras" target="_blank" rel="noopener">Extras</a></span>
@@ -225,14 +232,15 @@
                             </div>
                         </a>
                         <div class="detailed_card">
-                            <div> <!--Should have :before background of card image-->
-                                <h2>DeLeDuck Persona</h2>
-                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                            </div>
-                            <div>
-                                <span>YouTube Channels: <a href="https://www.youtube.com/@DeLeDuck" target="_blank" rel="noopener">Primary</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Music" target="_blank" rel="noopener">Music</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Extras" target="_blank" rel="noopener">Extras</a></span>
+                            <div class="detailed_card_img_section"></div>
+                            <div class="detailed_card_main_section">
+                                <div>
+                                    <span class="project_tag">Art</span>
+                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">Other</span>
+                                </div>
+                                <h2>Princess Celene Persona</h2>
+                                <h4>This is my current major project, showcasing a new online persona, games, and more.</h4>
                             </div>
                         </div>
                     </div>
@@ -253,14 +261,13 @@
                             <div class="credits_to_show"><p>Art by Pari T</p></div>
                         </a>
                         <div class="detailed_card">
-                            <div> <!--Should have :before background of card image-->
-                                <h2>DeLeDuck Persona</h2>
-                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                            </div>
-                            <div>
-                                <span>YouTube Channels: <a href="https://www.youtube.com/@DeLeDuck" target="_blank" rel="noopener">Primary</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Music" target="_blank" rel="noopener">Music</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Extras" target="_blank" rel="noopener">Extras</a></span>
+                            <div class="detailed_card_img_section"></div>
+                            <div class="detailed_card_main_section">
+                                <div>
+                                    <span class="project_tag">Websites</span>
+                                </div>
+                                <h2>Viceria Webpage</h2>
+                                <h4>The webpage for Gaming Thing Studios' Itch.io game <i>Visceria</i>.</h4>
                             </div>
                         </div>
                     </div>
@@ -280,14 +287,13 @@
                             </div>
                         </a>
                         <div class="detailed_card">
-                            <div> <!--Should have :before background of card image-->
-                                <h2>DeLeDuck Persona</h2>
-                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                            </div>
-                            <div>
-                                <span>YouTube Channels: <a href="https://www.youtube.com/@DeLeDuck" target="_blank" rel="noopener">Primary</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Music" target="_blank" rel="noopener">Music</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Extras" target="_blank" rel="noopener">Extras</a></span>
+                            <div class="detailed_card_img_section"></div>
+                            <div class="detailed_card_main_section">
+                                <div>
+                                    <span class="project_tag">Video Games</span>
+                                </div>
+                                <h2>GameMaker Games</h2>
+                                <h4>The games made with GameMaker as a part of my Software & Game Development high school course.</h4>
                             </div>
                         </div>
                     </div>
@@ -699,8 +705,35 @@
                 <h5 class="section_inline_blorb"><span class="material-symbols-rounded">terminal</span> Software Developer</h6>
                 <h5 class="section_inline_blorb"><span class="material-symbols-rounded">sports_esports</span> Aspiring Game Developer</h6>
             </span>
-            <br/>
-            <div>
+            <fieldset>
+                <picture class="profile_hyperlink_icon">
+                    <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/youtube_black.svg" type="image/svg+xml">
+                    <source media="(prefers-color-scheme: dark)"  srcset="./images_public/marks/youtube_white.svg" type="image/svg+xml">
+                    <img src="./images_public/marks/youtube_colour.svg" alt="youtube_icon.svg">
+                </picture>
+                <a href="https://www.youtube.com/@DeLeDuck" title="@DeLeDuck on YouTube">Main</a>
+                <a href="https://www.youtube.com/@DeLeDuck" title="@DeLeDuck on YouTube">Music</a>
+                <a href="https://www.youtube.com/@DeLeDuck" title="@DeLeDuck on YouTube">Alt</a>
+                
+                <br/>
+
+                <picture class="profile_hyperlink_icon">
+                        <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/github_black.svg" type="image/svg+xml">
+                        <img src="./images_public/marks/github_white.svg" alt="github_icon.svg">
+                </picture>
+                <a href="https://github.com/lunanobles" title="lunanobles on GitHub">GitHub</a>
+
+                <br/>
+
+                <picture class="profile_hyperlink_icon">
+                        <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/discord_black.svg" type="image/svg+xml">
+                        <source media="(prefers-color-scheme: dark)"  srcset="./images_public/marks/discord_white.svg" type="image/svg+xml">
+                        <img src="./images_public/marks/discord_colour.svg" alt="discord_icon.svg">
+                </picture>
+                <a href="https://discord.com/users/872675076472983572" title="@DeLeDuck on Discord">Discord</a>
+            </fieldset>
+            <hr/>
+            <div class="profile_bio">
                 <h4>Autobiography</h4>
                 <p>I do oh so many things! Making websites? Check. Making videos for YouTube? Check. 
                    Music? Check. Art? Check.</p>

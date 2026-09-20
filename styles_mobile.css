@@ -1,14 +1,12 @@
 @charset "UTF-8";
 
-/*I'll be working on getting the mobile version of the projects cards working *later*... (0.5.6)*/
-
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     html nav div#navigation_pannel p {
         display: none;
     }
 }
 
-@media (max-width: 850px) { /*MOBILE LAYOUT -- Large*/
+@media screen and (max-width: 850px) { /*MOBILE LAYOUT -- Large*/
     html > body {
         flex-direction: column;
         & > nav, & > aside:not(.mobile) {
@@ -82,11 +80,36 @@
     }
 }
 
-@media (max-width: 450px) {
+@media screen and (min-width: 850px) and (max-height: 650px),
+       screen and (max-width: 1000px) and (min-height: 1000px)  {
+    html body nav,
+    html body aside {display: none !important;}
+
+    html body main {width: 100% !important; height: 100%;}
+
+}
+
+@media screen and (max-width: 700px) {
+    html div.detailed_card {
+        flex-direction: column !important;
+        height: max-content !important;
+        width: 100% !important;
+
+        & *.detailed_card_img_section {
+            aspect-ratio: 1/0.75 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
     html body aside {
         display: none !important;
     }
     html > body > main {
         height: 90%;
+    }
+    html a.project_card {
+        min-width: 90vw !important;
+        max-width: 100% !important;
     }
 }
