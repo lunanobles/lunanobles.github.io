@@ -1,15 +1,7 @@
 <!--
     Project Title:             Luna Nobles Portfolio Webpage
         Document Author:       Luna Nobles
-        Date Initialised:      July, 2025
-        Date Updated:          March, 2026
-        Version ID:            (Unreleased) 0.4b.7
-
-    Project Description:
-        Personal portfolio webpage for me.
-
-    Important Notes and Comments:
-        
+        Date Initialised:      July, 2025   
 -->
 <!DOCTYPE html>
 <html lang="en-CA">
@@ -25,20 +17,20 @@
         <link rel="icon" type="image/svg" href="images_profile/Luna Nobles, Personal Icon.png"/>
 
         <!--META CONTEXT-->
-        <link rel="stylesheet" href="styles_font.css"/>
-        <link rel="stylesheet" href="styles_general.css"/>
-        <link rel="stylesheet" href="styles_special.css"/>
-        <link rel="stylesheet" href="styles_mobile.css"/>
+        <link rel="stylesheet" href="./styles/styles_font.css"/>
+        <link rel="stylesheet" href="./styles/styles_general.css"/>
+        <link rel="stylesheet" href="./styles/styles_special.css"/>
+        <link rel="stylesheet" href="./styles/styles_mobile.css"/>
         <style>
             /*Project Background Image Selection*/
-            #project_deleduck a::before                                 {background-image: url(./images_profile/profile_deleduck.png) !important;}
-            #project_deleduck *.detailed_card_img_section::before       {background-image: url(./images_profile/profile_deleduck.png) !important;}/*Use !important to override default image*/
-            #project_princesscelene a::before                           {background-image: url(./images_profile/profile_celene.png) !important;} 
-            #project_princesscelene *.detailed_card_img_section::before {background-image: url(./images_profile/profile_celene.png) !important;}/*Use !important to override default image*/
-            #project_visceria a::before                                 {background-image: url(./images_public/cards/visceria.webp) !important; background-position: right -20px top 0 !important;} 
-            #project_visceria *.detailed_card_img_section::before       {background-image: url(./images_public/cards/visceria.webp) !important;}/*Use !important to override default image*/
-            #project_gamemaker a::before                                {background-image: url(./images_public/cards/gamemaker.png) !important;} 
-            #project_gamemaker *.detailed_card_img_section::before      {background-image: url(./images_public/cards/gamemaker.png) !important;}/*Use !important to override default image*/
+            #project_deleduck div::before                               {background-image: url(./images/profile/profile_deleduck.png) !important;}
+            #project_deleduck *.detailed_card_img_section::before       {background-image: url(./images/profile/profile_deleduck.png) !important;}/*Use !important to override default image*/
+            #project_princesscelene div::before                         {background-image: url(./images/profile/profile_celene.png) !important;} 
+            #project_princesscelene *.detailed_card_img_section::before {background-image: url(./images/profile/profile_celene.png) !important;}/*Use !important to override default image*/
+            #project_visceria div::before                               {background-image: url(./images/cards/visceria.webp) !important; background-position: right -20px top 0 !important;} 
+            #project_visceria *.detailed_card_img_section::before       {background-image: url(./images/cards/visceria.webp) !important;}/*Use !important to override default image*/
+            #project_gamemaker div::before                              {background-image: url(./images/cards/gamemaker.png) !important;} 
+            #project_gamemaker *.detailed_card_img_section::before      {background-image: url(./images/cards/gamemaker.png) !important;}/*Use !important to override default image*/
         </style>
     </head>
 
@@ -51,6 +43,7 @@
             Secondary:  Rasberry Plum   (#AB2088)
             Accent:     Bright Amber    (#FCC900)
     -->
+        <!--MARK: 🧭 NAV-->
         <nav>
             <div id="navigation_pannel">
                 <p>Navigation:</p>
@@ -116,6 +109,7 @@
             </div>
             <fieldset id="version"><a href="https://github.com/lunanobles/lunanobles.github.io" title="View GitHub Repo">0.5 Version Family.<br/>Pre-release Deployment.</a></fieldset>
         </nav>
+        <!--MARK: 🧭 NAV (m)-->
         <nav class="mobile">
             <div id="navigation_pannel_mobile">
                 <p>
@@ -129,6 +123,7 @@
             </div>
         </nav>
         <main>
+            <!--MARK: 🏠 HOME-->
             <div id="home">
                 <h1>Luna Nobles Webpage Portfolio & Personal Site</h1>
                 <h3>This site serves as my personal playground and showcase workshop for all the projects and fun creations I have under my belt!</h3>
@@ -185,7 +180,7 @@
                          class="super_card"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
@@ -197,7 +192,8 @@
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
-                        </a>
+                            <div class="credits_to_show"><p>Art by @ch1zuno</p></div>
+                        </div>
                         <div class="detailed_card">
                             <div class="detailed_card_img_section"></div>
                             <div class="detailed_card_main_section">
@@ -218,7 +214,7 @@
                          class="super_card"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>Princess Celene Persona</h2>
                                 <h4>This is my current major project, showcasing a new online persona, games, and more.</h4>
@@ -230,7 +226,8 @@
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
-                        </a>
+                            <div class="credits_to_show"><p>Created with <a href="https://picrew.me/en/image_maker/2">this Picrew</a></p></div>
+                        </div>
                         <div class="detailed_card">
                             <div class="detailed_card_img_section"></div>
                             <div class="detailed_card_main_section">
@@ -248,7 +245,7 @@
                          class="super_card"
                          onclick="FocusCard(this)" 
                          data-tags="websites">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>Visceria Webpage</h2>
                                 <h4>The webpage for Gaming Thing Studios' Itch.io game <i>Visceria</i>.</h4>
@@ -259,7 +256,7 @@
                                 </div>
                             </div>
                             <div class="credits_to_show"><p>Art by Pari T</p></div>
-                        </a>
+                        </div>
                         <div class="detailed_card">
                             <div class="detailed_card_img_section"></div>
                             <div class="detailed_card_main_section">
@@ -275,7 +272,7 @@
                          class="super_card"
                          onclick="FocusCard(this)"
                          data-tags="video-games">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>GameMaker Games</h2>
                                 <h4>The games made with GameMaker as a part of my Software & Game Development high school course.</h4>
@@ -285,7 +282,7 @@
                                     <span class="project_tag">Video Games</span>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         <div class="detailed_card">
                             <div class="detailed_card_img_section"></div>
                             <div class="detailed_card_main_section">
@@ -303,13 +300,11 @@
                 <h3><span class="material-symbols-rounded">book_5</span> All Projects</h3>
                 <div id="project_buttons">
                     <button type="button" onclick="project_filter()">Reset &mdash; Show All</button></br>
-                    <button type="button" onclick="project_filter('featured')">Featured</button>
                     <button type="button" onclick="project_filter('websites')">Websites</button>
                     <button type="button" onclick="project_filter('video-games')">Video Games</button>
                     <button type="button" onclick="project_filter('software')">Software</button>
                     <button type="button" onclick="project_filter('art')">Art</button>
                     <button type="button" onclick="project_filter('systems-and-hierarchies')">Systems & Hierarchies</button>
-                    <button type="button" onclick="project_filter('super-projects')">Super-Projects</button>
                     <button type="button" onclick="project_filter('other')">Other</button>
                 </div>
                 <section id="projects_search">
@@ -317,7 +312,7 @@
                          class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="art">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
@@ -327,7 +322,7 @@
                                     <span class="project_tag">Art</span>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         <div class="detailed_card">
                             <div> <!--Should have :before background of card image-->
                                 <h2>DeLeDuck Persona</h2>
@@ -344,7 +339,7 @@
                          class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other super-projects">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
@@ -355,7 +350,7 @@
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         <div class="detailed_card">
                             <div> <!--Should have :before background of card image-->
                                 <h2>DeLeDuck Persona</h2>
@@ -372,7 +367,7 @@
                          class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
@@ -384,7 +379,7 @@
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         <div class="detailed_card">
                             <div> <!--Should have :before background of card image-->
                                 <h2>DeLeDuck Persona</h2>
@@ -401,7 +396,7 @@
                          class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
@@ -413,7 +408,7 @@
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         <div class="detailed_card">
                             <div> <!--Should have :before background of card image-->
                                 <h2>DeLeDuck Persona</h2>
@@ -430,7 +425,7 @@
                          class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
@@ -442,7 +437,7 @@
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         <div class="detailed_card">
                             <div> <!--Should have :before background of card image-->
                                 <h2>DeLeDuck Persona</h2>
@@ -459,7 +454,7 @@
                          class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
@@ -471,7 +466,7 @@
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         <div class="detailed_card">
                             <div> <!--Should have :before background of card image-->
                                 <h2>DeLeDuck Persona</h2>
@@ -488,7 +483,7 @@
                          class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
@@ -500,7 +495,7 @@
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         <div class="detailed_card">
                             <div> <!--Should have :before background of card image-->
                                 <h2>DeLeDuck Persona</h2>
@@ -517,7 +512,7 @@
                          class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
@@ -529,7 +524,7 @@
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         <div class="detailed_card">
                             <div> <!--Should have :before background of card image-->
                                 <h2>DeLeDuck Persona</h2>
@@ -546,7 +541,7 @@
                          class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
@@ -558,7 +553,7 @@
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         <div class="detailed_card">
                             <div> <!--Should have :before background of card image-->
                                 <h2>DeLeDuck Persona</h2>
@@ -575,7 +570,7 @@
                          class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
@@ -587,7 +582,7 @@
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         <div class="detailed_card">
                             <div> <!--Should have :before background of card image-->
                                 <h2>DeLeDuck Persona</h2>
@@ -604,7 +599,7 @@
                          class="super_card content_shown"
                          onclick="FocusCard(this)"
                          data-tags="other featured super-projects">
-                        <a class="project_card">
+                        <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
@@ -616,7 +611,7 @@
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         <div class="detailed_card">
                             <div> <!--Should have :before background of card image-->
                                 <h2>DeLeDuck Persona</h2>
@@ -634,6 +629,7 @@
                     <div id="project_deleduck"></div>
                 </section>
             </section>
+            <!--MARK: 🔨 SKILLS-->
             <section id="skills">
                 <h1>Skills</h1>
                 <h3>A search-feature with all of the projects I've created.</h3>
@@ -642,6 +638,7 @@
                     blah blah blah
                 </p>
             </section>
+            <!--MARK: ℹ️ ABOUT-->
             <section id="aboutme">
                 <h1>About Me</h1>
                 <h3>A search-feature with all of the projects I've created.</h3>
@@ -650,23 +647,24 @@
                     blah blah blah
                 </p>
                 <picture>
-                    <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/youtube_black.svg" type="image/svg+xml">
-                    <source media="(prefers-color-scheme: dark)"  srcset="./images_public/marks/youtube_white.svg" type="image/svg+xml">
-                    <img src="./images_public/marks/youtube_colour.svg" alt="youtube_icon.svg">
+                    <source media="(prefers-color-scheme: light)" srcset="./images/marks/youtube_black.svg" type="image/svg+xml">
+                    <source media="(prefers-color-scheme: dark)"  srcset="./images/marks/youtube_white.svg" type="image/svg+xml">
+                    <img src="./images/marks/youtube_colour.svg" alt="youtube_icon.svg">
                 </picture>
                 <picture>
-                    <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/github_black.svg" type="image/svg+xml">
-                    <img src="./images_public/marks/github_white.svg" alt="github_icon.svg">
+                    <source media="(prefers-color-scheme: light)" srcset="./images/marks/github_black.svg" type="image/svg+xml">
+                    <img src="./images/marks/github_white.svg" alt="github_icon.svg">
                 </picture>
                 <picture>
-                    <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/discord_black.svg" type="image/svg+xml">
-                    <source media="(prefers-color-scheme: dark)"  srcset="./images_public/marks/discord_white.svg" type="image/svg+xml">
-                    <img src="./images_public/marks/discord_colour.svg" alt="discord_icon.svg">
+                    <source media="(prefers-color-scheme: light)" srcset="./images/marks/discord_black.svg" type="image/svg+xml">
+                    <source media="(prefers-color-scheme: dark)"  srcset="./images/marks/discord_white.svg" type="image/svg+xml">
+                    <img src="./images/marks/discord_colour.svg" alt="discord_icon.svg">
                 </picture>
                 <picture>
-                    <img src="./images_public/marks/recroom_colour.svg" alt="recroom_icon.svg">
+                    <img src="./images/marks/recroom_colour.svg" alt="recroom_icon.svg">
                 </picture>
             </section>
+            <!--MARK: 📞 CONTACT-->
             <section id="contacts">
                 <h1>Contacts & Socials</h1>
                 <h3>A search-feature with all of the projects I've created.</h3>
@@ -675,6 +673,7 @@
                     blah blah blah
                 </p>
             </section>
+            <!--MARK: 📝 RESUME-->
             <section id="resume">
                 <h1 aria-label="resume">Resume</h1>
                 <h3>Various versions of the resumes under my name.</h3>
@@ -684,6 +683,11 @@
                 </p>
             </section>
         </main>
+        <!--MARK: 👥 PROFILES-->
+
+
+
+        <!--MARK: DeLeDuck-->
         <aside class="profile_deleduck">
             <div class="profile_selector">
                 <div class="checked">
@@ -696,7 +700,7 @@
                     <span class="material-symbols-rounded">face_3</span>
                 </div>
             </div>
-            <img class="profile_picture" src="images_profile/profile_deleduck.png" alt="profile_deleduck.png"/>
+            <img class="profile_picture" src="./images/profile/profile_deleduck.png" alt="profile_deleduck.png"/>
             <h2>Duck?</h2>
             <h3>@deleduck</h3>
             <h3>she/her/hers</h3>
@@ -707,9 +711,9 @@
             </span>
             <fieldset>
                 <picture class="profile_hyperlink_icon">
-                    <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/youtube_black.svg" type="image/svg+xml">
-                    <source media="(prefers-color-scheme: dark)"  srcset="./images_public/marks/youtube_white.svg" type="image/svg+xml">
-                    <img src="./images_public/marks/youtube_colour.svg" alt="youtube_icon.svg">
+                    <source media="(prefers-color-scheme: light)" srcset="./images/marks/youtube_black.svg" type="image/svg+xml">
+                    <source media="(prefers-color-scheme: dark)"  srcset="./images/marks/youtube_white.svg" type="image/svg+xml">
+                    <img src="./images/marks/youtube_colour.svg" alt="youtube_icon.svg">
                 </picture>
                 <a href="https://www.youtube.com/@DeLeDuck" title="@DeLeDuck on YouTube">Main</a>
                 <a href="https://www.youtube.com/@DeLeDuck" title="@DeLeDuck on YouTube">Music</a>
@@ -718,17 +722,17 @@
                 <br/>
 
                 <picture class="profile_hyperlink_icon">
-                        <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/github_black.svg" type="image/svg+xml">
-                        <img src="./images_public/marks/github_white.svg" alt="github_icon.svg">
+                        <source media="(prefers-color-scheme: light)" srcset="./images/marks/github_black.svg" type="image/svg+xml">
+                        <img src="./images/marks/github_white.svg" alt="github_icon.svg">
                 </picture>
                 <a href="https://github.com/lunanobles" title="lunanobles on GitHub">GitHub</a>
 
                 <br/>
 
                 <picture class="profile_hyperlink_icon">
-                        <source media="(prefers-color-scheme: light)" srcset="./images_public/marks/discord_black.svg" type="image/svg+xml">
-                        <source media="(prefers-color-scheme: dark)"  srcset="./images_public/marks/discord_white.svg" type="image/svg+xml">
-                        <img src="./images_public/marks/discord_colour.svg" alt="discord_icon.svg">
+                        <source media="(prefers-color-scheme: light)" srcset="./images/marks/discord_black.svg" type="image/svg+xml">
+                        <source media="(prefers-color-scheme: dark)"  srcset="./images/marks/discord_white.svg" type="image/svg+xml">
+                        <img src="./images/marks/discord_colour.svg" alt="discord_icon.svg">
                 </picture>
                 <a href="https://discord.com/users/872675076472983572" title="@DeLeDuck on Discord">Discord</a>
             </fieldset>
@@ -745,6 +749,7 @@
                 <p>Now I choose to move towards a new persona, currently in the works: Princess Celene.</p>
             </div>
         </aside>
+        <!--MARK: Celene-->
         <aside class="profile_celene">
             <div class="profile_selector">
                 <div onclick="viewProfile('DeLeDuck')">
@@ -757,7 +762,7 @@
                     <span class="material-symbols-rounded">face_3</span>
                 </div>
             </div>
-            <img class="profile_picture" src="images_profile/profile_celene.png" alt="profile_celene.png"/>
+            <img class="profile_picture" src="./images/profile/profile_celene.png" alt="profile_celene.png"/>
             <h2>Princess Celene</h2>
             <h3>@princess_celene</h3>
             <h3>she/her/hers</h3>
@@ -766,6 +771,7 @@
                 <h5 class="section_inline_blorb"><span class="material-symbols-rounded">sports_esports</span> Game Dev.</h6>
             </span>
         </aside>
+        <!--MARK: Irl-->
         <aside class="profile_irl">
             <div class="profile_selector">
                 <div onclick="viewProfile('DeLeDuck')">
@@ -778,7 +784,7 @@
                     <span class="material-symbols-rounded">face_3</span>
                 </div>
             </div>
-            <img class="profile_picture" src="images_profile/profile_irl.png" alt="profile_irl.png"/>
+            <img class="profile_picture" src="./images/profile/profile_irl.png" alt="profile_irl.png"/>
             <h2>Luna Nobles</h2>
             <h3>Subtitle</h3>
             <h3>she/her/hers</h3>
@@ -815,6 +821,6 @@
                 </a>
             </span>
         </aside>
-        <script src="script.js"></script>
+        <script src="./scripts/script.js"></script>
     </body>
 </html>

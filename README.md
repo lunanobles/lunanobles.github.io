@@ -12,13 +12,10 @@ This webpage is the hub and core of all my personas, projects, ideas, and whatev
 
 ---
 ## Update Notes
-`(Written Sep. 12, 0.5.4)` Alrighty! I'm back! I know it's been a while, but I am going to start working on this again; however, I will not be updating the site every single day like the crazy past me was doing.
+`(Written Oct. 10, 0.5.9)` Helllooo! I've been hard at work making this project better and better! This particular update was a pretty big rework of a lot of things (check the [CHANGELOG.md](https://github.com/lunanobles/lunanobles.github.io/blob/main/CHANGELOG.md) for more info). I'm glad to announce that this should be the very last non-content update before launch! I'll be adding all of the content over the next few versions, adding projects, resumés, info, and generally completing the site!
 
-There aren't any major goals for the project at the moment; primarily, I am working on just getting the project cards show a more detailed description of the content upon asking, but I am having troubles due to the fact that the codespace is getting more and more spaghettified as this project continues.
+In the `0.6.0` update, there will come a new page! `/wishlist` will be a nw page for hosting my own personal wishlist.
 
 ## Known bugs & Issues
-1. Detailed Project Cards are... ugly and also don't work all that well!
-2. The Projects searching functionality is... well... not functional.
-3. If you hadn't noticed... there's no content... As of now, the page is really just a pretty way to say "not much here ¯\\\_(ツ)\_/¯".
-4. The profile selector buttons are based off viewheight, so low pixel dencity screens get like 2pxs for the buttons.
-5. The light-mode project cards have poor visibility/readability.
+1. If you hadn't noticed... there's no content... As of now, the page is really just a pretty way to say "not much here ¯\\\_(ツ)\_/¯".
+2. The light-mode project cards have poor visibility/readability.

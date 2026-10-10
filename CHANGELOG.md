@@ -1,19 +1,23 @@
-# `0.5.8 | Project Card Filtering via Tags — Design`
-- Published **Sep. 19, '26**
-- Created desktop design for detailed cards.
-- Created mobile design for detailed cards.
-- Adjusted mobile design for standard cards.
-- Designed the search/filter buttons.
-- Added the missing images to the detailed cards.
-- Added a little hyperlinks section to one of the profiles.
+# `0.5.9 | Final Preparations before Adding Content`
+- Published **Oct. 10, '26**
+- Handful of typo fixes with this CHANGELOG... (I will be finding these things until after 1.0, I swear 😭).
+- Added credits to more images. 
+  > For the "DeLeDuck Persona" card, the original artist's social media seem to all have been banned! [This Reddit account](https://www.reddit.com/user/tuturuu3761/) is the only remaining trace I can find of them, and I cannot verify that this account belongs to the real @ch1zuno or if they we're the true original artist, so I won't directly link them in the webpage.
+- Added more `MARK:` comments so I can work better.
+- Reorganised all files into more organised folders and adjusted all paths acordingly.
+  > For `/scripts/` and `/styles/`, I will work on them again around 0.7.0, splitting up files into specific functions or uses.
+- Trimmed down my HTML comment header (idek why I have that tbfr).
+- Deleted the RecRoom (may she rest in peace) Creative Campus image and replaced it with another image as the default.
+- (It's in a .gitignore-ed folder, but) I made a tool to help me make project cards easier, where I fill out a form instead of writting the HTML myself.
+- (Also in a currently .gitignore-ed folder, but) I am making a brand new page! It'll be a wishlist for myself, consolidating all the different platforms I would want stuffs from. It will likely release in 0.6.0 as a release version alongside the content for 0.6.0 on the main page.
 
 ---
 
 ## Future/Planned Updates
 
-```0.6.0 | Project Cards Content, Media, Descriptions, Etc...```<br/>
-```0.6.1 | Profile Content, Media, Descriptions, Etc...```<br/>
+```0.6.X | [topic/section] Cards Content, Media, Descriptions, Etc...```<br/>
   > The 0.6.X versions will likely be labeled as "0.6.X | [topic/section] Content, Media, Descriptions, Etc..." and the X will just count up, no 0.6.3a, or anything. But repeating topics will get I or II or whatever at the end.
+
 ```0.7.0 | Reorganising and Cleaning Code I-...```
   > I might just do some general cleaning up before the actual launch.
 
@@ -26,9 +30,18 @@ _(In Newest to Oldest Order.)<br/>(📦 indicates a release version.)_
 
 
 
-<!-- MARK: 0.5.0...0.5.? -->
-### 0.5.0 &#x2194; 0.5.?
-> At this point in development, new features should be kept to a minimum, and there should be a focus on content.
+<!-- MARK: 0.5.0...0.5.9 -->
+### 0.5.0 &#x2194; 0.5.9
+> The 0.5.X family ended up being 
+
+#### `0.5.8 | Project Card Filtering via Tags — Design`
+- Published **Sep. 20, '26**
+- Created desktop design for detailed cards.
+- Created mobile design for detailed cards.
+- Adjusted mobile design for standard cards.
+- Designed the search/filter buttons.
+- Added the missing images to the detailed cards.
+- Added a little hyperlinks section to one of the profiles.
 
 #### `0.5.7 | Project Card Filtering via Tags — Functionality`
 - Published **Sep. 14, '26**
@@ -170,7 +183,7 @@ _(In Newest to Oldest Order.)<br/>(📦 indicates a release version.)_
 
 
 <!-- MARK: Merger -->
-### Branch creation &mdash; overall-redesign &mdash; 0.4b.0
+### Branch creation &mdash; overall-redesign &mdash; 0.4a.0?
 
 > This was a weird one, it was my first time making a branch, and I had just started learning Git. This got set to main in a weird way, I have no clue what happend ngl.
 
@@ -178,8 +191,8 @@ _(In Newest to Oldest Order.)<br/>(📦 indicates a release version.)_
 
 
 
-<!-- MARK: 0.3.0...0.3.3 -->
-### 0.3.0 &#x2194; 0.3.3
+<!-- MARK: 0.3.0...0.3.2 -->
+### 0.3.0 &#x2194; 0.3.2
 
 #### `0.3.2 | Seperation of Stylesheets I` &mdash; lunanobles
 
