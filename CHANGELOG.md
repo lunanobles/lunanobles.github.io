@@ -1,15 +1,6 @@
-# `0.5.9 | Final Preparations before Adding Content`
+# `0.5.10 | Google DNS Site Verification`
 - Published **Oct. 10, '26**
-- Handful of typo fixes with this CHANGELOG... (I will be finding these things until after 1.0, I swear 😭).
-- Added credits to more images. 
-  > For the "DeLeDuck Persona" card, the original artist's social media seem to all have been banned! [This Reddit account](https://www.reddit.com/user/tuturuu3761/) is the only remaining trace I can find of them, and I cannot verify that this account belongs to the real @ch1zuno or if they we're the true original artist, so I won't directly link them in the webpage.
-- Added more `MARK:` comments so I can work better.
-- Reorganised all files into more organised folders and adjusted all paths acordingly.
-  > For `/scripts/` and `/styles/`, I will work on them again around 0.7.0, splitting up files into specific functions or uses.
-- Trimmed down my HTML comment header (idek why I have that tbfr).
-- Deleted the RecRoom (may she rest in peace) Creative Campus image and replaced it with another image as the default.
-- (It's in a .gitignore-ed folder, but) I made a tool to help me make project cards easier, where I fill out a form instead of writting the HTML myself.
-- (Also in a currently .gitignore-ed folder, but) I am making a brand new page! It'll be a wishlist for myself, consolidating all the different platforms I would want stuffs from. It will likely release in 0.6.0 as a release version alongside the content for 0.6.0 on the main page.
+- Added the metadata to verify `https://lunanobles.github.io` with the Google Console DNS.
 
 ---
 
@@ -33,6 +24,19 @@ _(In Newest to Oldest Order.)<br/>(📦 indicates a release version.)_
 <!-- MARK: 0.5.0...0.5.9 -->
 ### 0.5.0 &#x2194; 0.5.9
 > The 0.5.X family ended up being 
+
+#### `0.5.9 | Final Preparations before Adding Content`
+- Published **Oct. 10, '26**
+- Handful of typo fixes with this CHANGELOG... (I will be finding these things until after 1.0, I swear 😭).
+- Added credits to more images. 
+  > For the "DeLeDuck Persona" card, the original artist's social media seem to all have been banned! [This Reddit account](https://www.reddit.com/user/tuturuu3761/) is the only remaining trace I can find of them, and I cannot verify that this account belongs to the real @ch1zuno or if they we're the true original artist, so I won't directly link them in the webpage.
+- Added more `MARK:` comments so I can work better.
+- Reorganised all files into more organised folders and adjusted all paths acordingly.
+  > For `/scripts/` and `/styles/`, I will work on them again around 0.7.0, splitting up files into specific functions or uses.
+- Trimmed down my HTML comment header (idek why I have that tbfr).
+- Deleted the RecRoom (may she rest in peace) Creative Campus image and replaced it with another image as the default.
+- (It's in a .gitignore-ed folder, but) I made a tool to help me make project cards easier, where I fill out a form instead of writting the HTML myself.
+- (Also in a currently .gitignore-ed folder, but) I am making a brand new page! It'll be a wishlist for myself, consolidating all the different platforms I would want stuffs from. It will likely release in 0.6.0 as a release version alongside the content for 0.6.0 on the main page.
 
 #### `0.5.8 | Project Card Filtering via Tags — Design`
 - Published **Sep. 20, '26**
