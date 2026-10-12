@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+
+
+
+
+/* MARK: 💬 FONTS*/
+
+/*GMSR*/         @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+/*DynaPuff*/     @import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700");
+/*Playpen Sans*/ @import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800");
+
+
+.material-symbols-rounded {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    font-size: 1.2em;
+    vertical-align: middle;
+    margin: auto;
+}
+
+
+.dynapuff {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+
+.playpen-sans {
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+/*MARK: 🔨 UTILS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*.splitport_even {
+    display: flex;
+    justify-content: space-evenly;
+
+    & > * {
+        flex-grow: 1;
+    }
+}
+
+
+
+
+
+/*MARK: ➰ VARS*/
+
+:root {
+    --palette-primary:              hsl(267, 29%, 60%);
+    --palette-secondary:            hsl(266, 55%, 35%);
+    --palette-accent:               hsl(37, 46%, 54%);
+    --palette-common-text:          hsl(253, 100%, 95%);
+    --palette-common-text-muted:    hsl(244, 68%, 79%);
+    --palette-common-field-top:     hsl(251, 53%, 13%);
+    --palette-common-field-bottom:  hsl(253, 80%, 8%);
+    --palette-common-background:    hsl(250, 100%, 5%);
+    /**/
+    --palette-common-field-bottom-transparent: hsla(253, 80%, 8%, 0.7);
+}
+
+/*Light Mode*/
+@media (prefers-color-scheme: light) {
+    :root {
+        --palette-primary:              hsl(266, 55%, 35%);
+        --palette-secondary:            hsl(267, 29%, 60%);
+        --palette-accent:               hsl(37, 67%, 43%);
+        --palette-common-text:          hsl(256, 100%, 12%);
+        --palette-common-text-muted:    hsl(251, 43%, 38%);
+        --palette-common-field-top:     hsl(260, 100%, 99%);
+        --palette-common-field-bottom:  hsl(246, 100%, 94%);
+        --palette-common-background:    hsl(244, 100%, 93%);
+    }
+}
+
+
+
+
+
+/*MARK: 🖼️ DISPLAY*/
+
+body {
+
+    /*Styles*/
+    font-family: 'Playpen Sans';
+    background-color: var(--palette-common-background);
+    color: var(--palette-common-text-muted);
+    overflow-y: hidden;
+
+    & h1,
+    & h2,
+    & h3 {
+        font-family: 'DynaPuff';
+        color: var(--palette-common-text);
+    }
+
+
+    /*Display*/
+    display: flex;
+    justify-content: space-evenly;
+
+    & > nav {width: 15%;}
+    & > main {width: 85%;}
+
+
+    /*Important Children*/
+    & main {
+        padding: 1vh 1vw;
+        overflow-y: scroll;
+        max-height: 100vh;
+
+        & section {
+            margin-top: 3vh;
+        }
+    }
+
+
+    /*General Children*/
+
+    & a,
+    & a:visited {
+        color: var(--palette-accent);
+
+        &:hover {
+            color: var(--palette-primary);
+        }
+    }
+}
+
+
+
+
+
+/*MARK: 🃏 CARDS*/
+
+body *.card {
+
+    /*General style of the card*/
+    display: block;
+    position: relative;
+    background-color: var(--palette-common-field-bottom);
+    color: var(--palette-common-text-muted);
+    border: 1px solid var(--palette-common-field-top);
+    border-radius: 15px;
+    min-width: 400px;
+    width: 30%;
+    max-width: 33%;
+    aspect-ratio: 1/1.15;
+    transition: background-color 1s ease-in-out;
+    overflow: hidden;
+
+    /*Background image*/
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-image: url(../images/placeholder-image.png);
+        background-size: cover;
+        background-position: center;
+        transition: all 1s ease-in-out;
+        z-index: 1;
+    }
+
+    /*Hover*/
+    &:hover::before {transform: scale(1.2);}
+
+    /*Card type*/
+    & > div.card_type {
+        content: "";
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        background-color: var(--palette-common-field-bottom-transparent);
+        border: 1px solid var(--palette-common-field-top);
+        border-radius: 5px;
+        width: 15%;
+        aspect-ratio: 1/1;
+        background-size: cover;
+        z-index: 2;
+    }
+
+    /*Description box*/
+    & > div.card_info {
+        position: absolute;
+        bottom: 0;
+        background-color: var(--palette-common-field-bottom-transparent);
+        border-top: 1px solid var(--palette-common-field-top);
+        border-radius: 0 0 14px 14px;
+        padding: 5px;
+        z-index: 2;
+        min-width: 100%;
+    }
+
+    /*Tags*/
+    & > div.card_info div.tags {
+        visibility: hidden;
+        position: relative;
+
+        &::after {
+            background-color: var(--palette-common-field-bottom-transparent);
+            border: 1px solid var(--palette-common-field-top);
+            border-radius: 5px;
+            padding: 2px;
+            font-size: 0.8em;
+            vertical-align: middle;
+
+            visibility: visible;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+body div.cards_section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    & > * {
+        margin: 1vw 1vh;
+    }
+}

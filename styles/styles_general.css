@@ -307,12 +307,12 @@ main p {
     text-indent: 2rem;
 }
 
-*.splitport-even {
+*.splitport_even {
     display: flex;
     justify-content: space-evenly;
 
     &>* {
-        max-width: 50%;
+        flex-grow: 1;
         margin: 0 2px;
     }
 
@@ -322,7 +322,7 @@ main p {
 }
 
 
-*.splitport-even-vertical {
+*.splitport_even_vertical {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

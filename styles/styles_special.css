@@ -277,3 +277,57 @@ aside div.profile_selector {
         }
     }
 }
+
+section#contacts *.social_account {
+
+    width: 100%;
+    justify-items: center;
+
+    & picture img,
+    & span.material-symbols-rounded {
+        height: 1.2em;
+        margin: 0;
+    }
+
+    & p {
+        text-indent: 0.2em;
+    }
+
+    & > a:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        background-color: var(--palette-common-field-bottom);
+        border: 1px solid var(--palette-common-field-top);
+        padding: 1vw;
+        width: 100%;
+        font-size: 2rem;
+        border-radius: 15px;
+    }
+
+    & > div:nth-child(2) {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    & > div:nth-child(2) > a {
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        background-color: var(--palette-common-field-bottom);
+        border: 1px solid var(--palette-common-field-top);
+        padding: 1vw;
+        margin: 5px;
+        max-width: 50%;
+        border-radius: 10px;
+    }
+
+    & a:hover,
+    & > div:nth-child(2) > a:hover {
+        cursor: pointer;
+        background-color: var(--palette-common-field-top);
+        border-color: var(--palette-common-field-bottom);
+    }
+}

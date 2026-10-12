@@ -1,16 +1,22 @@
-# `0.5.10 | Google DNS Site Verification`
-- Published **Oct. 10, '26**
-- Added the metadata to verify `https://lunanobles.github.io` with the Google Console DNS.
+# `0.6.0 | 📦 Contacts & Socials Content, Media, Descriptions, Etc... I`
+- Published **Oct. 11, '26**
+  > This message has two links that requre the commit to go through before I can give them urls, so they will not be functional until the next commit, when I have access to the urls.
+- Release Version: **[0.6.0 | New page /wishlist is now live!](<!--REPLACE-->)**
+- Redirected some of the internal `href` links that were pointing to old file locations that changed after the directory rework in `0.5.9`.
+- Gave every section a unique subtitle.
+- In the Contacts & Socials section, I added my main social media accounts and contact methods creating a fun decorated link for accounts.
+- Started using `flex-grow: 1;` instead of `max-width: 50%;` for splitport_even.
+- The wishlist page is now live! See [/wishlist CHANGELOG.md](<!--REPLACE-->) for relevent information.
 
 ---
 
 ## Future/Planned Updates
 
-```0.6.X | [topic/section] Cards Content, Media, Descriptions, Etc...```<br/>
+```0.6.X | [topic/section] Content, Media, Descriptions, Etc...```<br/>
   > The 0.6.X versions will likely be labeled as "0.6.X | [topic/section] Content, Media, Descriptions, Etc..." and the X will just count up, no 0.6.3a, or anything. But repeating topics will get I or II or whatever at the end.
 
 ```0.7.0 | Reorganising and Cleaning Code I-...```
-  > I might just do some general cleaning up before the actual launch.
+  > I might just do some general cleaning up before the actual launch. (Ps. THE CSS IS SO BAD OMG)
 
 
 ---
@@ -21,9 +27,13 @@ _(In Newest to Oldest Order.)<br/>(📦 indicates a release version.)_
 
 
 
-<!-- MARK: 0.5.0...0.5.9 -->
-### 0.5.0 &#x2194; 0.5.9
+<!-- MARK: 0.5.0...0.5.10 -->
+### 0.5.0 &#x2194; 0.5.10
 > The 0.5.X family ended up being 
+
+#### `0.5.10 | Google DNS Site Verification`
+- Published **Oct. 10, '26**
+- Added the metadata to verify `https://lunanobles.github.io` with the Google Console DNS.
 
 #### `0.5.9 | Final Preparations before Adding Content`
 - Published **Oct. 10, '26**
