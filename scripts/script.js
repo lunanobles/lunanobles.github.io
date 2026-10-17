@@ -3,14 +3,13 @@ if (document.documentElement.clientWidth < 320) {
     document.body.innerHTML = `<p style="text-align: center;">&#9888; Please view this page on a larger device. &#9888;</br>Try reloading the page...<br/>Width: `+document.documentElement.clientWidth+`px</p>`
 }
 
+// MARK: project_filter()
 function project_filter(tag) {
 
     var items = document.querySelectorAll(`section#projects_search div.super_card[data-tags~="${tag}"]`);
     var all_items = document.querySelectorAll(`section#projects_search div.super_card[data-tags]`);
     var this_button = document.querySelector(`button[onclick~="project_filter('${tag}')"]`);
     var all_buttons = document.querySelectorAll(`div#project_buttons > button`);
-
-    console.info(`items:\n\t${JSON.stringify(items)}\n\nall_items:\n\t${JSON.stringify(all_items)}`);
 
 
     /// Stylising Buttons ///
@@ -45,6 +44,7 @@ function project_filter(tag) {
     }
 }
 
+// MARK: viewProfile()
 function viewProfile(who) {
     var profile_deleduck = document.querySelector("aside.profile_deleduck");
     var profile_celene = document.querySelector("aside.profile_celene");
@@ -67,6 +67,8 @@ function viewProfile(who) {
     }
 }
 
+
+// MARK: navDropDown()
 
 let isOpen = [false, false, false, false, false, false];
 
@@ -115,7 +117,7 @@ function navDropDown(section) {
     }
 }
 
-
+// MARK: FocusCard()
 // Focussing on certain cards should increase their width and show details
 function FocusCard(element) {
     

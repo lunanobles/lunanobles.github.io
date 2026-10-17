@@ -1,12 +1,20 @@
-# `0.6.0 | 📦 Contacts & Socials Content, Media, Descriptions, Etc... I`
-- Published **Oct. 11, '26**
-  > This message has two links that requre the commit to go through before I can give them urls, so they will not be functional until the next commit, when I have access to the urls.
-- Release Version: **[0.6.0 | New page /wishlist is now live!](<!--REPLACE-->)**
-- Redirected some of the internal `href` links that were pointing to old file locations that changed after the directory rework in `0.5.9`.
-- Gave every section a unique subtitle.
-- In the Contacts & Socials section, I added my main social media accounts and contact methods creating a fun decorated link for accounts.
-- Started using `flex-grow: 1;` instead of `max-width: 50%;` for splitport_even.
-- The wishlist page is now live! See [/wishlist CHANGELOG.md](<!--REPLACE-->) for relevent information.
+# `0.6.1 | Projects Content, Media, Descriptions, Etc... I`
+- Published **Oct. 16, '26**
+- Fixed the hyperlinks in the previous commit's CHANGELOG entry.
+- Added the description and information for the DeLeDuck Persona detailed card.
+- Added the description and information for the Princess Celene Persona detailed card.
+- Added the description and information for the Visceria Webpage detailed card.
+- Added the description and information for the the following cards:
+  - GameMaker Games&dagger;
+  - Artsonia Portfolio
+  - Syllia Kon
+  - Wishlist
+  > &dagger; Moved out of the featured section and into the general section.
+- Changed the "Systems & Hierachies" tag to "Systems", combined the "Video Games" and "Software" tags into one "Software" tag, and added the "Writting" tag.
+- Added `MARK:`s to script.js for better readability and management.
+- Added a lightmode variation of `--palette-common-field-bottom-transparent` that was missing and casuing lightmode project cards to look bad. :(
+- Changed up the application of the `:before` images of the cards in the internal CSS to use one application on both selections with comma sepeation instead of two distict applications.
+- See [./wishlist/CHANGELOG.md] for relevent changes.
 
 ---
 
@@ -25,7 +33,17 @@ _(In Newest to Oldest Order.)<br/>(📦 indicates a release version.)_
 
 
 
+<!-- MARK: 0.6.0...0.6.X -->
+### 0.5.0 &#x2194; 0.6.X
 
+#### `0.6.0 | 📦 Contacts & Socials Content, Media, Descriptions, Etc... I`
+- Published **Oct. 11, '26**
+- Release Version: **[0.6.0 | New page /wishlist is now live!](https://github.com/lunanobles/lunanobles.github.io/releases/tag/0.6.0)**
+- Redirected some of the internal `href` links that were pointing to old file locations that changed after the directory rework in `0.5.9`.
+- Gave every section a unique subtitle.
+- In the Contacts & Socials section, I added my main social media accounts and contact methods creating a fun decorated link for accounts.
+- Started using `flex-grow: 1;` instead of `max-width: 50%;` for splitport_even.
+- The wishlist page is now live! See [/wishlist CHANGELOG.md](./wishlist/CHANGELOG.md>) for relevent information.
 
 <!-- MARK: 0.5.0...0.5.10 -->
 ### 0.5.0 &#x2194; 0.5.10

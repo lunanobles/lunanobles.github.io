@@ -1,7 +1,8 @@
-{()=>{
-    //MARK: SPECIAL CODE
-}}
-
+//MARK: ULTRA SMALL SCREENS
+if (document.documentElement.clientWidth < 200) {
+    alert("WARNING! This page was not developed with this screen size in mind, page layout will be distorted or even unusable.\nPlease view the page on a larger device.")
+    document.body.innerHTML = `<p style="text-align: center;">&#9888; Please view this page on a larger device. &#9888;</br>Try reloading the page...<br/>Width: `+document.documentElement.clientWidth+`px</p>`
+}
 
 //MARK: SPECIAL CODE
     const code_input_element = document.getElementById("special_code_input");
@@ -10,6 +11,7 @@
 
     show_cards("Public");
 
+    //MARK:  + Code Input
     code_input_element.addEventListener("change", function (e) {
         code_input = this.value;
 
@@ -29,6 +31,8 @@
         } 
     });
 
+
+    //MARK: + show_cards()
     function show_cards(section) {
 
         const cards_all              = document.querySelectorAll("*.card");

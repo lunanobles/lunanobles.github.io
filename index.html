@@ -24,14 +24,13 @@
         <link rel="stylesheet" href="./styles/styles_mobile.css"/>
         <style>
             /*Project Background Image Selection*/
-            #project_deleduck div::before                               {background-image: url(./images/profile/profile_deleduck.png) !important;}
-            #project_deleduck *.detailed_card_img_section::before       {background-image: url(./images/profile/profile_deleduck.png) !important;}/*Use !important to override default image*/
-            #project_princesscelene div::before                         {background-image: url(./images/profile/profile_celene.png) !important;} 
-            #project_princesscelene *.detailed_card_img_section::before {background-image: url(./images/profile/profile_celene.png) !important;}/*Use !important to override default image*/
-            #project_visceria div::before                               {background-image: url(./images/cards/visceria.webp) !important; background-position: right -20px top 0 !important;} 
-            #project_visceria *.detailed_card_img_section::before       {background-image: url(./images/cards/visceria.webp) !important;}/*Use !important to override default image*/
-            #project_gamemaker div::before                              {background-image: url(./images/cards/gamemaker.png) !important;} 
-            #project_gamemaker *.detailed_card_img_section::before      {background-image: url(./images/cards/gamemaker.png) !important;}/*Use !important to override default image*/
+            #project_deleduck div::before, #project_deleduck *.detailed_card_img_section::before                   {background-image: url(./images/profile/profile_deleduck.png) !important;}/*Use !important to override default image*/
+            #project_princesscelene div::before, #project_princesscelene *.detailed_card_img_section::before       {background-image: url(./images/profile/profile_celene.png) !important;}
+            #project_visceria div::before, #project_visceria *.detailed_card_img_section::before                   {background-image: url(./images/cards/visceria.webp) !important;}
+            #project_gamemaker div::before, #project_gamemaker *.detailed_card_img_section::before                 {background-image: url(./images/cards/gamemaker.png) !important;}
+            #project_artsoniaportfolio div::before, #project_artsoniaportfolio *.detailed_card_img_section::before {background-image: url(./images/cards/artsoniaportfolio.png) !important;}
+            #project_sylliakon div::before, #project_sylliakon *.detailed_card_img_section::before                 {background-image: url(./images/cards/sylliakon.png) !important;}
+            #project_wishlist div::before, #project_wishlist *.detailed_card_img_section::before                   {background-image: url(./images/cards/wishlist.png) !important;}
         </style>
     </head>
 
@@ -164,7 +163,7 @@
                 <p>
                     After all the content is in place and fact-checked, I will be making so many much stuffs! My main idea is &#10024; <i>secrets</i> &#10024;, easter eggs, little nibits 
                     to find around the page. Maybe a hidden button that lets you see some cute bonus content; something along those lines. That will <b>NOT</b> be added untill the actual 
-                    content is done. As I'm writting this, this page is only in version 0.5.1 approximately twelve planned updates before publishing, so we have a long way to go before 
+                    content is done. As I'm writing this, this page is only in version 0.5.1 approximately twelve planned updates before publishing, so we have a long way to go before 
                     things like that are added.
                 </p>
             </div>
@@ -180,7 +179,7 @@
                     <div id="project_deleduck" 
                          class="super_card"
                          onclick="FocusCard(this)"
-                         data-tags="other featured super-projects">
+                         data-tags="art systems other">
                         <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
@@ -189,7 +188,7 @@
                                 <hr/>
                                 <div>
                                     <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">Systems</span>
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
@@ -200,21 +199,29 @@
                             <div class="detailed_card_main_section">
                                 <div>
                                     <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">Systems</span>
                                     <span class="project_tag">Other</span>
                                 </div>
                                 <h2>DeLeDuck Persona</h2>
                                 <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
+                                <h4>Art by @ch1zuno</h4>
                                 <span>YouTube Channels: <a href="https://www.youtube.com/@DeLeDuck" target="_blank" rel="noopener">Primary</a>, 
                                                         <a href="https://www.youtube.com/@DeLeDuck_Music" target="_blank" rel="noopener">Music</a>, 
                                                         <a href="https://www.youtube.com/@DeLeDuck_Extras" target="_blank" rel="noopener">Extras</a></span>
+                                <p>Here it is. My main online persona. I posted many things under this title, played many games, worked on many projects.
+                                    Most people know this persona and often call me by it, shorted often to "Duck". But now, it's era comes to an end, 
+                                    as I transition into my new persona, marking a new era of myself online.</p>
+                                <p>It wasn't really about the persona itself, more the many things I worked on and published under the name. My art, 
+                                    my videos, my music, my systems, all of my work leading up to recent has been published unter this name. The art
+                                    and general connection to the character Ōzora Subaru (the lady in the image holding the duck) came through me just 
+                                    liking her design and sharing her love for ducks! The art featured was made by someone tagged @ch1zuno.</p>
                             </div>
                         </div>
                     </div>
                     <div id="project_princesscelene"
                          class="super_card"
                          onclick="FocusCard(this)"
-                         data-tags="other featured super-projects">
+                         data-tags="art writing systems other">
                         <div class="project_card">
                             <div>
                                 <h2>Princess Celene Persona</h2>
@@ -223,7 +230,8 @@
                                 <hr/>
                                 <div>
                                     <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">Writing</span>
+                                    <span class="project_tag">Systems</span>
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
@@ -234,11 +242,29 @@
                             <div class="detailed_card_main_section">
                                 <div>
                                     <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">writing</span>
+                                    <span class="project_tag">Systems</span>
                                     <span class="project_tag">Other</span>
                                 </div>
                                 <h2>Princess Celene Persona</h2>
                                 <h4>This is my current major project, showcasing a new online persona, games, and more.</h4>
+                                <h4>Art created with <a href="https://picrew.me/en/image_maker/2">this Picrew</a></h4>
+                                <p>Alrighty! This is the big one; this is the project that will encompass all of my work for the foreseeable 
+                                    future, giving all my work a name to atatch it to!</p>
+                                <p>Princess Celene as a character is the Princess of the Moon; her main colour pallet consists of many purples
+                                    and accenting yellows (not to disimular form my personal pallet); she can often be depicted wearing royal 
+                                    gowns and flowy dresses. She will have lore assosiated with her character, and, when making videos, I will 
+                                    have to stay in character (although I don't plan on imposing too many restrictions on the character that 
+                                    do not match my own natural personality).</p>
+                                <p>One of, if not, the most important project under this character will be the Princess Celene website, currently 
+                                    at <a href="https://princess-celene.github.io" target="_blank" rel="noopener">princess-celene.github.io</a>. I plan to have a centralised 
+                                    website that can support things like a front and centre live chatbox, hosting for all of my videos, and a 
+                                    hundered fun activities to play with! I want to have a limited social media presence, and will likely only 
+                                    maintain a YouTube channel (<a href="https://www.youtube.com/@Princess_Celene" target="_blank" rel="noopener">@Princess_Celene</a>)
+                                    featuring things like my coding projects, gaming adventures, and creative projects. But, importantly, some
+                                    content will be locked to my own website, encouraging people to join it. I want to have my full personality
+                                    on my website, and a public snippet of it on YouTube.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -266,32 +292,26 @@
                                 </div>
                                 <h2>Viceria Webpage</h2>
                                 <h4>The webpage for Gaming Thing Studios' Itch.io game <i>Visceria</i>.</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="project_gamemaker" 
-                         class="super_card"
-                         onclick="FocusCard(this)"
-                         data-tags="video-games">
-                        <div class="project_card">
-                            <div>
-                                <h2>GameMaker Games</h2>
-                                <h4>The games made with GameMaker as a part of my Software & Game Development high school course.</h4>
-                                <h6>Febuary of 26</h6>
-                                <hr/>
-                                <div>
-                                    <span class="project_tag">Video Games</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="detailed_card">
-                            <div class="detailed_card_img_section"></div>
-                            <div class="detailed_card_main_section">
-                                <div>
-                                    <span class="project_tag">Video Games</span>
-                                </div>
-                                <h2>GameMaker Games</h2>
-                                <h4>The games made with GameMaker as a part of my Software & Game Development high school course.</h4>
+                                <h4>Art by Pari T.</h4>
+                                <p>In April of 2026, I designed and developed (in coordination with the 
+                                    Gaming Thing Studio team behind the game), the webpage for Visceria.
+                                    Visceria itself is an Itch.io game featuring a lost alien girl wandering
+                                    a semi-populated planet to find tools to repair her ship. While I had no 
+                                    part in the development of the game, I did solely create the webpage.</p>
+                                <p>At <a href="https://visceria.github.io" target="_blank" rel="noopener">visceria.github.io</a>,
+                                    you can find the webpage I created, designed, and published in coordination with 
+                                    the Gamig Thing Studio team. The site features a Itch.io embed to play the game directly
+                                    from the site! It also includes an "About the Creators" section, detailing the faces and roles
+                                    of the team, as well as a "Lore" section, with in-game and meta-game lore snippets.</p>
+                                <p>Nowadays, the site sits up and running, but left to the team themselves to update. I was retired
+                                    shortly after the site and game's publication, therein leaving any updates to the Gaming Thing 
+                                    Studios team. I stick around as advisory now...</p>
+                                <p>This project was super fun to work on, not only more practice and training for my web design and
+                                    development skills, but as a great experience in working with others to get the site taylored to
+                                    their wants. I loved working with the team to create an awesome website, and I thuroughly enjoyed 
+                                    the game itself! Thank you to the Gaming Thing Studio team for letting me be a part of it for my
+                                    little piece.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -302,17 +322,187 @@
                 <div id="project_buttons">
                     <button type="button" onclick="project_filter()">Reset &mdash; Show All</button></br>
                     <button type="button" onclick="project_filter('websites')">Websites</button>
-                    <button type="button" onclick="project_filter('video-games')">Video Games</button>
-                    <button type="button" onclick="project_filter('software')">Software</button>
+                    <button type="button" onclick="project_filter('games-and-software')">Games & Software</button>
                     <button type="button" onclick="project_filter('art')">Art</button>
-                    <button type="button" onclick="project_filter('systems-and-hierarchies')">Systems & Hierarchies</button>
+                    <button type="button" onclick="project_filter('writing')">Writing</button>
+                    <button type="button" onclick="project_filter('systems')">Systems</button>
                     <button type="button" onclick="project_filter('other')">Other</button>
                 </div>
                 <section id="projects_search">
+                    <div id="project_gamemaker" 
+                         class="super_card content_shown"
+                         onclick="FocusCard(this)"
+                         data-tags="games-and-software">
+                        <div class="project_card">
+                            <div>
+                                <h2>GameMaker Games</h2>
+                                <h4>A small collection of games made in an old version of GameMaker.</h4>
+                                <h6>Febuary of 26</h6>
+                                <hr/>
+                                <div>
+                                    <span class="project_tag">Games & Software</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detailed_card">
+                            <div class="detailed_card_img_section"></div>
+                            <div class="detailed_card_main_section">
+                                <div>
+                                    <span class="project_tag">Games & Software</span>
+                                </div>
+                                <h2>GameMaker Games</h2>
+                                <h4>A small collection of games made in an old version of GameMaker.</h4>
+                                <p>Back in Febuary of 2026, I spent a few months working with GameMaker, an old version of
+                                    GameMaker, making a few basic games and learning basic game development. One of the more
+                                    pivital games I had created was a fully functioning Pacman clone. I also made a two player
+                                    tanks game (not too disimular from Wii Tanks), a maze escape game, and, of course, Pong.</p>
+                                <p>Unfortuantely, due to loss of access to the harddrive I kept these games on, I cannot show 
+                                    them to you! 😭</p>
+                                <p>Making these games served as a great intro to basic game development, learning how to predict 
+                                    and understand player behaviour, and some animation and pixle art skills! I had a great time 
+                                    checking out GameMaker, and would love to dive back into it again on my own time... Hopefully 
+                                    getting my hands on a slightly more up-to-date version...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project_artsoniaportfolio" 
+                         class="super_card content_shown"
+                         onclick="FocusCard(this)"
+                         data-tags="art other">
+                        <div class="project_card">
+                            <div>
+                                <h2>Artonia Portfolio</h2>
+                                <h4>On Artsonia, you can find all of the physical art I have made throughout the years.</h4>
+                                <h6>~</h6>
+                                <hr/>
+                                <div>
+                                    <span class="project_tag">Art</span>
+                                    <span class="project_tag">Other</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detailed_card">
+                            <div class="detailed_card_img_section"></div>
+                            <div class="detailed_card_main_section">
+                                <div>
+                                    <span class="project_tag">Art</span>
+                                    <span class="project_tag">Other</span>
+                                </div>
+                                <div>
+                                    <h2>Artsonia Portfolio</h2>
+                                    <h4>On Artsonia, you can find all of the physical art I have made throughout the years.</h4>
+                                </div>
+                                <div>
+                                    <p>Throughout my years, I have made some amazing art, some things I am really proud of. 
+                                        This <a href="https://www.artsonia.com/artists/portfolio.asp?id=18291527">Artsonia portfolio</a> 
+                                        showcases some of these peices. I recognise that not all of my art has been uploaded to Artsonia; 
+                                        I have a lot missing. But these are some of the piece I do have on there.</p>
+                                    <p>But I do have a few grievances with Artsonia. Moving forward, since Artsonia seems to be a platform 
+                                        mainly made for schools and educational art programs, as well as how limited it's uploading capabilities
+                                        are, I will be finding some other platform to publish my work on. Maybe just here! Perhaps a /art page.
+                                        Or perhaps I simply move to some other known platform like DeviantArt or something. 😄</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project_sylliakon" 
+                         class="super_card content_shown"
+                         onclick="FocusCard(this)"
+                         data-tags="art writing">
+                        <div class="project_card">
+                            <div>
+                                <h2>Sylia Kon</h2>
+                                <h4>A Dungeons & Dragons character I have written that I am very proud of.</h4>
+                                <h6>June of 2026 &rightarrow; Present</h6>
+                                <hr/>
+                                <div>
+                                    <span class="project_tag">Art</span>
+                                    <span class="project_tag">Writing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detailed_card">
+                            <div class="detailed_card_img_section"></div>
+                            <div class="detailed_card_main_section">
+                                <div>
+                                    <span class="project_tag">Art</span>
+                                    <span class="project_tag">Writing</span>
+                                </div>
+                                <div>
+                                    <h2>Syllia Kon</h2>
+                                    <h4>A Dungeons & Dragons character I have written that I am very proud of.</h4>
+                                    <h4>Art created with <a href="https://picrew.me/en/image_maker/1564386/">this Picrew</a>.</h4>
+                                </div>
+                                <div>
+                                    <p>Starting around late June of 2026, I started creating and writing the Dungeons
+                                        & Dragons character Syllia Kon. I love writing, and I really enjoy the help of
+                                        building a character within a pre-defined universe! The ability to both push the 
+                                        limits and contrict to the rules is something that really helps me find a grove 
+                                        when writing. Intertwining the characteristics of the actual world of D&D into my 
+                                        own creation made it both easier to expand the character and more fun to work on
+                                        in the first place, with the added excitement of being able to then play/act as 
+                                        the character at the table!</p>
+                                        
+                                    <p>A basic overview of her story goes as follows:
+                                        growing up in a smaller town, one of particular bigotry towards her species, 
+                                        Syllia ran away from home to "the big city". Struggling to pay for basics like
+                                        food and shelter, she is forced to join the local crime empire to scrape by.
+                                        During the first mission with the organisation, she witnesses her recruiter loose
+                                        their arm in combat! In a panic, she grabs his rapier and displays particular talent
+                                        in the weapon, going on to hone that skill for about another year with the organisation.
+                                        She was respected by the lower ranks of the organisation, but ended up leaving for 
+                                        another city, finding the life of crime not suit for her. She ends up joining the city's
+                                        paladins' guild, maybe as apology for her previous crimes, maybe as a way to help others
+                                        in a way she never got growing up.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project_wishlist" 
+                         class="super_card content_shown"
+                         onclick="FocusCard(this)"
+                         data-tags="websites">
+                        <div class="project_card">
+                            <div>
+                                <h2>Wishlist</h2>
+                                <h4>My personal wishlist page, with everything I'd like consolidated into one page.</h4>
+                                <h6>October of 2026 &rightarrow; Present</h6>
+                                <hr/>
+                                <div>
+                                    <span class="project_tag">Websites</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detailed_card">
+                            <div class="detailed_card_img_section"></div>
+                            <div class="detailed_card_main_section">
+                                <div>
+                                    <span class="project_tag">Websites</span>
+                                </div>
+                                <div>
+                                    <h2>Wishlist</h2>
+                                    <h4>My personal wishlist page, with everything I'd like consolidated into one page.</h4>
+                                </div>
+                                <div>
+                                    <p>I was particularly annoyed and kerfuffled by the disorganisation of managing and distributing
+                                        multiple wishlists and wants across diffeerent platforms, so I made this. At 
+                                        <a href="./wishlist/" target="_blank" rel="noopener">/wishlist</a>, I have my 
+                                        entire current wishlist, with links, descriptions, and pretty pretty looks and
+                                        animations! This project isn't particularly difficuly, but I do enjoy training
+                                        my HTML/CSS/JS skills by creating this project!</p>
+                                    <p>I am particularly pround of the "Secret Code" feature! Visitors to the site can 
+                                        enter a secret code that changes what wishlisted items apear to them. By default,
+                                        the 'Public' type items are viewable, but entering the secret code may make 'Friends
+                                        & Family' type items viewable! There is also a great system so that certain 'Public'
+                                        type items are STILL viewable when the 'Friends & Family' mode is activated!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div id="project_deleduck-not" 
                          class="super_card content_shown"
                          onclick="FocusCard(this)"
-                         data-tags="art">
+                         data-tags="other featured super-projects">
                         <div class="project_card">
                             <div>
                                 <h2>DeLeDuck Persona</h2>
@@ -321,33 +511,7 @@
                                 <hr/>
                                 <div>
                                     <span class="project_tag">Art</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="detailed_card">
-                            <div> <!--Should have :before background of card image-->
-                                <h2>DeLeDuck Persona</h2>
-                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                            </div>
-                            <div>
-                                <span>YouTube Channels: <a href="https://www.youtube.com/@DeLeDuck" target="_blank" rel="noopener">Primary</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Music" target="_blank" rel="noopener">Music</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Extras" target="_blank" rel="noopener">Extras</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="project_deleduck-not" 
-                         class="super_card content_shown"
-                         onclick="FocusCard(this)"
-                         data-tags="other super-projects">
-                        <div class="project_card">
-                            <div>
-                                <h2>DeLeDuck Persona</h2>
-                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                                <h6>Unknown Date &rightarrow; May of 2026</h6>
-                                <hr/>
-                                <div>
-                                    <span class="project_tag">Super Projects</span>
+                                    <span class="project_tag">Systems</span>
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
@@ -376,7 +540,7 @@
                                 <hr/>
                                 <div>
                                     <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">Systems</span>
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
@@ -405,7 +569,7 @@
                                 <hr/>
                                 <div>
                                     <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">Systems</span>
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
@@ -434,7 +598,7 @@
                                 <hr/>
                                 <div>
                                     <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">Systems</span>
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
@@ -463,7 +627,7 @@
                                 <hr/>
                                 <div>
                                     <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">Systems</span>
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
@@ -492,7 +656,7 @@
                                 <hr/>
                                 <div>
                                     <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">Systems</span>
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
@@ -521,7 +685,7 @@
                                 <hr/>
                                 <div>
                                     <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">Systems</span>
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>
@@ -550,65 +714,7 @@
                                 <hr/>
                                 <div>
                                     <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
-                                    <span class="project_tag">Other</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="detailed_card">
-                            <div> <!--Should have :before background of card image-->
-                                <h2>DeLeDuck Persona</h2>
-                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                            </div>
-                            <div>
-                                <span>YouTube Channels: <a href="https://www.youtube.com/@DeLeDuck" target="_blank" rel="noopener">Primary</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Music" target="_blank" rel="noopener">Music</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Extras" target="_blank" rel="noopener">Extras</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="project_deleduck-not" 
-                         class="super_card content_shown"
-                         onclick="FocusCard(this)"
-                         data-tags="other featured super-projects">
-                        <div class="project_card">
-                            <div>
-                                <h2>DeLeDuck Persona</h2>
-                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                                <h6>Unknown Date &rightarrow; May of 2026</h6>
-                                <hr/>
-                                <div>
-                                    <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
-                                    <span class="project_tag">Other</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="detailed_card">
-                            <div> <!--Should have :before background of card image-->
-                                <h2>DeLeDuck Persona</h2>
-                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                            </div>
-                            <div>
-                                <span>YouTube Channels: <a href="https://www.youtube.com/@DeLeDuck" target="_blank" rel="noopener">Primary</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Music" target="_blank" rel="noopener">Music</a>, 
-                                                        <a href="https://www.youtube.com/@DeLeDuck_Extras" target="_blank" rel="noopener">Extras</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="project_deleduck-not" 
-                         class="super_card content_shown"
-                         onclick="FocusCard(this)"
-                         data-tags="other featured super-projects">
-                        <div class="project_card">
-                            <div>
-                                <h2>DeLeDuck Persona</h2>
-                                <h4>My previous online persona, containing its own projects, like YouTube videos, music, art, and more!</h4>
-                                <h6>Unknown Date &rightarrow; May of 2026</h6>
-                                <hr/>
-                                <div>
-                                    <span class="project_tag">Art</span>
-                                    <span class="project_tag">Systems & Hierarchies</span>
+                                    <span class="project_tag">Systems</span>
                                     <span class="project_tag">Other</span>
                                 </div>
                             </div>

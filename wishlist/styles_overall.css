@@ -92,6 +92,8 @@
         --palette-common-field-top:     hsl(260, 100%, 99%);
         --palette-common-field-bottom:  hsl(246, 100%, 94%);
         --palette-common-background:    hsl(244, 100%, 93%);
+        /**/
+        --palette-common-field-bottom-transparent: hsla(246, 100%, 94%, 0.7);
     }
 }
 
@@ -161,7 +163,7 @@ body *.card {
     display: block;
     position: relative;
     background-color: var(--palette-common-field-bottom);
-    color: var(--palette-common-text-muted);
+    color: var(--palette-common-text-muted) !important;
     border: 1px solid var(--palette-common-field-top);
     border-radius: 15px;
     min-width: 400px;

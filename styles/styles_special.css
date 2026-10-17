@@ -58,6 +58,8 @@ section#projects_featured {
 
             padding: 5px;
 
+            overflow-y: auto;
+
         }
 
         & span.project_tag {
