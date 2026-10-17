@@ -1,20 +1,6 @@
-# `0.6.1 | Projects Content, Media, Descriptions, Etc... I`
+# `0.6.2 | Creation of Sitemap`
 - Published **Oct. 16, '26**
-- Fixed the hyperlinks in the previous commit's CHANGELOG entry.
-- Added the description and information for the DeLeDuck Persona detailed card.
-- Added the description and information for the Princess Celene Persona detailed card.
-- Added the description and information for the Visceria Webpage detailed card.
-- Added the description and information for the the following cards:
-  - GameMaker Games&dagger;
-  - Artsonia Portfolio
-  - Syllia Kon
-  - Wishlist
-  > &dagger; Moved out of the featured section and into the general section.
-- Changed the "Systems & Hierachies" tag to "Systems", combined the "Video Games" and "Software" tags into one "Software" tag, and added the "Writting" tag.
-- Added `MARK:`s to script.js for better readability and management.
-- Added a lightmode variation of `--palette-common-field-bottom-transparent` that was missing and casuing lightmode project cards to look bad. :(
-- Changed up the application of the `:before` images of the cards in the internal CSS to use one application on both selections with comma sepeation instead of two distict applications.
-- See [./wishlist/CHANGELOG.md] for relevent changes.
+- Added [./sitemap.xml], created with [https://xml-sitemaps.com].
 
 ---
 
@@ -34,7 +20,25 @@ _(In Newest to Oldest Order.)<br/>(📦 indicates a release version.)_
 
 
 <!-- MARK: 0.6.0...0.6.X -->
-### 0.5.0 &#x2194; 0.6.X
+### 0.6.0 &#x2194; 0.6.X
+
+#### `0.6.1 | Projects Content, Media, Descriptions, Etc... I`
+- Published **Oct. 16, '26**
+- Fixed the hyperlinks in the previous commit's CHANGELOG entry.
+- Added the description and information for the DeLeDuck Persona detailed card.
+- Added the description and information for the Princess Celene Persona detailed card.
+- Added the description and information for the Visceria Webpage detailed card.
+- Added the description and information for the the following cards:
+  - GameMaker Games&dagger;
+  - Artsonia Portfolio
+  - Syllia Kon
+  - Wishlist
+  > &dagger; Moved out of the featured section and into the general section.
+- Changed the "Systems & Hierachies" tag to "Systems", combined the "Video Games" and "Software" tags into one "Software" tag, and added the "Writting" tag.
+- Added `MARK:`s to script.js for better readability and management.
+- Added a lightmode variation of `--palette-common-field-bottom-transparent` that was missing and casuing lightmode project cards to look bad. :(
+- Changed up the application of the `:before` images of the cards in the internal CSS to use one application on both selections with comma sepeation instead of two distict applications.
+- See [./wishlist/CHANGELOG.md] for relevent changes.
 
 #### `0.6.0 | 📦 Contacts & Socials Content, Media, Descriptions, Etc... I`
 - Published **Oct. 11, '26**

@@ -1,10 +1,4 @@
-# `0.6.1 | Projects Content, Media, Descriptions, Etc... I`
-- Published **Oct. 16, '26**
-- Added description for Computer section.
-- Added new cards and assosiated images for: `Meta Quest 2 Grips`, and `Any Amount Amazon Gift Card`.
-- Updated the speceficity of the text colour of cards so that they don't get the anchor element styles aplied to them.
-- Added a ultra small (< 200px) screen exeption, not to dissimular from the ./ page that displays a warning saying to get a bigger screen.
-- Added simple `MARK:`s to the scripts.js file for better organisation.
+_No updates this version... (0.6.2)_
 
 
 ---
@@ -30,6 +24,14 @@ _(In Newest to Oldest Order.)<br/>(📦 indicates a release version.)_
 
 <!-- MARK: 0.6.0...0.6.X -->
 ### 0.6.0 &#x2194; 0.6.X
+
+#### `0.6.1 | Projects Content, Media, Descriptions, Etc... I`
+- Published **Oct. 16, '26**
+- Added description for Computer section.
+- Added new cards and assosiated images for: `Meta Quest 2 Grips`, and `Any Amount Amazon Gift Card`.
+- Updated the speceficity of the text colour of cards so that they don't get the anchor element styles aplied to them.
+- Added a ultra small (< 200px) screen exeption, not to dissimular from the ./ page that displays a warning saying to get a bigger screen.
+- Added simple `MARK:`s to the scripts.js file for better organisation.
 
 #### `0.6.0 | 📦 Contacts & Socials Content, Media, Descriptions, Etc... I`
 - Published **Oct. 11, '26**
